@@ -156,10 +156,11 @@ a {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
-.container {
+
+
+.banner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -172,9 +173,11 @@ a {
 }
 
 
-.container .topbarfont {
-    writing-mode: vertical-rl; /* 垂直排列，文字由右向左 */
-    text-orientation: upright; /* 文字方向直立 */
+.banner .topbarfont {
+    writing-mode: vertical-rl;
+    /* 垂直排列，文字由右向左 */
+    text-orientation: upright;
+    /* 文字方向直立 */
 
     position: absolute;
     top: 75%;
@@ -183,17 +186,35 @@ a {
     color: white;
     font-size: 1.3rem;
     text-align: center;
-    line-height: 2.8; /* 設置行高為字體大小的2倍 */
-    height: 500px; /* 固定高度為 250 像素 */
-    letter-spacing: 20px; /* 設置字距為2像素 */
+    line-height: 2.8;
+    /* 設置行高為字體大小的2倍 */
+    height: 400px;
+    /* 固定高度為 400 像素 */
+    letter-spacing: 20px;
+    /* 設置字距為2像素 */
 }
 
 
-.bigmenu{
-padding: 60px;
+.topbar {
+    
+    padding: 30px 50px;
+
+    justify-content: space-between;
+    align-items: center; /* 垂直置中 */
+
 }
 
-
+.banner {
+height: 955px;
+    
+    background-image: url(./images/home.jpg);
+    background-size: cover;
+    /* 將背景圖片的寬度設為自動，高度設為 300 像素 */
+    background-position: center;
+    /* 將背景圖片置中 */
+    background-repeat: no-repeat;
+    /* 禁止背景圖片重複 */
+}
 
 .topbar nav {
     display: flex;
@@ -212,22 +233,30 @@ padding: 60px;
 }
 
 .icon li {
-    margin: 0 10px; /* 調整圖片與文字之間的間距 */
-    display: inline-block; /* 讓列表項水平排列 */
-    margin-left: 20px; /* 調整列表項之間的間距 */
+    margin: 0 10px;
+    /* 調整圖片與文字之間的間距 */
+    display: inline-block;
+    /* 讓列表項水平排列 */
+    margin-left: 20px;
+    /* 調整列表項之間的間距 */
 }
 
 
 .icon li a {
     display: flex;
-    align-items: center; /* 將圖片與文字垂直置中 */
+    align-items: center;
+    /* 將圖片與文字垂直置中 */
     text-decoration: none;
-    color: #333; /* 文字顏色 */
+    color: #333;
+    /* 文字顏色 */
     font-size: 1.3rem;
 }
 
 .icon li img {
-    width: 50px; /* 圖片寬度 */
-    height: 50px; /* 圖片高度 */
-    margin-right: 5px; /* 調整圖片與文字之間的間距 */
+    width: 50px;
+    /* 圖片寬度 */
+    height: 50px;
+    /* 圖片高度 */
+    margin-right: 5px;
+    /* 調整圖片與文字之間的間距 */
 }
