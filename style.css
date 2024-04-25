@@ -132,6 +132,24 @@ table {
 }
 
 /*共用區*/
+:root {
+    --indigo: #374C66;
+    --auburn: #9F353A;
+    --alabaster: #F1EEE1;
+    --rosyBrown: #B19693;
+    --jel: #403D3D;
+
+    /* --bg-color-1: #F2EDF0;
+    --bg-color-2: #E6ECE5;
+    --bg-color-3: #ECF0F4;
+
+    --lesser-color: #BF9899; */
+    /*透明色調*/
+    /* --alpha-deep: rgba(0, 0, 0, 0.4);
+    --alpha-red: rgba(227, 217, 151, 0.2);
+    --alpha-red2: rgba(214, 168, 163, 0.6); */
+}
+
 img {
     display: block;
     width: 100%;
@@ -144,7 +162,16 @@ a {
     text-decoration: none;
     /* 取消預設的底線裝飾 */
 }
-
+section {
+    display: flex;
+    flex-direction: column;
+    /*主軸:垂直*/
+    justify-content: center;
+    /*主軸(垂直)置中*/
+    align-items: center;
+    /*副軸水平置中*/
+    height: 100vh;
+}
 
 
 
@@ -259,4 +286,34 @@ height: 955px;
     /* 圖片高度 */
     margin-right: 5px;
     /* 調整圖片與文字之間的間距 */
+}
+
+#about {
+    background-image: url(./images/Rectangle\ 180.png);
+}
+
+
+#about img {
+    object-fit: cover;
+    height: 100%;
+}
+
+#allRegions{
+    background-image: url(./images/Rectangle\ 180.png);
+}
+#recommendations{
+    background-image: url(./images/Rectangle\ 180.png);
+}
+#allEvents{
+    background-color:white;
+}
+#news{
+    background-color:white;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--indigo);
+    height: 50vh;
 }
