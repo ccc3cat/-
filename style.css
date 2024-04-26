@@ -162,6 +162,7 @@ a {
     text-decoration: none;
     /* 取消預設的底線裝飾 */
 }
+
 section {
     display: flex;
     flex-direction: column;
@@ -172,6 +173,8 @@ section {
     /*副軸水平置中*/
     height: 100vh;
 }
+
+p {}
 
 
 
@@ -223,17 +226,18 @@ section {
 
 
 .topbar {
-    
+
     padding: 30px 50px;
 
     justify-content: space-between;
-    align-items: center; /* 垂直置中 */
+    align-items: center;
+    /* 垂直置中 */
 
 }
 
 .banner {
-height: 955px;
-    
+    height: 955px;
+
     background-image: url(./images/home.jpg);
     background-size: cover;
     /* 將背景圖片的寬度設為自動，高度設為 300 像素 */
@@ -288,28 +292,82 @@ height: 955px;
     /* 調整圖片與文字之間的間距 */
 }
 
+/*關於日本*/
 #about {
     background-image: url(./images/Rectangle\ 180.png);
 }
 
+#about {
+    position: relative;
+
+}
+
+.title {
+    position: relative;
+    width: 290px;
+    /* 可以根據需要調整 */
+    height: 50px;
+    /* 可以根據需要調整 */
+}
+
+.title p1,
+.title p2 {
+
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+}
+
+.title p1 {
+    position: absolute;
+    top: 75%;
+    /* 垂直置中 */
+    right: 40px;
+    /* 靠右 */
+    font-weight: bold;
+}
+
+/* 左側介紹卡 */
+.card {
+    width: 100%;
+    height: 485px;
+
+}
+
+.card img {
+    float: left;
+    max-height: 100%;
+    /* 圖片最大寬度為容器寬度 */
+    width: auto;
+    /* 讓高度自動調整以保持比例 */
+    /* 如果需要空間分隔圖片和其他內容，可以添加 margin */
+    margin-right: 10px;
+    /* 調整間距 */
+}
 
 #about img {
     object-fit: cover;
     height: 100%;
 }
 
-#allRegions{
+/*所有地區*/
+#allRegions {
     background-image: url(./images/Rectangle\ 180.png);
 }
-#recommendations{
+
+#recommendations {
     background-image: url(./images/Rectangle\ 180.png);
 }
-#allEvents{
-    background-color:white;
+
+#allEvents {
+    background-color: white;
 }
-#news{
-    background-color:white;
+
+#news {
+    background-color: white;
 }
+
 footer {
     display: flex;
     justify-content: center;
