@@ -172,10 +172,17 @@ section {
     align-items: center;
     /*副軸水平置中*/
     height: 100vh;
+
+    border: 2px solid #000000; /* 外框線寬度和顏色 */
+    
 }
 
-p {}
 
+
+.titleP{
+    height: 50px;
+    width: 290px;
+}
 
 
 
@@ -308,15 +315,7 @@ p {}
     /* 可以根據需要調整 */
     height: 50px;
     /* 可以根據需要調整 */
-}
-
-.title p1,
-.title p2 {
-
-    color: var(--indigo);
-    /* 調整文字顏色 */
-    font-size: 1.5rem;
-    /* 調整文字大小 */
+    margin-bottom: 100px; /* 下方距離 */
 }
 
 .title p1 {
@@ -326,13 +325,28 @@ p {}
     right: 40px;
     /* 靠右 */
     font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+}
+
+.title p2 {
+    font-size: 1.3rem;
+    /* 調整文字大小 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
 }
 
 /* 左側介紹卡 */
 .card {
     width: 100%;
     height: 485px;
+}
 
+#about{
+    flex-direction: row;
 }
 
 .card img {
@@ -346,15 +360,39 @@ p {}
     /* 調整間距 */
 }
 
-#about img {
-    object-fit: cover;
-    height: 100%;
+
+.behight{
+    flex-direction: row;
 }
+.whyjp{
+    border: 2px solid #ffffff; /* 外框線寬度和顏色 */
+    border-radius: 40px 0 0 40px; /* 左側圓角 */
+    padding: 10px; /* 可以加入內邊距以避免內容和邊框重疊 */
+    padding: 77px 80px;
+}
+h1{
+    font-size: 1.3rem;
+    color: var(--indigo);
+    font-weight: bold;
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
 
 /*所有地區*/
 #allRegions {
     background-image: url(./images/Rectangle\ 180.png);
 }
+.allRw {
+    width: 100%;
+    height: 485px;
+}
+
+
+
 
 #recommendations {
     background-image: url(./images/Rectangle\ 180.png);
