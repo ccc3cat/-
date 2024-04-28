@@ -173,13 +173,14 @@ section {
     /*副軸水平置中*/
     height: 100vh;
 
-    border: 2px solid #000000; /* 外框線寬度和顏色 */
-    
+    border: 2px solid #000000;
+    /* 外框線寬度和顏色 */
+
 }
 
 
 
-.titleP{
+.titleP {
     height: 50px;
     width: 290px;
 }
@@ -306,8 +307,8 @@ section {
 
 #about {
     position: relative;
-
 }
+
 
 .title {
     position: relative;
@@ -315,7 +316,8 @@ section {
     /* 可以根據需要調整 */
     height: 50px;
     /* 可以根據需要調整 */
-    margin-bottom: 100px; /* 下方距離 */
+    margin-bottom: 100px;
+    /* 下方距離 */
 }
 
 .title p1 {
@@ -345,7 +347,7 @@ section {
     height: 485px;
 }
 
-#about{
+#about {
     flex-direction: row;
 }
 
@@ -361,35 +363,79 @@ section {
 }
 
 
-.behight{
+.behight {
     flex-direction: row;
+    border: 2px solid #000000;
+    /* 外框線寬度和顏色 */
 }
-.whyjp{
-    border: 2px solid #ffffff; /* 外框線寬度和顏色 */
-    border-radius: 40px 0 0 40px; /* 左側圓角 */
-    padding: 10px; /* 可以加入內邊距以避免內容和邊框重疊 */
+
+.whyjp {
+    border: 2px solid #ffffff;
+    /* 外框線寬度和顏色 */
+    border-radius: 40px 0 0 40px;
+    /* 左側圓角 */
     padding: 77px 80px;
 }
-h1{
+
+h1 {
     font-size: 1.3rem;
     color: var(--indigo);
     font-weight: bold;
 }
 
-h2{
+h2 {
     margin-top: 30px;
     font-size: 1rem;
 }
 
 
 /*所有地區*/
-#allRegions {
+#allRegions{
     background-image: url(./images/Rectangle\ 180.png);
 }
-.allRw {
-    width: 100%;
-    height: 485px;
+.allRegions {
+    display: flex;
+    
 }
+
+.allRw {
+    flex: 1;
+    display: flex; /* 將 .allRw 元素設置為 flex 容器 */
+    flex-direction: column; /* 將內容從上到下垂直排列 */
+    justify-content: center; /* 水平置中 */
+    
+}
+
+.allRegionsbe {
+    flex: 1;
+    align-self: flex-start; /* 將該元素的內容置頂 */
+}
+
+.map {
+    position: absolute;
+    height: 700px;
+
+    position: relative; /* 設置相對位置 */
+  z-index: 1; /* 設置層級，這裡假設 .div1 在上面 */
+}
+
+.allRegionsbe .title{
+    position: absolute; /* 設置絕對位置 */
+  top: 0; /* 設置距離父元素頂部的距離 */
+  left: 0; /* 設置距離父元素左側的距離 */
+  z-index: 2; /* 設置層級，這裡假設 .div2 在上面 */
+}
+
+
+
+.map img {
+    max-height: 100%;
+    /* 圖片最大寬度為容器寬度 */
+    width: auto;
+    /* 讓高度自動調整以保持比例 */
+}
+.allRegionsbe .title{}
+
 
 
 
