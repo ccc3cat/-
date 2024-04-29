@@ -426,17 +426,17 @@ h1 {
 }
 
 .map {
-    position: absolute;
+    position: relative;
     height: 700px;
 
     position: relative; /* 設置相對位置 */
   z-index: 1; /* 設置層級，這裡假設 .div1 在上面 */
 }
 
-.allRegionsbe .title{
+.map .title{
     position: absolute; /* 設置絕對位置 */
-  top: 0; /* 設置距離父元素頂部的距離 */
-  left: 0; /* 設置距離父元素左側的距離 */
+  top: 250px; /* 設置距離父元素頂部的距離 */
+  left: 100px; /* 設置距離父元素左側的距離 */
   z-index: 2; /* 設置層級，這裡假設 .div2 在上面 */
 }
 
@@ -448,7 +448,6 @@ h1 {
     width: auto;
     /* 讓高度自動調整以保持比例 */
 }
-.allRegionsbe .title{}
 
 
 
@@ -457,6 +456,21 @@ h1 {
 #recommendations {
     background-image: url(./images/Rectangle\ 180.png);
 }
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row; /* 讓 carousel-item 水平排列 */
+    
+    width: 100%; /* 將 carousel-inner 的寬度設置為 carousel-item 的 300% */
+  }
+
+.carousel-item{
+    
+    flex: 0 0 33.33%; /* 每個 carousel-item 擁有 33.33% 的寬度 */
+    max-width: 33.33%; /* 最大寬度為 33.33% */
+    margin-right: 1%; /* 添加右邊間距 */
+}
+
 
 #allEvents {
     background-color: white;
