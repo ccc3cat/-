@@ -163,6 +163,10 @@ a {
     /* 取消預設的底線裝飾 */
 }
 
+p{
+    line-height: 1.5;
+}
+
 h2 {
     font-size: 1rem;
 }
@@ -313,9 +317,6 @@ section {
 /*關於日本*/
 #about {
     background-image: url(./images/Rectangle\ 180.png);
-}
-
-#about {
     position: relative;
 }
 
@@ -323,9 +324,7 @@ section {
 .title {
     position: relative;
     width: 290px;
-    /* 可以根據需要調整 */
     height: 50px;
-    /* 可以根據需要調整 */
     margin-bottom: 100px;
     /* 下方距離 */
 }
@@ -401,6 +400,7 @@ h1 {
 
 /*所有地區*/
 #allRegions {
+    height: 700px;
     background-image: url(./images/Rectangle\ 180.png);
 }
 
@@ -468,14 +468,75 @@ h1 {
 
 
 
-
+/* 推薦行程 */
 #recommendations {
+    height: 600px;
+    justify-content:flex-start;/*主軸對齊方式*/
+    align-items: center;
     background-image: url(./images/Rectangle\ 180.png);
+    /* height: 600px; */
+}
+.recommendations-botton{
+    left: 800px;
+    margin-top: 100px;
+    /* 上方為按鈕上下左右位置調整 */
+    position: absolute;
+    width: 100px;
+    display: flex; /* 將父元素設置為 Flexbox 容器 */
+    flex-direction:row;
+    justify-content: space-between;
 }
 
+.titlebox{
+margin-top: 30px;
+
+    position: absolute;
+    left: 90%;
+
+    display: flex; /* 將父元素設置為 Flexbox 容器 */
+    flex-direction:row;
+    
+
+    /* border: 1px solid #ff1c1c; */
+}
+
+.title1{
+    writing-mode: vertical-lr;
+    /* 垂直排列，文字由右向左 */
+    text-orientation: upright;
+    /* 文字方向直立 */
+    margin-right: 25px;
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+    letter-spacing: 13px; 
+    /* 增加字距 */
+}
+
+
+.title2{
+    transform: rotate(90deg);
+    transform-origin: top left; /* 旋轉基準點在左上角 */
+    white-space: nowrap; /* 防止文字換行 */
+
+}
+
+.list-box {
+    align-items:flex-end;/*主軸對齊方式*/
+margin-top: 80px;
+    display: inline-flex;
+    overflow: visible; /* 允許內容溢出 */
+    overflow: hidden; /* 溢出隱藏 */
+    /* border: 1px solid #ff1c1c; */
+}
+
+/* 一格文字卡-大 */
 .item {
-    height: 350px;
-    width: 300px;
+    height: 450px;
+    width: 400px;
 
     margin: 15px;
     border-radius: 20px;
@@ -484,7 +545,7 @@ h1 {
     background-color: #ffffff;
 }
 .content{
-    margin: 10px 20px;
+    margin: 25px 32.5px;
     /* border: 1px solid blue; */
 }
 
@@ -495,17 +556,23 @@ h1 {
 }
 
 .icon {
+    height: 13px;
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 30px;
     /* border: 1px solid rgb(255, 157, 157); */
+}
+.icon h2{
+    font-size: 0.875rem;
+
 }
 
 .cardImg img {
     max-height: 100%;
     /* 圖片最大寬度為容器寬度 */
     width: auto;
+    margin-right: 5px;
 }
 .c1 img {
     max-height: 100%;
@@ -513,10 +580,27 @@ h1 {
     width: auto;
 }
 .carddow{
-    margin-top: 10px;
+    margin-top: 24px;
 }
+/* 一格文字卡-大 */
+/* 一格文字卡-小 */
+.item-s{
+    height: 350px;
+    width: 320px;
 
-
+    margin: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+.item-s p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
 
 
 
@@ -528,10 +612,36 @@ h1 {
 #allEvents {
     background-color: white;
 }
-
+/* 最新消息 */
 #news {
+    flex-direction: row;
+    justify-content: space-between;
     background-color: white;
+    
+    position: relative;
 }
+#news .title{
+    position: absolute;
+    top: 80px;
+    left: 1200px;
+}
+
+#news img{
+    max-height: 100%;
+    /* 圖片最大寬度為容器寬度 */
+    width: auto;
+    /* 讓高度自動調整以保持比例 */
+}
+
+
+
+
+
+
+
+
+
+
 
 footer {
     display: flex;
