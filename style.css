@@ -651,6 +651,10 @@ h1 {
     height: 100vh;
     width: auto;
 }
+.newsright-t{
+    border: 1px solid #644949;
+    /* 外框線寬度和顏色 */
+}
 
 
 
