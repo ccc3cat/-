@@ -326,7 +326,7 @@ section {
     /* 下方距離 */
 }
 
-.title p1 {
+.title h1 {
     position: absolute;
     top: 75%;
     /* 垂直置中 */
@@ -340,7 +340,7 @@ section {
     /* 調整文字大小 */
 }
 
-.title p2 {
+.title h2 {
     font-size: 1.3rem;
     /* 調整文字大小 */
     color: var(--indigo);
@@ -635,7 +635,7 @@ h1 {
     justify-content: space-between;
     background-color: white;
 
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     /* 外框線寬度和顏色 */
 
     position: relative;
@@ -651,9 +651,34 @@ h1 {
     height: 100vh;
     width: auto;
 }
+
+.newst{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 350px;
+
+    /* border: 1px solid #494964; */
+}
+
 .newsright-t{
-    border: 1px solid #644949;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #494964;
     /* 外框線寬度和顏色 */
+    line-height: 2.5; /* 設置行高為文字大小的1.5倍 */
+    
+}
+.newst1{
+    
+    margin-bottom: 40px;
+}
+.newsright-t img{
+    height: 50px;
+    
 }
 
 
