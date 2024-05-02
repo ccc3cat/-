@@ -163,7 +163,7 @@ a {
     /* 取消預設的底線裝飾 */
 }
 
-p{
+p {
     line-height: 1.5;
 }
 
@@ -180,9 +180,6 @@ section {
     align-items: center;
     /*副軸水平置中*/
     height: 100vh;
-
-    border: 2px solid #000000;
-    /* 外框線寬度和顏色 */
 
 }
 
@@ -471,36 +468,46 @@ h1 {
 /* 推薦行程 */
 #recommendations {
     height: 600px;
-    justify-content:flex-start;/*主軸對齊方式*/
+    justify-content: flex-start;
+    /*主軸對齊方式*/
     align-items: center;
     background-image: url(./images/Rectangle\ 180.png);
     /* height: 600px; */
+    overflow: visible;
+    /* 允許內容溢出 */
+    overflow: hidden;
+    /* 溢出隱藏 */
 }
-.recommendations-botton{
+
+.recommendations-botton {
     left: 800px;
     margin-top: 100px;
     /* 上方為按鈕上下左右位置調整 */
     position: absolute;
     width: 100px;
-    display: flex; /* 將父元素設置為 Flexbox 容器 */
-    flex-direction:row;
+    display: flex;
+    /* 將父元素設置為 Flexbox 容器 */
+    flex-direction: row;
     justify-content: space-between;
+
+
 }
 
-.titlebox{
-margin-top: 30px;
+.titlebox {
+    margin-top: 30px;
 
     position: absolute;
     left: 90%;
 
-    display: flex; /* 將父元素設置為 Flexbox 容器 */
-    flex-direction:row;
-    
+    display: flex;
+    /* 將父元素設置為 Flexbox 容器 */
+    flex-direction: row;
+
 
     /* border: 1px solid #ff1c1c; */
 }
 
-.title1{
+.title1 {
     writing-mode: vertical-lr;
     /* 垂直排列，文字由右向左 */
     text-orientation: upright;
@@ -512,24 +519,27 @@ margin-top: 30px;
     /* 調整文字顏色 */
     font-size: 1.5rem;
     /* 調整文字大小 */
-    letter-spacing: 13px; 
+    letter-spacing: 13px;
     /* 增加字距 */
 }
 
 
-.title2{
+.title2 {
     transform: rotate(90deg);
-    transform-origin: top left; /* 旋轉基準點在左上角 */
-    white-space: nowrap; /* 防止文字換行 */
+    transform-origin: top left;
+    /* 旋轉基準點在左上角 */
+    white-space: nowrap;
+    /* 防止文字換行 */
 
 }
 
 .list-box {
-    align-items:flex-end;/*主軸對齊方式*/
-margin-top: 80px;
+    /* width: 100%; */
+    align-items: flex-end;
+    /*主軸對齊方式*/
+    margin-top: 80px;
     display: inline-flex;
-    overflow: visible; /* 允許內容溢出 */
-    overflow: hidden; /* 溢出隱藏 */
+
     /* border: 1px solid #ff1c1c; */
 }
 
@@ -544,7 +554,8 @@ margin-top: 80px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
 }
-.content{
+
+.content {
     margin: 25px 32.5px;
     /* border: 1px solid blue; */
 }
@@ -563,7 +574,8 @@ margin-top: 80px;
     margin-right: 30px;
     /* border: 1px solid rgb(255, 157, 157); */
 }
-.icon h2{
+
+.icon h2 {
     font-size: 0.875rem;
 
 }
@@ -574,17 +586,20 @@ margin-top: 80px;
     width: auto;
     margin-right: 5px;
 }
+
 .c1 img {
     max-height: 100%;
     /* 圖片最大寬度為容器寬度 */
     width: auto;
 }
-.carddow{
+
+.carddow {
     margin-top: 24px;
 }
+
 /* 一格文字卡-大 */
 /* 一格文字卡-小 */
-.item-s{
+.item-s {
     height: 350px;
     width: 320px;
 
@@ -594,7 +609,8 @@ margin-top: 80px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
 }
-.item-s p{
+
+.item-s p {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -612,25 +628,28 @@ margin-top: 80px;
 #allEvents {
     background-color: white;
 }
+
 /* 最新消息 */
 #news {
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
-    
+
+    border: 1px solid #000000;
+    /* 外框線寬度和顏色 */
+
     position: relative;
 }
-#news .title{
+
+#news .title {
     position: absolute;
     top: 80px;
     left: 1200px;
 }
 
-#news img{
-    max-height: 100%;
-    /* 圖片最大寬度為容器寬度 */
+#news .newsImg {
+    height: 100vh;
     width: auto;
-    /* 讓高度自動調整以保持比例 */
 }
 
 
