@@ -644,7 +644,7 @@ h1 {
 #news .title {
     position: absolute;
     top: 80px;
-    left: 1200px;
+    left: 900px;
 }
 
 #news .newsImg {
@@ -652,7 +652,7 @@ h1 {
     width: auto;
 }
 
-.newst{
+.newst {
     width: 550px;
     display: flex;
     flex-direction: column;
@@ -661,7 +661,7 @@ h1 {
     /* border: 1px solid #494964; */
 }
 
-.newsright-t{
+.newsright-t {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -669,16 +669,19 @@ h1 {
 
     border-bottom: 1px solid #494964;
     /* 外框線寬度和顏色 */
-    line-height: 2.5; /* 設置行高為文字大小的1.5倍 */
-    
+    line-height: 2.5;
+    /* 設置行高為文字大小的1.5倍 */
+
+    /* border: 1px solid red; */
 }
-.newst1{
-    
-    margin-bottom: 40px;
+
+.newst a {
+    margin-bottom: 30px;
 }
-.newsright-t img{
+
+.newsright-t img {
     height: 50px;
-    
+
 }
 
 
