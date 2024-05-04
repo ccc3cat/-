@@ -674,11 +674,12 @@ section {
 
     /* border: 1px solid red; */
 }
-.newsright-t img{
+
+.newsright-t img {
     height: 50px;
 }
 
-.newst1{
+.newst1 {
     margin: 30px 0;
 }
 
@@ -701,21 +702,25 @@ footer {
     background-color: var(--indigo);
     height: 50vh;
 }
-.footer-left{
+
+.footer-left {
 
     width: 522px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    margin-right: 250px;
 
-        border: 1px solid #ff1c1c;
+    border: 1px solid #ff1c1c;
 }
+
 .footerLogo {
     width: 100px;
     padding-right: 30px;
     border-right: 3px solid var(--alabaster);
 }
-.footer-left h1{
+
+.footer-left h1 {
     font-weight: bold;
     /* 粗體字 */
     color: var(--alabaster);
@@ -724,33 +729,70 @@ footer {
     /* 調整文字大小 */
 
 }
-.footer-left h2{
+
+.footer-left h2 {
     color: var(--alabaster);
     /* 調整文字顏色 */
     line-height: 2.5;
-    /* 設置行高為文字大小的1.5倍 */
+    /* 設置行高為文字大小的2.5倍 */
     font-size: 1rem;
 
 }
-.f1{
+
+.f1 {
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
     /* justify-content: center; */
     /*主軸(垂直)置中*/
 }
-.f2{
-margin-right: 30px;
+
+.f2 {
+    margin-right: 62px;
 }
 
-.f3 h2{
+.f3 h2 {
     line-height: 1.5;
     /* 設置行高為文字大小的1.5倍 */
 
 
 }
+
 .f {
-    
-        border: 1px solid #ff1c1c;
+
+    border: 1px solid #ff1c1c;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+
+    color: var(--alabaster);
+    border: 1px solid #ff1c1c;
+}
+.r{
+    line-height: 2.5;
+}
+
+.r1::after{
+    content: "";
+    border-color: #000;
+}
+/* .r1{
+    border-right: 3px solid var(--alabaster);
+} */
+.r1,.r2{
+    margin-right: 30px;
+}
+
+
+
+
+
+
+.Copyright-Notice {
+    color: var(--alabaster);
+
+    border: 1px solid #ff1c1c;
 }
