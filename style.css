@@ -702,6 +702,32 @@ footer {
     background-color: var(--indigo);
     height: 40vh;
 }
+.footer-frame{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* border: 1px solid #1cff8a; */
+}
+.social-media-icon{
+width: 70%;
+display: flex;
+justify-content: flex-end;
+
+    /* border: 1px solid #ff1c1c; */
+}
+
+.social-media-icon img{
+height: 25px;
+width: 25px;
+margin-right: 10px;
+}
+
+.r a{
+    text-decoration: underline;
+
+}
 
 .footer {
     width: 55%;
@@ -710,6 +736,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 
+        /* border: 1px solid #ff1c1c; */
 }
 
 .footer-left {
@@ -807,11 +834,6 @@ footer {
 .r2 {
     margin-right: 60px;
 }
-
-
-
-
-
 
 .Copyright-Notice {
     color: var(--alabaster);
