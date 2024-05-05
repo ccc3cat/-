@@ -566,7 +566,10 @@ section {
     background-color: #0056b3;
 }
 /* 底 */
-
+figure{
+    
+    /* border: 1px solid #ff1c1c; */
+}
 .list-box {
     /* width: 100%; */
     align-items: flex-end;
