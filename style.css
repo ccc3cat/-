@@ -477,6 +477,8 @@ section {
     /* 允許內容溢出 */
     overflow: hidden;
     /* 溢出隱藏 */
+
+        border: 1px solid #d91cff;
 }
 
 .recommendations-botton {
@@ -656,15 +658,43 @@ figure{
 }
 
 
-
-
-
-
-
-
+/* 所有主題 */
 #allEvents {
     background-color: white;
 }
+
+.Buildings{
+        border: 1px solid #1515ff;
+
+}
+
+.Buildings img{
+    max-width: 100%;
+    width: 720px;
+
+}
+.all-t{
+    width: 634px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+
+    border: 1px solid #1515ff;
+    background-color: #ffbcbc;
+}
+.all-t p{
+    margin: 20px 60px;
+}
+
+
+
 
 /* 最新消息 */
 #news {
