@@ -16,11 +16,11 @@ function slider(flag, numSlides) {
   centerSlide <= numSlides / 2
     ? $("#side-" + centerSlide).css(
       "transform",
-      `translateX(${xCoef + 100}%) scale(1.5)`
+      `translateX(${xCoef + 200}%) scale(1.5)`
     )
     : $("#side-" + centerSlide).css(
       "transform",
-      `translateX(${xCoef + 100}%) scale(1.5)`
+      `translateX(${xCoef + 200}%) scale(1.5)`
     );
     // 我把-100變+100
 

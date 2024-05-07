@@ -1,5 +1,6 @@
 body{
   overflow-x: hidden;
+  display: flex;
 }
 #slider-container{
   max-height: 100vh;
@@ -38,8 +39,7 @@ body{
 .slide .card-body p {
   font-size: 0.7rem;
   margin-bottom: 0.5rem;
-  transition: all 1s;
-  opacity: 0;
+
 }
 .slide.active img {
   filter: none;
@@ -50,16 +50,18 @@ body{
 
 #side-1 {
   z-index: 99;
-  transform: translateX(500%) scale(1.5);
+  transform: translateX(375%) scale(1.5);
   /* 首張的位置調整 */
 }
 .slider-controls {
   display: flex;
+  position: absolute;
+  left: 500px;
   flex-direction: row;
   justify-content: center;
   margin: 0 auto 3rem auto;
 }
-.slider-btn {
+/* .slider-btn {
   border-radius: 50px;
   height: 2rem;
   width: 3rem;
@@ -70,13 +72,13 @@ body{
   line-height: 30px;
   padding-top: 0.1rem;
   margin: 0.5rem;
-}
-.slider-btn:hover {
+} */
+/* .slider-btn:hover {
   cursor: pointer;
   color: #fff;
   background-color: #00accd;
   border: none;
-}
+} */
 .slide-indicator-container {
   margin: 6rem auto 1rem auto;
   display: flex;
@@ -97,64 +99,17 @@ body{
   background-color: #00accd;
   border-color: #00accd;
 }
-/* 內按鈕設定 */
-/* .btn-contact {
-  background-color: #fff;
-  border: 1px solid #b3b3b3;
-  border-radius: 50px;
-  color: #a5a5a5;
-  padding: 0.3rem 0.5rem;
-  font-size: 0.6rem;
-  margin-bottom: 0.5rem;
-  transition: all 1s;
-}
-.slide.active .btn-contact {
-  background-color: #00accd;
-  color: #fff;
-  border: transparent;
-}
-.btn-contact:hover,
-.slide.active .btn-contact:hover {
-  text-decoration: none;
-  color: #000;
-  background-color: #95d7e4;
-  border: transparent;
-} */
+
 
 
 /* 我的 */
-/* .content {
-  margin: 25px 32.5px;
-
-}
-
-
-.cardImg {
-  display: flex;
-
-}
 
 .icon {
   height: 13px;
   display: flex;
-  align-items: center;
-  margin-top: 10px;
-  margin-right: 30px;
-
+  margin: 10px 0;
 }
-
-.icon h2 {
-  font-size: 0.875rem;
-
+.icon img{
+width: 10px;
+margin: 0 7px;
 }
-
-.cardImg img {
-  max-height: 100%;
-
-  width: auto;
-  margin-right: 5px;
-}
-
-.carddow {
-  margin-top: 24px;
-} */
