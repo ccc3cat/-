@@ -549,20 +549,6 @@ section {
     width: 1700px;
 }
 
-ol,
-ul {
-    list-style: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-button:focus,
-input:focus,
-textarea:focus {
-    outline: 0;
-}
 
 .card_wrapper {
     height: 50vh;
