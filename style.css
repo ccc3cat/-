@@ -106,6 +106,7 @@ section {
 
 body {
     line-height: 1;
+    overflow-x: hidden;
 }
 
 ol,
@@ -348,31 +349,24 @@ section {
 }
 
 /* 左側介紹卡 */
-.card {
-    width: 100%;
-    height: 485px;
-}
-
 #about {
     flex-direction: row;
+    justify-content: space-between;
+
+    border: 1px solid #d91cff;
+
+}
+.about-card {
+    width: 100%;
+    align-items: center;
+    height: 500px;
 }
 
-.card img {
-    float: left;
-    max-height: 100%;
-    /* 圖片最大寬度為容器寬度 */
+
+#about img:first-child {
+    height: 500px;
     width: auto;
-    /* 讓高度自動調整以保持比例 */
-    /* 如果需要空間分隔圖片和其他內容，可以添加 margin */
-    margin-right: 10px;
-    /* 調整間距 */
-}
-
-
-.behight {
-    flex-direction: row;
-    border: 2px solid #000000;
-    /* 外框線寬度和顏色 */
+    margin-right: 500px;
 }
 
 .whyjp {
@@ -467,7 +461,7 @@ section {
 
 /* 推薦行程 */
 #recommendations {
-    height: 600px;
+    height: 60vh;
     justify-content: flex-start;
     /*主軸對齊方式*/
     align-items: center;
@@ -536,139 +530,6 @@ section {
 
 }
 /* 橫向輪播條 */
-
-
-.container {
-    margin: 0 5%;
-}
-
-.owl-carousel,
-.slider_carousel,
-.owl-loaded,
-.owl-drag {
-    width: 1700px;
-}
-
-
-.card_wrapper {
-    height: 50vh;
-    display: flex;
-    align-items: center;
-}
-
-.head_text {
-    font-family: bromega-Bold;
-    font-size: 45px;
-}
-
-.head_para {
-    margin-top: 15px;
-}
-
-.card_box {
-    background: #ffffff;
-    width: 350px;
-    margin-top: 40px;
-    transition: .3s;
-    margin-bottom: 40px;
-    border-radius: 20px;
-    overflow: hidden;
-
-}
-
-.card_box:hover {
-    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
-    transform: translateY(-30px);
-}
-
-.card_text {
-    height: 200px;
-    padding: 30px 20px 25px 20px;
-}
-
-.card_text h4 {
-    font-size: 18px;
-    font-family: bromega-Bold;
-    color: #FA4A6F;
-}
-
-.card_text p {
-    font-size: 14px;
-    line-height: 150%;
-
-    color: #23273A;
-}
-
-.slider_carousel .owl-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-}
-
-
-.icon {
-    height: 13px;
-    display: flex;
-    margin: 10px 0;
-}
-
-.icon img {
-    width: 10px;
-    /* margin: 10px; */
-
-}
-
-.owl-carousel .owl-item img {
-    display: block;
-    max-width: 100%;
-    width: 30px;
-}
-
-.introduce {
-    margin: 20px 7px;
-}
-
-.card-title {
-    font-size: 1.5rem;
-    margin-left: 7px;
-}
-
-.slider_carousel .owl-prev{
-    width: 40px;
-    height: 40px;
-	background: none;
-    background-image: url("../button-left.png");
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: absolute;
-    top: 230px;
-}
-.slider_carousel .owl-next {
-    width: 40px;
-    height: 40px;
-	background: none;
-    background-image: url("../button-right.png");
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: absolute;
-    top: 230px;
-}
-.slider_carousel .owl-next {
-    right: 800px;
-}
-
-.slider_carousel .owl-prev {
-    left: 800px;
-}
-/* 底 */
-figure{
-    
-    /* border: 1px solid #ff1c1c; */
-}
 .list-box {
     width: 105%;
     align-items: flex-end;
@@ -713,7 +574,6 @@ figure{
 
 .icon h2 {
     font-size: 0.875rem;
-
 }
 
 .cardImg img {
@@ -752,6 +612,13 @@ figure{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+}
+
+
+/* 底 */
+figure{
+    
+    /* border: 1px solid #ff1c1c; */
 }
 
 
@@ -899,7 +766,6 @@ margin-right: 10px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
         /* border: 1px solid #ff1c1c; */
 }
 
@@ -970,7 +836,6 @@ margin-right: 10px;
 
     /* border: 1px solid #ff1c1c; */
 }
-
 .r {
     line-height: 2.5;
     align-content: center;
