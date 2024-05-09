@@ -106,7 +106,7 @@ section {
 
 body {
     line-height: 1;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 ol,
@@ -198,25 +198,22 @@ section {
     top : 0;
     left: 0;
 
-
     z-index    : 9999;
     user-select: none;
 }
 
 .menu_container input {
     position: sticky;
-    /* 從 absolute 轉換成sticky或fixed的固定可以使收縮時保持同一位置*/
     display: none;
-    /* 透過display: none; 來隱藏*/
-    top     : -1100px;
-    left    : -1400px;
+    /* top     : -1100px;
+    left    : -1400px; */
     opacity : 0;
 }
 
 .menu_container .bt {
     position: absolute;
     top     : 30px;
-    right    : 30px;
+    left    : 30px;
 
     width : 60px;
     height: 45px;
@@ -229,7 +226,7 @@ section {
     justify-content: space-between;
     flex-direction : column;
 }
-/* 動畫效果 */
+
 .menu_container .bt span {
     position: relative;
 
@@ -264,21 +261,21 @@ section {
 .menu_container input:checked~.bt span:nth-child(3) {
     transform: translateY(-18px) rotate(135deg);
 }
-
+/* 更改W使其寬度滿版 */
 .menu_container .menu {
     position: absolute;
 
     top : 0;
-    right: 0;
+    left: 200%;
+    transform: translateX(100%);
 
     padding-top: 150px;
 
     width : 100%;
     height: calc(100vh - 150px);
 
-    transform: translateX(100%);
 
-    background-color: #ededed;
+    background-color: #eecece;
 
     list-style: none;
 
@@ -286,11 +283,12 @@ section {
 }
 
 .menu_container input:checked~.menu {
-
-    transform : translateX(0%);
+    top : 0;
+    left: 0;
+    transform : translateX(0px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
-/* li的設定 */
+
 .menu_container .menu li {
 
     font-size: 24px;
@@ -301,15 +299,13 @@ section {
 
     text-align: right;
 }
-/* li的滑入效果 */
-
 .menu_container input:checked~.menu li{
     transition: all 0.2s ease-out calc(var(--i) * 80ms + 200ms);
 
     transform:  translateX(0px);
     opacity: 1;
 }
-/* 完 */
+
 .menu_container .menu a {
     display: block;
 
@@ -317,17 +313,21 @@ section {
 
     line-height: 60px;
 
-    color           : #ffffff;
-    background-color: var(--indigo);
+    text-decoration: none;
+
+    color           : #232323;
+    background-color: #f1f1f1;
 
     transition: all 0.3s ease;
 
 }
 
 .menu_container .menu a:hover {
-    color           : var(--rosyBrown);
+    color           : #f1f1f1;
     background-color: var(--background-color);
 }
+/* 完 */
+
 /*頁首區*/
 .logo {
     width: 210px;
@@ -528,11 +528,11 @@ position: relative;
 #allRegions {
     height: 700px;
     background-image: url(./images/Rectangle\ 180.png);
+    overflow: hidden;
 }
 
 .allRegions {
     display: flex;
-    margin-left: 250px;
 }
 
 .allRw {
@@ -589,6 +589,9 @@ position: relative;
     /* 圖片最大寬度為容器寬度 */
     width: auto;
     /* 讓高度自動調整以保持比例 */
+}
+.alimg{
+    margin-left: 40px;
 }
 
 
