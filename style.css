@@ -206,6 +206,8 @@ section {
 .menu_container input {
     position: sticky;
     /* 從 absolute 轉換成sticky或fixed的固定可以使收縮時保持同一位置*/
+    display: none;
+    /* 透過display: none; 來隱藏*/
     top     : -1100px;
     left    : -1400px;
     opacity : 0;
@@ -214,7 +216,7 @@ section {
 .menu_container .bt {
     position: absolute;
     top     : 30px;
-    left    : 30px;
+    right    : 30px;
 
     width : 60px;
     height: 45px;
@@ -267,14 +269,14 @@ section {
     position: absolute;
 
     top : 0;
-    left: 0;
+    right: 0;
 
     padding-top: 150px;
 
-    width : 300px;
+    width : 100%;
     height: calc(100vh - 150px);
 
-    transform: translateX(-100%);
+    transform: translateX(100%);
 
     background-color: #ededed;
 
@@ -285,35 +287,34 @@ section {
 
 .menu_container input:checked~.menu {
 
-    transform : translateX(0px);
+    transform : translateX(0%);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
-
+/* li的設定 */
 .menu_container .menu li {
 
-    font-size: 24px;
+
     margin   : 10px 20px;
 
-    transform: translateX(-50px);
+    /* transform: translateX(-50px); */
     opacity  : 0;
 
-    text-align: right;
 }
+/* li的滑入效果 */
+
 .menu_container input:checked~.menu li{
     transition: all 0.2s ease-out calc(var(--i) * 80ms + 200ms);
 
     transform:  translateX(0px);
     opacity: 1;
 }
-
+/* 完 */
 .menu_container .menu a {
     display: block;
 
     padding-right: 20px;
 
     line-height: 60px;
-
-    text-decoration: none;
 
     color           : #ffffff;
     background-color: var(--indigo);
@@ -379,7 +380,7 @@ section {
 
 
 .topbar {
-
+position: relative;
     padding: 30px 50px;
 
     justify-content: space-between;
@@ -626,7 +627,7 @@ section {
     margin-top: 30px;
 
     position: absolute;
-    left: 93%;
+    left: 85%;
 
     display: flex;
     /* 將父元素設置為 Flexbox 容器 */
@@ -664,7 +665,7 @@ section {
 }
 /* 橫向輪播條 */
 .list-box {
-    width: 105%;
+    width: 100%;
     align-items: flex-end;
     /*主軸對齊方式*/
     margin-top: 80px;
@@ -1005,4 +1006,17 @@ margin-right: 10px;
     margin-top: 50px;
 
     /* border: 1px solid #ff1c1c; */
+}
+
+/* TOP鈕 */
+.TOP{
+    position: fixed;
+
+    top: 85%;
+    /* top: 0; */
+    left: 95%;
+    z-index: 999;
+
+    width: 70px;
+    max-width: 100%;
 }

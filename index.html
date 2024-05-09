@@ -6,50 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>昵朋旅遊網</title>
-    <link rel="icon" href="./images/logo.png">
+    <link rel="icon" href="./images/LOGO/logo.png">
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-<!-- 漢堡按鈕區 -->
-
-<div class="menu_container">
-    <input type="checkbox" name="open" id="open">
-    <label for="open" class="bt">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <ul class="menu">
-        <li style="--i:1">
-            <a href="#">
-                聯絡我們 Contact US
-            </a>
-        </li>
-        <li style="--i:2">
-            <a href="#">
-                關於我們 About Us
-            </a>
-        </li>
-        <li style="--i:3">
-            <a href="#">
-                最新消息 Latest News
-            </a>
-        </li>
-        <li style="--i:4">
-            <a href="#">
-                關於日本 About Japan
-            </a>
-        </li>
-        <li style="--i:5">
-            <a href="#">
-                Show me more
-            </a>
-        </li>
-    </ul>
-</div>
+    <!-- 漢堡按鈕區 -->
+    <div class="menu_container">
+        <input type="checkbox" name="open" id="open">
+        <label for="open" class="bt">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="menubox"></div>
+        <ul class="menu">
+            <li><a href="#">聯絡我們 Contact US</a></li>
+            <li><a href="#">關於我們 About Us</a></li>
+            <li> <a href="#">最新消息 Latest News</a></li>
+            <li><a href="#">關於日本 About Japan</a></li>
+            <li><a href="#">Show me more</a></li>
+        </ul>
+    </div>
 
 
 
@@ -58,7 +38,7 @@
         <figure>
             <div class="logo">
                 <h1>
-                    <img src="./images/Frame 222.png" alt="昵朋旅遊網logo">
+                    <img src="./images/LOGO/BIGlogo.png" alt="昵朋旅遊網logo">
                 </h1>
             </div>
         </figure>
@@ -75,6 +55,7 @@
     </div>
 
     <div class="topbar">
+
         <nav>
             <ul class="icon">
                 <li><a href="#" class="abouUs"><img src="./images/icon/daruma.svg" alt="">關於我們</a></li>
@@ -82,15 +63,18 @@
                 <li><a href="#" class="groupAll"><img src="./images/icon/fish.svg" alt="">開團總覽</a></li>
                 <li><a href="#" class="travelInformation"><img src="./images/icon/mask.svg" alt="">旅遊資訊</a></li>
                 <!-- <li><a href="#" class="menu"><img src="./images/icon/menu-icon.svg" alt="">MENU</a></li> -->
-                <label for="open"><li><a class="menu"><img src="./images/icon/menu-icon.svg" alt="">MENU</a></li></label>
+                <label for="open">
+                    <li><a class="menu"><img src="./images/icon/menu-icon.svg" alt="">MENU</a></li>
+                </label>
             </ul>
         </nav>
     </div>
     <!-- 主要內容區 -->
+
     <main>
         <!-- 關於日本 -->
         <section id="about">
-            
+
             <img src="./images/card1.png" alt="">
             <!-- <div class="about-card">
             </div> -->
@@ -132,7 +116,7 @@
 
                     <div class="map">
                         <div class="title">
-                        
+
                             <h1>所有地區</h1>
                             <h2>All Regions</h2>
                             <img class="titleP" src="./images/titleImg.png" alt="">
@@ -387,7 +371,7 @@
             <div class="footer">
                 <div class="footer-left">
                     <div class="footerLogo">
-                        <img src="./images/logo-Off-white.png" alt="">
+                        <img src="./images/LOGO/logo-Off-white.png" alt="">
                     </div>
                     <div class="f f1">
                         <h1>昵朋旅行社</h1>
@@ -426,17 +410,27 @@
                         <a href="">客製化</a>
                     </div>
                 </div>
-
-
-
-
-
                 <div class="Copyright-Notice">Copyright @ 2024 昵朋旅遊網. Privacy Policy / Copyright</div>
             </div>
         </div>
     </footer>
+    <!-- TOP鈕 -->
+    <a href="#" class="TOP" id="elementToDisappear"><img src="./images/TOP.png" alt=""></a>
 
 
+    <script>
+        // TOP的滾動隱藏效果
+        window.addEventListener('scroll', function () {
+            var element = document.getElementById('elementToDisappear');
+            var scrollPosition = window.scrollY;
+
+            if (scrollPosition <= 250) {
+                element.style.display = 'none'; // 滾動到 200px 高度時隱藏元素
+            } else {
+                element.style.display = 'block'; // 如果滾動高度小於 200px，則顯示元素
+            }
+        });
+    </script>
 
 </body>
 
