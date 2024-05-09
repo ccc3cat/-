@@ -293,12 +293,13 @@ section {
 /* li的設定 */
 .menu_container .menu li {
 
-
+    font-size: 24px;
     margin   : 10px 20px;
 
-    /* transform: translateX(-50px); */
+    transform: translateX(-50px);
     opacity  : 0;
 
+    text-align: right;
 }
 /* li的滑入效果 */
 
