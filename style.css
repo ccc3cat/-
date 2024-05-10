@@ -211,30 +211,55 @@ section {
     width: 100%;
     height: 100vh;
     background-color: white;
-    transition: right 0.3s ease;
+    transition: right 0.7s ease;
     z-index: 999;
+}
+.menuImg{
+    height: 100vh;
+    max-height: 100%;
+
+}
+.logohavefont{
+    position: absolute;
+margin: 35% 14.4%;
+
+    width: 280px;
+    max-width: 100%;
+
 }
 
 .menu-content {
     height: 100%;
-    /* background-color: aqua; */
     overflow-y: auto;
 }
+.menuBox{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.menuA{
+    width: 500px;
+    background-color: #ff9898;
+}
 .menuA li{
-margin-top: 100px;
-color: #ff6969;
+    width: 500px;
+margin-top: 10px;
+color: #000000;
 
-    background-color: #6abc90;
+    background-color: #d7ffea;
 }
 
 .overlay {
-    /* position: fixed; */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: none;
-
+    /* display: none; */
+/* background-color: #cf7910; */
+z-index: 50;
 }
 
 .show-overlay {
@@ -565,7 +590,7 @@ button#closeMenu {
     display: flex;
     /* 將父元素設置為 Flexbox 容器 */
     flex-direction: row;
-    z-index: 999;
+    z-index: 998;
     /* 設置層級，這裡假設 .div2 在上面 */
 
     /* border: 1px solid #ff1c1c; */

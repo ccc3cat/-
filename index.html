@@ -51,13 +51,17 @@
         <div id="menu" class="menu">
             <div class="menu-content">
                 <button id="closeMenu"><img src="./images/close.png" alt=""></button>
-                <ul class="menuA">
-                    <li><a href="#">聯絡我們 Contact US</a></li>
-                    <li><a href="#">關於我們 About Us</a></li>
-                    <li> <a href="#">最新消息 Latest News</a></li>
-                    <li><a href="#">關於日本 About Japan</a></li>
-                    <li><a href="#">Show me more</a></li>
-                </ul>
+                <div class="menuBox">
+                    <img src="./images/menuImg.png" alt="" class="menuImg">
+                    <img src="./images/LOGO/logohavefont-off-wite.png" alt="" class="logohavefont">
+                    <ul class="menuA">
+                        <li><a href="#">聯絡我們 Contact US</a></li>
+                        <li><a href="#">關於我們 About Us</a></li>
+                        <li> <a href="#">最新消息 Latest News</a></li>
+                        <li><a href="#">關於日本 About Japan</a></li>
+                        <li><a href="#">Show me more</a></li>
+                    </ul>
+                </div>
                 <div id="overlay" class="overlay"></div>
             </div>
         </div>
@@ -409,41 +413,6 @@
     </footer>
     <!-- TOP鈕 -->
     <a href="#" class="TOP" id="elementToDisappear"><img src="./images/TOP.png" alt=""></a>
-<!-- <script>
-    // TOP的滾動隱藏效果
-    window.addEventListener('scroll', function () {
-        var element = document.getElementById('elementToDisappear');
-        var scrollPosition = window.scrollY;
-    
-        if (scrollPosition <= 250) {
-            element.style.display = 'none'; // 滾動到 200px 高度時隱藏元素
-        } else {
-            element.style.display = 'block'; // 如果滾動高度小於 200px，則顯示元素
-        }
-    });
-    // 漢堡
-    
-    const openMenuButton = document.getElementById('openMenu');
-    const closeMenuButton = document.getElementById('closeMenu');
-    const menu = document.getElementById('menu');
-    const overlay = document.getElementById('overlay');
-    
-    openMenuButton.addEventListener('click', () => {
-        menu.classList.add('show-menu');
-        overlay.classList.add('show-overlay');
-    });
-    
-    closeMenuButton.addEventListener('click', () => {
-        menu.classList.remove('show-menu');
-        overlay.classList.remove('show-overlay');
-    });
-    
-    overlay.addEventListener('click', () => {
-        menu.classList.remove('show-menu');
-        overlay.classList.remove('show-overlay');
-    });
-    </script> -->
-
     <script src="./js/main.js"></script>
 
 </body>
