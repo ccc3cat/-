@@ -259,10 +259,10 @@ section {
 
 .menuIconBox li {
     font-size: 1.4rem;
-    width: 360px;
+
     border: 1px solid rgb(19, 168, 255);
     color: #000000;
-    background-color: #d7ffea;
+    /* background-color: #d7ffea; */
 }
 
 .menuIconBox li img {
@@ -293,9 +293,22 @@ section {
 }
 
 .menuIconBox .allOptions li {
-
     width: auto;
 }
+.menu-social-media{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 230px;
+}
+.menu-social-media li img{
+    margin: initial;
+    width: 25px;
+    height: 25px;
+}
+
+
 
 .show-menu {
     right: 0;
