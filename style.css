@@ -216,6 +216,22 @@ section {
     z-index: 999;
 }
 
+.menu-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.menuBox {
+    display: flex;
+}
+
+.menuLogoimg {
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    display: flex;
+}
+
 .menuImg {
     height: 100vh;
     max-height: 100%;
@@ -224,53 +240,61 @@ section {
 
 .logohavefont {
     position: absolute;
-    margin: 35% 14.4%;
-
+    top: 30%;
+    left: 20%;
     width: 280px;
     max-width: 100%;
 
 }
 
-.menu-content {
-    height: 100%;
-    overflow-y: auto;
-}
-
-.menuBox {
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    z-index: 999;
-}
 
 .menuIconBox {
-    width: 500px;
+    width: 74%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
     background-color: #ff9898;
 }
 
 .menuIconBox li {
     font-size: 1.4rem;
-    width: 500px;
-    margin-top: 10px;
+    width: 360px;
+    border: 1px solid rgb(19, 168, 255);
     color: #000000;
-    border: 1px solid blue;
     background-color: #d7ffea;
 }
 
 .menuIconBox li img {
-    /* max-height: 100%; */
-    /* 圖片最大寬度為容器寬度 */
-    /* width: auto; */
-    /* 讓高度自動調整以保持比例 */
     height: 30px;
     width: 30px;
+    margin-right: 10px;
 }
 
 .menuIconBox li a {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.menu .all {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.menuIconBox .allOptions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 230px;
+}
+
+.menuIconBox .allOptions li {
+
+    width: auto;
 }
 
 .show-menu {
