@@ -2,7 +2,6 @@
 const openMenuButton = document.getElementById('openMenu');
 const closeMenuButton = document.getElementById('closeMenu');
 const menu = document.getElementById('menu');
-const overlay = document.getElementById('overlay');
 
 openMenuButton.addEventListener('click', () => {
     menu.classList.add('show-menu');
@@ -14,10 +13,9 @@ closeMenuButton.addEventListener('click', () => {
     overlay.classList.remove('show-overlay');
 });
 
-overlay.addEventListener('click', () => {
-    menu.classList.remove('show-menu');
-    overlay.classList.remove('show-overlay');
-});
+
+
+
 // TOP的滾動隱藏效果
 window.addEventListener('scroll', function () {
     var element = document.getElementById('elementToDisappear');

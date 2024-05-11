@@ -172,7 +172,8 @@ button {
     font: inherit;
     color: inherit;
     background-color: transparent;
-    cursor: pointer; /* 显示指针光标 */
+    cursor: pointer;
+    /* 显示指针光标 */
     /* 在需要的情况下添加其他样式 */
 }
 
@@ -214,14 +215,16 @@ section {
     transition: right 0.7s ease;
     z-index: 999;
 }
-.menuImg{
+
+.menuImg {
     height: 100vh;
     max-height: 100%;
 
 }
-.logohavefont{
+
+.logohavefont {
     position: absolute;
-margin: 35% 14.4%;
+    margin: 35% 14.4%;
 
     width: 280px;
     max-width: 100%;
@@ -232,38 +235,42 @@ margin: 35% 14.4%;
     height: 100%;
     overflow-y: auto;
 }
-.menuBox{
+
+.menuBox {
     position: absolute;
     display: flex;
     top: 0;
     left: 0;
     z-index: 999;
 }
-.menuA{
+
+.menuIconBox {
     width: 500px;
     background-color: #ff9898;
 }
-.menuA li{
-    width: 500px;
-margin-top: 10px;
-color: #000000;
 
+.menuIconBox li {
+    font-size: 1.4rem;
+    width: 500px;
+    margin-top: 10px;
+    color: #000000;
+    border: 1px solid blue;
     background-color: #d7ffea;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* display: none; */
-/* background-color: #cf7910; */
-z-index: 50;
+.menuIconBox li img {
+    /* max-height: 100%; */
+    /* 圖片最大寬度為容器寬度 */
+    /* width: auto; */
+    /* 讓高度自動調整以保持比例 */
+    height: 30px;
+    width: 30px;
 }
 
-.show-overlay {
-    display: block;
+.menuIconBox li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .show-menu {
