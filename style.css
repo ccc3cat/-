@@ -479,7 +479,7 @@ button#closeMenu {
 }
 
 
-#about .title {
+.title {
     position: relative;
     width: 290px;
     height: 50px;
@@ -520,7 +520,7 @@ button#closeMenu {
 }
 #CarouselImg img{
     background-color: transparent;
-    border-radius: 0 45px 45px 0;
+    border-radius: 45px;
 height: 700px;
 min-height: 100%;
 }
@@ -627,7 +627,7 @@ min-height: 100%;
 
 /* 推薦行程 */
 #recommendations {
-    height: 60vh;
+    height: 55vh;
     /* justify-content: flex-start; */
     /*主軸對齊方式*/
     align-items: center;
@@ -722,7 +722,7 @@ top: 75%;
     padding: 10px 20px;
 }
 
-.card .content .title {
+.card .content .Ctitle {
     font-size: 1.2rem;
     font-weight: 600;
     text-align: left;
