@@ -49,3 +49,12 @@ $(function () {
         timeout: 500,
     });
 });
+
+// 輪播卡
+$(".slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    items: 5, // 修改这里来指定同时显示的图片数目
+});
