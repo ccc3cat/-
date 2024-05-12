@@ -723,7 +723,9 @@ top: 75%;
 }
 
 .card .content .Ctitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: var(--indigo);
     font-weight: 600;
     text-align: left;
 }
@@ -755,7 +757,7 @@ margin:0 5px;
 }
 
 .card .content .btn button {
-    background: #e74c3c;
+    background:var(--auburn);
     color: #fff;
     border: none;
     outline: none;
