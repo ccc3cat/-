@@ -214,6 +214,10 @@ section {
     background-color: white;
     transition: right 0.7s ease;
     z-index: 999;
+    font-weight: bold;
+}
+.menu a:hover{
+    text-decoration: underline;
 }
 
 .menu-content {
@@ -223,6 +227,7 @@ section {
 
 .menuBox {
     display: flex;
+    align-items: center;
 }
 
 .menuLogoimg {
@@ -240,9 +245,9 @@ section {
 
 .logohavefont {
     position: absolute;
-    top: 30%;
-    left: 20%;
-    width: 280px;
+    top: 35%;
+    left: 25%;
+    width: 230px;
     max-width: 100%;
 
 }
@@ -254,13 +259,11 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     align-content: flex-start;
-    background-color: #ff9898;
+
 }
 
 .menuIconBox li {
     font-size: 1.4rem;
-
-    border: 1px solid rgb(19, 168, 255);
     color: #000000;
     /* background-color: #d7ffea; */
 }
@@ -275,13 +278,18 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: var(--indigo);
 }
 
 .menu .all {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #fff;
+}
+
+.menu .all a{
+padding-bottom: 20px;
+border-bottom: 2px solid var(--indigo);
 }
 
 .menuIconBox .allOptions {
@@ -290,24 +298,40 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0 230px;
+    margin: 40px 0;
 }
 
 .menuIconBox .allOptions li {
     width: auto;
 }
+
+.menuIconBox  .button, .l{
+margin: 0 30px;
+}
+
+.menuIconBox .button li{
+    margin-top: 20px;
+}
+
 .menu-social-media{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0 230px;
+justify-content: center;
+margin-top: 50px;
 }
+
+.menu-social-media li:nth-child(1),
+.menu-social-media li:nth-child(2){
+    margin-right: 50px;
+}
+
 .menu-social-media li img{
+    /* margin設定格式化 */
     margin: initial;
     width: 25px;
     height: 25px;
 }
-
 
 
 .show-menu {
@@ -442,11 +466,15 @@ button#closeMenu {
     margin-right: 5px;
     /* 調整圖片與文字之間的間距 */
 }
+.burgerBtn{
+    cursor: pointer;
+}
 
 /*關於日本*/
 #about {
     background-image: url(./images/Rectangle\ 180.png);
     position: relative;
+    display: flex;
 }
 
 
@@ -479,43 +507,41 @@ button#closeMenu {
     /* 調整文字顏色 */
 }
 
-/* 左側介紹卡 */
+
 #about {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    border: 1px solid #d91cff;
-
 }
 
-.about-card {
-    width: 100%;
-    align-items: center;
-    height: 500px;
+#CarouselImg{
+    margin-left: 150px;
 }
-
-
-#about img:first-child {
-    height: 500px;
-    width: auto;
-    margin-right: 500px;
+#CarouselImg img{
+height: 700px;
+min-height: 100%;
+}
+.aboutT{
+    width: 900px;
 }
 
 .whyjp {
+
     border: 2px solid #ffffff;
     /* 外框線寬度和顏色 */
     border-radius: 40px 0 0 40px;
     /* 左側圓角 */
-    padding: 77px 80px;
+    padding: 77px 300px 77px 80px;
 }
 
 .whyjp h1 {
-    font-size: 1.3rem;
+    font-size: 2rem;
     color: var(--indigo);
     font-weight: bold;
 }
 
 .whyjp h2 {
+    font-size: 1.3rem;
     margin-top: 30px;
 }
 
@@ -872,6 +898,9 @@ footer {
     background-color: var(--indigo);
     height: 40vh;
 }
+footer a:hover{
+    text-decoration: underline;
+}
 
 .footer-frame {
     width: 100%;
@@ -894,11 +923,6 @@ footer {
     height: 25px;
     width: 25px;
     margin-right: 10px;
-}
-
-.r a {
-    text-decoration: underline;
-
 }
 
 .footer {
@@ -1027,4 +1051,6 @@ footer {
 
     width: 70px;
     max-width: 100%;
+
+    
 }
