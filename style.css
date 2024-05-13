@@ -515,11 +515,11 @@ button#closeMenu {
 #about {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 #CarouselImg {
-    margin-left: 150px;
+    margin-right: 200px;
 }
 
 #CarouselImg img {
@@ -569,14 +569,14 @@ button#closeMenu {
 }
 
 .clouds-L {
-    width: 300px;
-    top: 50%;
+    width: 600px;
+    top: 5%;
     left: 0;
 }
 
 .clouds-R {
-    width: 300px;
-    top: 50%;
+    width: 500px;
+    top: 55%;
     right: 0;
 }
 
@@ -806,18 +806,103 @@ figure {
 #allEvents {
     background-color: white;
 }
-
-.Buildings {
-    border: 1px solid #1515ff;
-
+/* 大輪播 */
+.Buildings .slider {
+    max-width: 1900px;
+    display: flex;
 }
 
-.Buildings img {
-    max-width: 100%;
-    width: 720px;
-
+.Buildings .slider .card {
+    width: 600px;
+    height: 500px;
+    flex: 1;
+    margin: 0 50px;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
 }
 
+.Buildings .slider .card .img {
+    height: 300px;
+    width: 100%;
+}
+
+.Buildings .slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Buildings .slider .card .content {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.Buildings .card .content .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.Buildings .card .content .sub-title {
+    width: 300px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.Buildings .card .content .sub-title img {
+    width: 13px;
+    height: 13px;
+    margin: 0 5px;
+}
+
+.Buildings .card .content p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.Buildings .card .content .btn {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.Buildings .card .content .btn button {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.Buildings .card .content .btn button:hover {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 大輪播完 */
 .all-t {
     width: 634px;
     height: 200px;
