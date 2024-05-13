@@ -105,7 +105,7 @@ section {
 }
 
 body {
-    
+
     line-height: 1;
     /* overflow-x: hidden; */
 }
@@ -217,7 +217,8 @@ section {
     z-index: 999;
     font-weight: bold;
 }
-.menu a:hover{
+
+.menu a:hover {
     text-decoration: underline;
 }
 
@@ -288,9 +289,9 @@ section {
     justify-content: center;
 }
 
-.menu .all a{
-padding-bottom: 20px;
-border-bottom: 2px solid var(--indigo);
+.menu .all a {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--indigo);
 }
 
 .menuIconBox .allOptions {
@@ -306,28 +307,29 @@ border-bottom: 2px solid var(--indigo);
     width: auto;
 }
 
-.menuIconBox  .button, .l{
-margin: 0 30px;
+.menuIconBox .button,
+.l {
+    margin: 0 30px;
 }
 
-.menuIconBox .button li{
+.menuIconBox .button li {
     margin-top: 20px;
 }
 
-.menu-social-media{
+.menu-social-media {
     width: 100%;
     display: flex;
     flex-direction: row;
-justify-content: center;
-margin-top: 50px;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .menu-social-media li:nth-child(1),
-.menu-social-media li:nth-child(2){
+.menu-social-media li:nth-child(2) {
     margin-right: 50px;
 }
 
-.menu-social-media li img{
+.menu-social-media li img {
     /* margin設定格式化 */
     margin: initial;
     width: 25px;
@@ -467,7 +469,8 @@ button#closeMenu {
     margin-right: 5px;
     /* 調整圖片與文字之間的間距 */
 }
-.burgerBtn{
+
+.burgerBtn {
     cursor: pointer;
 }
 
@@ -515,16 +518,18 @@ button#closeMenu {
     justify-content: space-between;
 }
 
-#CarouselImg{
+#CarouselImg {
     margin-left: 150px;
 }
-#CarouselImg img{
+
+#CarouselImg img {
     background-color: transparent;
     border-radius: 45px;
-height: 700px;
-min-height: 100%;
+    height: 700px;
+    min-height: 100%;
 }
-.aboutT{
+
+.aboutT {
     width: 900px;
 }
 
@@ -557,6 +562,24 @@ min-height: 100%;
     background-image: url(./images/Rectangle\ 180.png);
     overflow: hidden;
 }
+
+.clouds-L,
+.clouds-R {
+    position: absolute;
+}
+
+.clouds-L {
+    width: 300px;
+    top: 50%;
+    left: 0;
+}
+
+.clouds-R {
+    width: 300px;
+    top: 50%;
+    right: 0;
+}
+
 
 .allRegions {
     display: flex;
@@ -658,7 +681,7 @@ min-height: 100%;
 
     position: absolute;
     left: 85%;
-top: 75%;
+    top: 75%;
     display: flex;
     flex-direction: row;
     z-index: 998;
@@ -739,10 +762,10 @@ top: 75%;
     line-height: 20px;
 }
 
-.card .content .sub-title img{
+.card .content .sub-title img {
     width: 13px;
     height: 13px;
-margin:0 5px;
+    margin: 0 5px;
 }
 
 .card .content p {
@@ -757,7 +780,7 @@ margin:0 5px;
 }
 
 .card .content .btn button {
-    background:var(--auburn);
+    background: var(--auburn);
     color: #fff;
     border: none;
     outline: none;
@@ -771,6 +794,7 @@ margin:0 5px;
 .card .content .btn button:hover {
     transform: scale(0.9);
 }
+
 /* 底 */
 figure {
 
@@ -891,7 +915,8 @@ footer {
     background-color: var(--indigo);
     height: 40vh;
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -1045,5 +1070,5 @@ footer a:hover{
     width: 70px;
     max-width: 100%;
 
-    
+
 }

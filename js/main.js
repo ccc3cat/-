@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
+// 關於日本輪播圖
 $(function () {
     $("#CarouselImg").cycle({
         // 輪播效果名稱
