@@ -773,27 +773,6 @@ button#closeMenu {
     margin: 10px 0;
 }
 
-.card .content .btn {
-    display: block;
-    text-align: left;
-    margin: 10px 0;
-}
-
-.card .content .btn button {
-    background: var(--auburn);
-    color: #fff;
-    border: none;
-    outline: none;
-    font-size: 17px;
-    padding: 5px 8px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.card .content .btn button:hover {
-    transform: scale(0.9);
-}
 
 /* 底 */
 figure {
@@ -817,6 +796,7 @@ figure {
     height: 500px;
     flex: 1;
     margin: 0 15px;
+
     border-radius: 40px;
     overflow: hidden;
     position: relative;
@@ -840,7 +820,7 @@ figure {
     position: absolute;
     right: 50px;
     top: 250px;
-    width: 450px;
+    width: 500px;
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
@@ -853,22 +833,16 @@ figure {
 }
 
 #allEvents .card .content .sub-title {
-    width: 300px;
+    width: 400px;
     font-size: 1rem;
     font-weight: 600;
     line-height: 20px;
-}
 
-#allEvents .card .content .sub-title img {
-    width: 13px;
-    height: 13px;
-    margin: 0 5px;
 }
 
 #allEvents .card .content p {
     text-align: justify;
-    margin: 10px 0;
-    width: 450px;
+    letter-spacing: 8px;
 }
 
 /* 大輪播完 */
@@ -898,6 +872,7 @@ figure {
 
 /* 最新消息 */
 #news {
+    height: 100vh;
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
