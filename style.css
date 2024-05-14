@@ -724,6 +724,7 @@ button#closeMenu {
 
 .slider .card {
     flex: 1;
+    height: 400px;
     margin: 0 20px;
     background: #fff;
     border-radius: 40px;
@@ -783,6 +784,7 @@ figure {
 
 /* 所有主題 */
 #allEvents {
+    height: 700px;
     background-color: white;
 }
 /* 大輪播 */
@@ -797,13 +799,13 @@ figure {
     flex: 1;
     margin: 0 15px;
 
-    border-radius: 40px;
+
     overflow: hidden;
     position: relative;
 }
 
 #allEvents .slider2 .card .img {
-    height: 300px;
+    height: 400px;
     width: 100%;
 }
 
@@ -811,6 +813,7 @@ figure {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 #allEvents .slider2 .card .content {
