@@ -66,3 +66,4 @@ $(".slider2").owlCarousel({
     autoplayHoverPause: true,
     items: 3, // 修改这里来指定同时显示的图片数目
 });
+
