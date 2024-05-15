@@ -594,7 +594,7 @@ button#closeMenu {
 }
 
 .allRw {
-margin-left: 500px;
+    margin-left: 500px;
     display: flex;
     /* 將 .allRw 元素設置為 flex 容器 */
     flex-direction: column;
@@ -635,7 +635,7 @@ margin-left: 500px;
 .mapbox {
 
     height: 700px;
-margin-left: 100px;
+    margin-left: 100px;
     z-index: 1;
     /* 設置層級，這裡假設 .div1 在上面 */
 }
@@ -658,7 +658,7 @@ margin-left: 100px;
     width: 250px;
 }
 
-.map  a {
+.map a {
     transition: transform 0.3s ease;
     /* 添加過渡效果 */
     position: absolute;
@@ -667,6 +667,10 @@ margin-left: 100px;
 .map :hover {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+.Kanto:hover {
+    z-index: 999;
 }
 
 
@@ -697,7 +701,7 @@ margin-left: 100px;
     left: 60px;
     width: 100px;
     top: 530px;
-    
+
 }
 
 .Kyushu {
@@ -706,28 +710,15 @@ margin-left: 100px;
     left: 20px;
     top: 530px;
 }
+
 /* 完。 */
-
-
-.alimg {
-    margin-left: 40px;
-}
-
-
 
 
 /* 推薦行程 */
 #recommendations {
     height: 55vh;
-    /* justify-content: flex-start; */
-    /*主軸對齊方式*/
     align-items: center;
     background-image: url(./images/Rectangle\ 180.png);
-    /* height: 600px; */
-    overflow: visible;
-    /* 允許內容溢出 */
-    overflow: hidden;
-    /* 溢出隱藏 */
 }
 
 .recommendations-botton {
@@ -746,7 +737,6 @@ margin-left: 100px;
 
 .titlebox {
     margin-top: 30px;
-
     position: absolute;
     left: 85%;
     top: 75%;
@@ -843,12 +833,7 @@ margin-left: 100px;
     margin: 10px 0;
 }
 
-
 /* 底 */
-figure {
-
-    /* border: 1px solid #ff1c1c; */
-}
 
 
 /* 所有主題 */
@@ -874,11 +859,6 @@ figure {
     margin: 0 15px;
     overflow: hidden;
     position: relative;
-}
-
-.owl-stage {
-    overflow: visible !important;
-    /* 允許溢出 */
 }
 
 .Label {
@@ -962,10 +942,6 @@ figure {
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
-
-    /* border: 1px solid #000000; */
-    /* 外框線寬度和顏色 */
-
     position: relative;
 }
 
@@ -973,8 +949,6 @@ figure {
     display: flex;
     flex-direction: column;
 }
-
-#news .title {}
 
 #news .newsImg {
     height: 100vh;
@@ -986,8 +960,6 @@ figure {
     display: flex;
     flex-direction: column;
     margin-right: 250px;
-
-    /* border: 1px solid #494964; */
 }
 
 .newsright-t {
@@ -995,13 +967,11 @@ figure {
     justify-content: flex-start;
     align-items: center;
     justify-content: space-between;
-
+    font-size: 1rem;
     border-bottom: 1px solid var(--indigo);
     /* 外框線寬度和顏色 */
     line-height: 2.5;
     /* 設置行高為文字大小的2.5倍 */
-
-    /* border: 1px solid red; */
 }
 
 .newsright-t img {
@@ -1013,17 +983,7 @@ figure {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* 頁尾區 */
 footer {
     display: flex;
     justify-content: center;
@@ -1041,16 +1001,12 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* border: 1px solid #1cff8a; */
 }
 
 .social-media-icon {
     width: 70%;
     display: flex;
     justify-content: flex-end;
-
-    /* border: 1px solid #ff1c1c; */
 }
 
 .social-media-icon img {
@@ -1065,7 +1021,6 @@ footer a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* border: 1px solid #ff1c1c; */
 }
 
 .footer-left {
@@ -1074,9 +1029,6 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-
-
-    /* border: 1px solid #ff1c1c; */
 }
 
 .footerLogo {
