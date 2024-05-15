@@ -105,7 +105,11 @@ section {
 }
 
 body {
-
+    font-family:
+        /* 英文 */
+        'times new roman', times, serif,
+        /* 中文 */
+        "Noto Sans TC", sans-serif;
     line-height: 1;
     /* overflow-x: hidden; */
 }
@@ -386,7 +390,7 @@ button#closeMenu {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: left;
     line-height: 2.8;
     /* 設置行高為字體大小的2.8倍 */
@@ -535,29 +539,32 @@ button#closeMenu {
 }
 
 .whyjp {
-
+    line-height: 2rem;
     border: 2px solid #ffffff;
     /* 外框線寬度和顏色 */
     border-radius: 40px 0 0 40px;
     /* 左側圓角 */
-    padding: 77px 300px 77px 80px;
+    padding: 77px 150px 77px 80px;
 }
 
 .whyjp h1 {
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: var(--indigo);
     font-weight: bold;
 }
 
 .whyjp h2 {
-    font-size: 1.3rem;
-    margin-top: 30px;
+    font-size: 1rem;
+    margin-top: 50px;
 }
 
 
 
 /*所有地區*/
 #allRegions {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
     position: relative;
     height: 700px;
     background-image: url(./images/Rectangle\ 180.png);
@@ -587,7 +594,7 @@ button#closeMenu {
 }
 
 .allRw {
-
+margin-left: 500px;
     display: flex;
     /* 將 .allRw 元素設置為 flex 容器 */
     flex-direction: column;
@@ -599,12 +606,25 @@ button#closeMenu {
 
 .w1 {
     width: 450px;
-    margin-bottom: 108px;
+    margin-bottom: 80px;
+}
+
+.w1,
+.w2 h1 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--indigo);
+
 }
 
 .w2 {
     width: 450px;
 }
+
+.w2 h1 {
+    margin: 50px 0 50px 0;
+}
+
 
 
 .allRegionsbe {
@@ -612,35 +632,82 @@ button#closeMenu {
     /* 將該元素的內容置頂 */
 }
 
-.map {
-    position: relative;
-    height: 700px;
+.mapbox {
 
-    position: relative;
-    /* 設置相對位置 */
+    height: 700px;
+margin-left: 100px;
     z-index: 1;
     /* 設置層級，這裡假設 .div1 在上面 */
 }
 
-.map .title {
+.mapbox .title {
     position: absolute;
     /* 設置絕對位置 */
     top: 250px;
     /* 設置距離父元素頂部的距離 */
-    left: 100px;
+    left: 1000px;
     /* 設置距離父元素左側的距離 */
     z-index: 2;
     /* 設置層級，這裡假設 .div2 在上面 */
 }
 
-
-
-.map img {
-    max-height: 100%;
-    /* 圖片最大寬度為容器寬度 */
-    width: auto;
-    /* 讓高度自動調整以保持比例 */
+/* 地圖縮放 */
+.map {
+    position: relative;
+    /* height: 100vh; */
+    width: 250px;
 }
+
+.map  a {
+    transition: transform 0.3s ease;
+    /* 添加過渡效果 */
+    position: absolute;
+}
+
+.map :hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+.Hokkaido {
+    height: 200px;
+    width: 230px;
+    top: 100px;
+    left: 310px;
+}
+
+.Kanto {
+    height: 250px;
+    left: 249px;
+    top: 279px;
+    width: 150px;
+}
+
+.Kansai {
+    height: 230px;
+    left: -55px;
+    top: 415px;
+}
+
+
+.Shikoku {
+    height: 90px;
+    left: 60px;
+    width: 100px;
+    top: 530px;
+    
+}
+
+.Kyushu {
+    height: 100px;
+    width: 60px;
+    left: 20px;
+    top: 530px;
+}
+/* 完。 */
+
 
 .alimg {
     margin-left: 40px;
@@ -748,7 +815,7 @@ button#closeMenu {
 }
 
 .card .content .Ctitle {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     margin: 10px 0;
     color: var(--indigo);
     font-weight: 600;
@@ -758,7 +825,7 @@ button#closeMenu {
 .card .content .sub-title {
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: .875rem;
     font-weight: 600;
 
     line-height: 20px;
@@ -771,6 +838,7 @@ button#closeMenu {
 }
 
 .card .content p {
+    font-size: 1rem;
     text-align: justify;
     margin: 10px 0;
 }
@@ -789,7 +857,7 @@ figure {
     background-color: white;
 }
 
-#allEvents .title{
+#allEvents .title {
     margin-bottom: 160px;
 }
 
@@ -807,10 +875,13 @@ figure {
     overflow: hidden;
     position: relative;
 }
-.owl-stage {
-    overflow: visible !important; /* 允許溢出 */}
 
-.Label{
+.owl-stage {
+    overflow: visible !important;
+    /* 允許溢出 */
+}
+
+.Label {
     top: -1px;
     left: -1px;
     width: 130px;
@@ -844,23 +915,18 @@ figure {
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 水平偏移量 垂直偏移量 模糊程度 颜色 */
-}
-
-#allEvents .card .content .title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: left;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    /* 水平偏移量 垂直偏移量 模糊程度 颜色 */
 }
 
 #allEvents .card .content .sub-title {
     width: 400px;
-    font-size: 1rem;
     font-weight: 600;
     line-height: 20px;
 }
 
 #allEvents .card .content p {
+    font-size: 1rem;
     text-align: justify;
     letter-spacing: 5px;
 }
@@ -903,11 +969,12 @@ figure {
     position: relative;
 }
 
-#news .title {
-    position: absolute;
-    top: 80px;
-    left: 900px;
+.box-r {
+    display: flex;
+    flex-direction: column;
 }
+
+#news .title {}
 
 #news .newsImg {
     height: 100vh;
@@ -929,7 +996,7 @@ figure {
     align-items: center;
     justify-content: space-between;
 
-    border-bottom: 1px solid #494964;
+    border-bottom: 1px solid var(--indigo);
     /* 外框線寬度和顏色 */
     line-height: 2.5;
     /* 設置行高為文字大小的2.5倍 */
@@ -1108,16 +1175,13 @@ footer a:hover {
 }
 
 /* TOP鈕 */
-.TOP {
+.gotop {
     position: fixed;
-
+    display: none;
     top: 85%;
-    /* top: 0; */
     left: 95%;
-    z-index: 999;
-
     width: 70px;
     max-width: 100%;
-
-
+    z-index: 999;
+    cursor: pointer;
 }

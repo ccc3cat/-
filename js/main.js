@@ -14,30 +14,6 @@ closeMenuButton.addEventListener('click', () => {
 });
 
 
-
-
-// TOP的滾動隱藏效果
-document.addEventListener('DOMContentLoaded', function () {
-    var element = document.getElementById('elementToDisappear');
-    var scrollPosition = window.scrollY;
-
-    if (scrollPosition <= 250) {
-        element.style.display = 'none'; // 滾動到 250px 高度時隱藏元素
-    } else {
-        element.style.display = 'block'; // 如果滾動高度小於 250px，則顯示元素
-    }
-
-    window.addEventListener('scroll', function () {
-        var scrollPosition = window.scrollY;
-
-        if (scrollPosition <= 250) {
-            element.style.display = 'none'; // 滾動到 250px 高度時隱藏元素
-        } else {
-            element.style.display = 'block'; // 如果滾動高度小於 250px，則顯示元素
-        }
-    });
-});
-
 // 關於日本輪播圖
 $(function () {
     $("#CarouselImg").cycle({
@@ -67,3 +43,17 @@ $(".slider2").owlCarousel({
     items: 3, // 修改这里来指定同时显示的图片数目
 });
 
+    // 至頂按鈕
+    $('#gotop').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 1300);
+    })
+
+    // 淡出淡入
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1000) {
+            $('#gotop').stop().fadeTo('', 1);
+        }
+        else {
+            $('#gotop').stop().fadeOut();
+        }
+    })
