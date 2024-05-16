@@ -1,0 +1,1170 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #555;
+    font-family:
+        /* 英文 */
+        'times new roman', times, serif,
+        /* 中文 */
+        "Noto Sans TC", sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+}
+
+
+
+/* 頁頭 */
+
+.topbar {
+    width: 100%;
+    height: 800px;
+    background-image: url('./images02/Fukuoka/bn.jpg');
+    position: relative;
+    background-size: cover;
+}
+
+.topbar img {
+    height: 96px;
+    width: 110px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.text-box {
+    background-color: #fff;
+    width: 365px;
+    height: 800px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.text {
+    width: 120px;
+    height: 570px;
+    justify-content: center;
+    display: flex;
+    /* 要包文字 */
+}
+
+.text h1 {
+    writing-mode: vertical-lr;
+    /* 文字垂直排 */
+    letter-spacing: 0.2em;
+    /* 文字間距 */
+    font-size: 1.5rem;
+    color: #374C66;
+    font-weight: bold;
+    /* 文字加粗 */
+    margin-top: 115px;
+}
+
+.text h2 {
+    writing-mode: vertical-lr;
+    /* 文字垂直排 */
+    letter-spacing: 0.2em;
+    font-size: 1.3rem;
+    margin-top: 390px;
+    margin-right: 16px;
+}
+
+.text h3 {
+    font-size: 1rem;
+    color: #B19693;
+    writing-mode: vertical-lr;
+    /* 文字垂直排 */
+    margin-top: 115px;
+}
+
+
+/* 索引 */
+
+.focus {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* 垂直居中 */
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.hamburger img {
+    height: 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger h2 {
+    font-size: 1em;
+    /* 16px */
+    margin: 4px;
+}
+
+.focus-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.focus-box li {
+    width: 125px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+}
+
+.focus-text {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: #F1EEE1;
+    border-radius: 50%;
+    justify-content: center;
+    flex-direction: column;
+    /* 垂直排列 */
+}
+
+.focus-box li img {
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+}
+
+.focus-text h2 {
+    font-size: 1rem;
+}
+
+.focus-text h3 {
+    font-size: 1.3rem;
+    color: #9F353A;
+    margin-top: 4px;
+
+}
+
+/* 選擇日期 */
+.date {
+    width: 100%;
+    height: 430px;
+    display: flex;
+}
+
+.date-title {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.date-title h1 {
+    writing-mode: vertical-lr;
+    /* 文字垂直排 */
+    letter-spacing: 0.2em;
+    /* 文字間距 */
+    font-size: 1.5rem;
+    color: #374C66;
+    font-weight: bold;
+    /* 文字加粗 */
+}
+
+.date-title h2 {
+    font-size: 1rem;
+    color: #B19693;
+    writing-mode: vertical-lr;
+    /* 文字垂直排 */
+}
+
+
+/* 日期選擇按鈕 */
+/* 縮放會有問題!!!尚未更改 */
+
+.choose {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* 垂直排列 */
+    margin-left: 15%;
+
+}
+
+.choose-btn {
+    width: 930px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 40px;
+    border-color: #B19693;
+    /* 線框顏色 */
+    background-color: rgb(241, 238, 225, 0.3);
+    margin-top: 30px;
+}
+
+.choose-box {
+    width: 610px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列 */
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-box p {
+    font-size: 1rem;
+    margin-top: 12px;
+}
+
+.choose-text {
+    width: 510px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-text img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.choose-text h2 {
+    font-size: 1.3rem;
+    color: #9F353A;
+    font-weight: bold;
+
+}
+
+/* 報名按鈕 */
+
+
+
+
+
+/* 裝飾線 */
+/* 縮放會有問題!!!尚未更改 */
+.line {
+    height: 230px;
+    width: 0.5px;
+    border-width: 0;
+    background-color: #374C66;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    right: 150px;
+    margin-top: 60px;
+}
+
+
+
+
+/* 導遊 */
+.guide {
+    width: 100%;
+    height: 500px;
+    background-color: #F1EEE1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-box {
+    width: 990px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guide-img {
+    display: flex;
+    align-items: center;
+}
+
+
+.guide-bg {
+    width: 300px;
+    height: 450px;
+    background-color: #374C66;
+    border-radius: 40px;
+    position: relative;
+    /* 絕對定位 */
+    margin-top: 24px;
+    z-index: 0;
+}
+
+.guide-image {
+    width: 300px;
+    height: 450px;
+    border-radius: 40px;
+    margin-left: 106px;
+    overflow: hidden;
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    background-image: url("./images02/Fukuoka/guide.jpg");
+}
+
+.guide-line {
+    border-color: #fff;
+    border-radius: 40px;
+    z-index: 2;
+    width: 300px;
+    height: 450px;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    margin-left: 90px;
+}
+
+.guide-text h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #374C66;
+    letter-spacing: 0.8rem;
+}
+
+.guide-text h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #9F353A;
+    margin-top: 16px;
+    letter-spacing: 0.3rem;
+    /* 字距 */
+}
+
+.guide-text p {
+    font-size: 1rem;
+    line-height: 40px;
+    /* 行距 */
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* 行程特色 */
+.feature-box {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.feature-box nav {
+    width: 95px;
+    height: 280px;
+    margin-left: 100px;
+    margin-top: 150px;
+    border-right: 0.5px solid #374C66;
+}
+
+
+
+.feature-box li {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+}
+
+
+
+
+
+/* 古蹟建築*/
+
+/* 特色景點 */
+.feature01 {
+    width: 1050px;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-top: 100px;
+
+}
+
+.f-box {
+    width: 720px;
+    height: 425px;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+/* 按鈕 */
+.f01 {
+    width: 485px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.btn-lift {
+    background-image: url("./images02/button-left.svg");
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+}
+
+.btn-right {
+    background-image: url("./images02/button-right.svg");
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+}
+
+.f01 h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #374C66;
+    letter-spacing: 0.3rem;
+    width: 350px;
+}
+
+/* 特色行程的圖文 */
+
+.f02 {
+    width: 720px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.f02 p {
+    font-size: 1rem;
+    line-height: 30px;
+    /* 行距 */
+    letter-spacing: 0.3rem;
+
+}
+
+.f03-img {
+    display: flex;
+    justify-content: center;
+}
+
+.f03-img1 img {
+    width: 330px;
+    height: 250px;
+    border-radius: 40px;
+    margin-top: 40px;
+    object-fit: cover;
+}
+
+.f03-img2 img {
+    width: 330px;
+    height: 250px;
+    border-radius: 40px;
+    margin-left: 36px;
+    margin-top: 40px;
+    object-fit: cover;
+    /* 圖超過被裁切 */
+}
+
+.f04img img {
+    /* 直式照片 */
+    width: 300px;
+    height: 430px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+/* 當地美食*/
+
+
+/*精選旅宿*/
+
+
+
+/* 花 */
+.DailyTour {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1EEE1;
+}
+
+.DailyTour img {
+    width: 190px;
+    height: 190px;
+}
+
+
+/* 每日行程 */
+.all-DAY {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Day-box {
+    margin: 50px 50px 0 50px;
+    padding: 0;
+    /*float: left;  */
+    list-style: none;
+    height: 90px;
+    /*border-bottom: 1px solid #9F353A;  */
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Day-box li {
+    float: left;
+    margin: 0 73px 0 73px;
+    cursor: pointer;
+    padding: 0px 21px;
+    height: 90px;
+    width: 230px;
+    line-height: 31px;
+    border: 6px double #fff;
+    background-color: #9F353A;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 滑鼠移動變色 */
+.Day-box li:hover {
+    background-color: #fff;
+    color: #000;
+    border-right: 15px solid #9F353A;
+    border-top: 2px solid #9F353A;
+    border-left: 1px solid #9F353A;
+}
+
+.Day-box .day {
+    background-color: #fff;
+    color: #000000;
+    border-right: 15px solid #9F353A;
+    border-top: 2px solid #9F353A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #9F353A;
+}
+
+.day_container {
+    border-right: 15px solid #9F353A;
+    height: auto;
+    width: 1530px;
+    border-radius: 40px;
+    border-left: 1px solid #9F353A;
+    border-top: 2px solid #9F353A;
+    border-bottom: 1px solid #9F353A;
+    position: relative;
+}
+
+.day-content {
+position: relative;
+}
+
+.d1 {
+    margin-top: 100px;
+}
+
+.journey-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* 垂直排 */
+    align-items: flex-end;
+    /* 靠右貼齊 */
+    overflow: hidden;
+    margin-top: 100px;
+
+}
+
+
+/* 行程內容 */
+.journey1 {
+    background-color: #374C66;
+    width: 1220px;
+    height: 360px;
+    display: flex;
+    align-items: flex-start;
+    /* 置頂頂部 */
+}
+
+
+.journey1 h3 {
+    writing-mode: vertical-lr;
+    /* 文字垂直排 */
+    color: #374C66;
+    padding: 25px 20px;
+    background-color: #fff;
+}
+
+
+.day-text {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+.btn-day-lift {
+    background-image: url("./images02/btn-day-lift.png");
+    width: 38px;
+    height: 38px;
+    background-color: #374C66;
+    outline: none;
+    border: none;
+    margin-right: 8px;
+}
+
+.btn-day-right {
+    background-image: url("./images02/btn-day-right.png");
+    width: 38px;
+    height: 38px;
+    background-color: #374C66;
+    outline: none;
+    border: none;
+    margin-left: 8px;
+}
+
+.day-text h4 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 500px;
+}
+
+/* 行程圖片 */
+.day-img {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    justify-content: center;
+    left: 0px;
+}
+
+.day-img img {
+    width: 550px;
+    height: 365px;
+    object-fit: cover;
+    border-radius: 40px;
+    margin: 0 35px;
+}
+
+/* 文字介紹 */
+.journey-box p {
+    font-size: 1rem;
+    width: 1140px;
+    height: 120px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+    /* 行距 */
+}
+
+
+
+
+
+/* 餐點 */
+.eat {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    /* 垂直排 */
+    position: relative;
+}
+
+.all-eat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+   height: 600px;
+}
+
+.stop {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #F1EEE1;
+    flex-direction: column;
+    /* 垂直排 */
+    margin-right: 450px;
+}
+
+.eat h5 {
+    font-size: 1.3rem;
+    color: #374C66;
+    margin-top: 50px;
+}
+
+.eat h6 {
+    font-size: 1.3rem;
+    color: #374C66;
+}
+
+.eat-text {
+    display: flex;
+    height: 240px;
+    width: 1100px;
+    background-color: #F1EEE1;
+    border-radius: 40px 0 0 40px;
+    position: absolute;
+    margin-top: 100px;
+
+}
+
+.all-text {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.all-text img {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+}
+
+.all-text .house,
+.food {
+    /* 文字 */
+    font-size: 1.3rem;
+    margin-left: 4px;
+    color: #374C66;
+    font-weight: bold;
+}
+
+.house {
+    display: flex;
+    align-items: center;
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+}
+
+/* 餐點圖片 */
+
+.eat-img {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 180px;
+}
+
+.eat-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 25px;
+}
+
+
+
+
+/* 車程時間 */
+.bus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.walk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bus img{
+    width: 40px;
+    height: 140px;
+}
+
+.walk img {
+    width: 30px;
+    height: 140px;
+}
+
+.bus h2,
+.walk h2 {
+    font-size: 1rem;
+    color: #374C66;
+    margin-left: 8px;
+}
+
+
+/* 飯店 */
+
+.hotel{
+    width: 1100px;
+    height: 640px;
+    position: relative;
+    display: flex;
+}
+
+.color{
+    width: 1000px;
+    height: 500px;
+    background-color: #F1EEE1;
+    border-radius: 40px;
+}
+
+.hotel-img {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+}
+
+.hotel-img h3 {
+    writing-mode: vertical-lr;
+    /* 文字垂直排 */
+    color: #374C66;
+    padding: 25px 20px;
+    background-color: #fff;
+    
+}
+
+.hotel-img img{
+    width: 600px;
+    height: 400px;
+    border-radius: 40px;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 備註 */
+.note {
+    width: 100%;
+    height: 300px;
+    background-color: #F1EEE1;
+    display: flex;
+}
+
+.note-title {
+    display: flex;
+    margin-left: 150px;
+    margin-top: 50px;
+    width: 70px;
+    height: 80px;
+    justify-content: center;
+}
+
+.note-title h1 {
+    writing-mode: vertical-lr;
+    /* 文字垂直排 */
+    letter-spacing: 0.2em;
+    /* 文字間距 */
+    font-size: 1.5rem;
+    color: #374C66;
+    font-weight: bold;
+    /* 文字加粗 */
+}
+
+.note-title h2 {
+    font-size: 1rem;
+    color: #B19693;
+    writing-mode: vertical-lr;
+    /* 文字垂直排 */
+}
+
+
+.note-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 350px;
+}
+
+.note-text li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.note-text li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+}
+
+/* 裝飾線 */
+/* 縮放會有問題!!!尚未更改 */
+.note-line {
+    height: 150px;
+    width: 1px;
+    border-width: 0;
+    background-color: #374C66;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    right: 300px;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+/* 頁尾 */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #374C66;
+    height: 40vh;
+}
+
+.footer-frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-icon {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.r a {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid #ff1c1c; */
+}
+
+.footer-left {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.footerLogo {
+    width: 100px;
+    padding-right: 30px;
+    border-right: 3px solid #F1EEE1;
+}
+
+.footer-left h1 {
+    font-weight: bold;
+    /* 粗體字 */
+    color: #F1EEE1;
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+
+}
+
+.footer-left h2 {
+    color: #F1EEE1;
+    /* 調整文字顏色 */
+    line-height: 2.5;
+    /* 設置行高為文字大小的2.5倍 */
+    font-size: 1rem;
+
+}
+
+.f1 {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: center; */
+    /*主軸(垂直)置中*/
+}
+
+.f2 {
+    margin-right: 62px;
+}
+
+.f3 h2 {
+    line-height: 1.5;
+    /* 設置行高為文字大小的1.5倍 */
+}
+
+
+.footer-right {
+    display: flex;
+    height: 224px;
+    width: 350px;
+    color: #F1EEE1;
+}
+
+.footer-right a {
+    color: #F1EEE1;
+}
+
+.r {
+    line-height: 2.5;
+    align-content: center;
+}
+
+.r1 {
+    display: block;
+    position: relative;
+}
+
+.r1::after {
+    content: "";
+    position: absolute;
+    top: 19%;
+    left: 140%;
+    background: #aaa;
+    width: 3px;
+    height: 140px;
+}
+
+.r1,
+.r2 {
+    margin-right: 60px;
+}
+
+.Copyright-Notice {
+    color: #F1EEE1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
