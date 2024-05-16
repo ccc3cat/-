@@ -816,7 +816,7 @@ button#closeMenu {
     display: flex;
     align-items: center;
     font-size: .875rem;
-    font-weight: 600;
+    /* font-weight: 600; */
 
     line-height: 20px;
 }
@@ -895,20 +895,18 @@ button#closeMenu {
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    /* 水平偏移量 垂直偏移量 模糊程度 颜色 */
+
+
 }
 
 #allEvents .card .content .sub-title {
     width: 400px;
-    font-weight: 600;
     line-height: 20px;
 }
 
 #allEvents .card .content p {
     font-size: 1rem;
     text-align: justify;
-    letter-spacing: 5px;
 }
 
 /* 大輪播完 */
