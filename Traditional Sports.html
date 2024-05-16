@@ -26,6 +26,57 @@
             <p class="english">Traditional Sports </p>
             <p class="chiness">傳統運動</p>
         </h2>
+
+        <!-- 漢堡按鈕區 -->
+        <div id="menu" class="menu">
+            <div class="menu-content">
+                <button id="closeMenu"><img src="./images/close.png" alt=""></button>
+                <div class="menuBox">
+                    <div class="menuLogoimg">
+                        <img src="./images/menuImg.png" alt="" class="menuImg">
+                        <img src="./images/LOGO/logohavefont-off-wite.png" alt="" class="logohavefont">
+                    </div>
+                    <ul class="menuIconBox">
+                        <div class="all">
+                            <li><a href="#"><img src="./images/icon/tea.png" alt="">所有主題 All Events</a></li>
+                        </div>
+                        <div class="allOptions">
+                            <li><a href="#">古蹟建築</a></li>
+                            <li><a href="#">傳統運動</a></li>
+                            <li><a href="#">所有主題</a></li>
+                        </div>
+                        <div class="all">
+                            <li><a href="#"><img src="./images/icon/food.png" alt="">所有地區 All Regions</a></li>
+                        </div>
+                        <div class="allOptions">
+                            <li><a href="#">北海道</a></li>
+                            <li><a href="#">關東</a></li>
+                            <li><a href="#">關西</a></li>
+                            <li><a href="#">四國</a></li>
+                            <li><a href="#">九州</a></li>
+                        </div>
+                        <div class="button l">
+                            <li><a href="#"><img src="./images/icon/sake.svg" alt="">聯絡我們 Contact US</a></li>
+                            <li><a href="#"><img src="./images/icon/daruma.svg" alt="">關於我們 About Us</a></li>
+                            <li><a href="#"><img src="./images/icon/cat.svg" alt="">最新消息 Latest News</a></li>
+                            <li><a href="#"><img src="./images/icon/susi.svg" alt="">關於日本 About Japan</a></li>
+                        </div>
+                        <div class="button">
+                            <li><a href="#"><img src="./images/icon/fish.svg" alt="">開團總覽 Itinerary Overview</a></li>
+                            <li><a href="#"><img src="./images/icon/noodle.svg" alt="">導遊介紹 Tour Guide Introduction</a>
+                            </li>
+                            <li><a href="#"><img src="./images/icon/Bamboo.svg" alt="">旅遊資訊 Travel Information</a></li>
+                            <li><a href="#"><img src="./images/icon/mask.svg" alt="">客製化 Customization</a></li>
+                        </div>
+                        <div class="menu-social-media">
+                            <li><a href="#"><img src="./images/icon/IG-b.png" alt=""></a></li>
+                            <li><a href="#"><img src="./images/icon/LINE-b.png" alt=""></a></li>
+                            <li><a href="#"><img src="./images/icon/FB-b.png" alt=""></a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- 內容 -->
@@ -37,8 +88,8 @@
                 首頁/所有主題/傳統運動
             </div>
             <div class="hamburger">
-                <a href="#"><img src="./images/Traditional Sports/menu.svg" alt=""> </a>
-                <h2>MENU</h2>
+                <a id="openMenu"><img src="./images/Traditional Sports/menu.svg" alt="">
+                <h2>MENU</h2> </a>
             </div>
         </div>
 
@@ -191,18 +242,18 @@
         </div>
     </main>
 
-    <!-- 頁尾 -->
+    <!-- 頁尾區 -->
     <footer>
         <div class="footer-frame">
             <div class="social-media-icon">
-                <a href=""><img src="./images/fb.png" alt=""></a>
-                <a href=""><img src="./images/ig.png" alt=""></a>
-                <a href=""><img src="./images/line.png" alt=""></a>
+                <a href=""><img src="./images/icon/fb.png" alt=""></a>
+                <a href=""><img src="./images/icon/ig.png" alt=""></a>
+                <a href=""><img src="./images/icon/line.png" alt=""></a>
             </div>
             <div class="footer">
                 <div class="footer-left">
                     <div class="footerLogo">
-                        <img src="./images/logo-Off-white.png" alt="">
+                        <img src="./images/LOGO/logo-Off-white.png" alt="">
                     </div>
                     <div class="f f1">
                         <h1>昵朋旅行社</h1>
@@ -211,7 +262,7 @@
                     <div class="f f2">
                         <h2>地址 / 台西市下區大大路 20 號 11 樓之 7 </h2>
                         <h2>電話 / 08-8787878787 </h2>
-                        <h2>Email / nippon123@gmail.com</h2>
+                        <h2>Email : nippon123@gmail.com</h2>
                     </div>
                     <div class="f f3">
                         <h2>平日 12：00 ～ 19：00</h2>
@@ -241,13 +292,18 @@
                         <a href="">客製化</a>
                     </div>
                 </div>
-
                 <div class="Copyright-Notice">Copyright @ 2024 昵朋旅遊網. Privacy Policy / Copyright</div>
             </div>
         </div>
     </footer>
+    <!-- TOP鈕 -->
+    <a href="#" class="gotop" id="gotop"><img src="./images/TOP.png" alt=""></a>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="./js/jquery.cycle.all.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

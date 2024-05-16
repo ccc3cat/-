@@ -114,6 +114,8 @@ body {
     /* overflow-x: hidden; */
 }
 
+
+
 ol,
 ul {
     list-style: none;
@@ -143,15 +145,6 @@ table {
     --alabaster: #F1EEE1;
     --rosyBrown: #B19693;
     --jel: #403D3D;
-}
-
-body {
-    color: #555;
-    font-family:
-    /* 英文 */
-    'times new roman', times, serif,
-    /* 中文 */
-    "Noto Sans TC", sans-serif;
 }
 
 img {
@@ -589,7 +582,7 @@ button#closeMenu {
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
     /* 水平偏移量 垂直偏移量 模糊程度 颜色 */
 }
 
