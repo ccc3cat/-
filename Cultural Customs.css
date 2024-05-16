@@ -430,6 +430,10 @@ button#closeMenu {
     align-items: center;
     margin-right: 50px;
 }
+#openMenu{
+    display: flex;
+    align-items: center;
+}
 
 .hamburger img {
     height: 30px;
@@ -588,7 +592,6 @@ button#closeMenu {
 
 .Tea-service .card .content .sub-title {
     width: 400px;
-    font-weight: 600;
     line-height: 20px;
 }
 
@@ -691,7 +694,6 @@ button#closeMenu {
     align-items: center;
     font-size: .875rem;
     font-weight: 600;
-
     line-height: 20px;
 }
 
@@ -845,13 +847,10 @@ button#closeMenu {
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    /* 水平偏移量 垂直偏移量 模糊程度 颜色 */
 }
 
 .Kabuki-service .card .content .sub-title {
     width: 400px;
-    font-weight: 600;
     line-height: 20px;
 }
 

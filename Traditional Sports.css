@@ -436,6 +436,10 @@ button#closeMenu {
     align-items: center;
     margin-right: 50px;
 }
+#openMenu{
+    display: flex;
+    align-items: center;
+}
 
 .hamburger img {
     height: 30px;
@@ -530,19 +534,6 @@ button#closeMenu {
 
 }
 
-/*  .KendoP{
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    }
-    
-    .KendoP img{
-     width: 290px;
-    height: 35px;
-    z-index: 1;
-    }*/
-    
-
 .Kendo-text {
     display: flex;
     margin: 0;
@@ -564,155 +555,172 @@ button#closeMenu {
     /* 垂直居中 */
 }
 
-.Kendo-service-box {
+/* 大輪播 */
+.Kendo-service .slider2 {
+    max-width: 1900px;
     display: flex;
-    overflow-y: hidden;
-    width: 500%;
-    /* 超出容器寬度*/
-    position: absolute;
 }
 
-
-/* 劍道介紹01 */
-.Kendo-img01 {
-    border-radius: 40px;
-    width: 920px;
-    height: 325px;
-    margin: 10px;
+.Kendo-service .slider2 .card {
+    width: 600px;
+    height: 500px;
+    flex: 1;
+    margin: 0 15px;
+    overflow: hidden;
     position: relative;
-    list-style-type: none;
 }
 
-.Kendo-img01 img {
-    border-radius: 40px;
-    width: 100%;
-    /* 填满容器 */
-    height: 100%;
-    /* 填满容器 */
-    object-fit: cover;
-    display: block;
-}
-
-.Kendo-background01 {
-    width: 715px;
-    height: 135px;
-    background-color: #fff;
+.Label {
+    top: -1px;
+    left: -1px;
+    width: 130px;
+    height: 90px;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    /* 通過平移水平居中 */
-    border-radius: 40px 40px 0 0;
-    display: flex;
-    /* 使用Flexbox布局 */
-    /* 轉換為Flex容器去包p */
-    justify-content: center;
-    /* 水平居中 */
-    align-items: center;
-}
-
-.Kendo-background01 p {
-    height: 105px;
-    width: 490px;
-    margin-top: 50px;
-}
-
-
-/* 劍道介紹02 */
-.Kendo-img02 {
-    border-radius: 40px;
-    width: 920px;
-    height: 325px;
-    margin: 10px;
-    position: relative;
-    list-style-type: none;
-}
-
-.Kendo-img02 img {
-    border-radius: 40px;
-    width: 100%;
-    /* 填满容器 */
-    height: 100%;
-    /* 填满容器 */
-    object-fit: cover;
-    display: block;
-}
-
-.Kendo-background02 {
-    width: 715px;
-    height: 135px;
     background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    /* 通過平移水平居中 */
-    border-radius: 40px 40px 0 0;
-    display: flex;
-    /* 使用Flexbox布局 */
-    /* 轉換為Flex容器去包p */
-    justify-content: center;
-    /* 水平居中 */
-    align-items: center;
+    border-radius: 30px 0 30px 0;
+
 }
 
-.Kendo-background02 p {
-    height: 105px;
-    width: 490px;
-    margin-top: 30px;
-}
-
-
-/* 劍道介紹03 */
-.Kendo-img03 {
-    border-radius: 40px;
-    width: 920px;
-    height: 325px;
-    margin: 10px;
-    position: relative;
-    list-style-type: none;
-}
-
-.Kendo-img03 img {
-    border-radius: 40px;
+.Kendo-service .slider2 .card .img {
+    height: 400px;
     width: 100%;
-    /* 填满容器 */
+}
+
+.Kendo-service .slider2 .card .img img {
     height: 100%;
-    /* 填满容器 */
+    width: 100%;
     object-fit: cover;
-    display: block;
+    border-radius: 30px;
 }
 
-.Kendo-background03 {
-    width: 715px;
-    height: 135px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    /* 通過平移水平居中 */
-    border-radius: 40px 40px 0 0;
+.Kendo-service .slider2 .card .content {
+    background-color: #ffffff;
+    padding: 20px 0;
     display: flex;
-    /* 使用Flexbox布局 */
-    /* 轉換為Flex容器去包p */
+    position: absolute;
+    right: 50px;
+    top: 280px;
+    width: 500px;
+    flex-direction: row;
     justify-content: center;
-    /* 水平居中 */
-    align-items: center;
+    border-radius: 20px;
 }
 
-.Kendo-background03 p {
-    height: 105px;
-    width: 490px;
-    margin-top: 30px;
+.Kendo-service .card .content .sub-title {
+    width: 400px;
+    line-height: 20px;
 }
+
+.Kendo-service .card .content p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* 大輪播完 */
 
 
 /* 劍道行程推薦 */
 .Kendo-Itinerary {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
     width: 100%;
     height: 600px;
     background-color: #F1EEE1;
+}
+.titlebox {
+    margin-top: 15px;
+    position: absolute;
+    left: 85%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 998;
+    /* 設置層級，這裡假設 .div2 在上面 */
+}
+.title1 {
+    writing-mode: vertical-lr;
+    /* 垂直排列，文字由右向左 */
+    text-orientation: upright;
+    /* 文字方向直立 */
+    margin-right: 25px;
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+    letter-spacing: 13px;
+    /* 增加字距 */
+}
+
+
+.title2 {
+    transform: rotate(90deg);
+    transform-origin: top left;
+    /* 旋轉基準點在左上角 */
+    white-space: nowrap;
+    /* 防止文字換行 */
+
+}
+.slider {
+    max-width: 1900px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.slider .card {
+    flex: 1;
+    height: 400px;
+    margin: 0 20px;
+    background: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.slider .card .img {
+    height: 200px;
+    width: 100%;
+}
+
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .card .content {
+    padding: 10px 20px;
+}
+
+.card .content .Ctitle {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: var(--indigo);
+    font-weight: 600;
+    text-align: left;
+}
+
+.card .content .sub-title {
+    display: flex;
+    align-items: center;
+    font-size: .875rem;
+    font-weight: 600;
+
+    line-height: 20px;
+}
+
+.card .content .sub-title img {
+    width: 13px;
+    height: 13px;
+    margin: 0 5px;
+}
+
+.card .content p {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 10px 0;
 }
 
 .titlebox {
@@ -904,152 +912,76 @@ button#closeMenu {
     /* 垂直居中 */
 }
 
-.Sumo-service-box {
+/* 大輪播 */
+.Sumo-service .slider2 {
+    max-width: 1900px;
     display: flex;
-    overflow-y: hidden;
-    width: 500%;
-    /* 超出容器寬度*/
-    position: absolute;
 }
 
-
-/* 相撲介紹01 */
-.Sumo-img01 {
-    border-radius: 40px;
-    width: 920px;
-    height: 325px;
-    margin: 10px;
+.Sumo-service .slider2 .card {
+    width: 600px;
+    height: 500px;
+    flex: 1;
+    margin: 0 15px;
+    overflow: hidden;
     position: relative;
-    list-style-type: none;
 }
 
-.Sumo-img01 img {
-    border-radius: 40px;
-    width: 100%;
-    /* 填满容器 */
-    height: 100%;
-    /* 填满容器 */
-    object-fit: cover;
-    display: block;
-}
-
-.Sumo-background01 {
-    width: 715px;
-    height: 135px;
-    background-color: #fff;
+.Label {
+    top: -1px;
+    left: -1px;
+    width: 130px;
+    height: 90px;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    /* 通過平移水平居中 */
-    border-radius: 40px 40px 0 0;
-    display: flex;
-    /* 使用Flexbox布局 */
-    /* 轉換為Flex容器去包p */
-    justify-content: center;
-    /* 水平居中 */
-    align-items: center;
-}
-
-.Sumo-background01 p {
-    height: 105px;
-    width: 490px;
-    margin-top: 50px;
-}
-
-
-/* 相撲介紹02 */
-.Sumo-img02 {
-    border-radius: 40px;
-    width: 920px;
-    height: 325px;
-    margin: 10px;
-    position: relative;
-    list-style-type: none;
-}
-
-.Sumo-img02 img {
-    border-radius: 40px;
-    width: 100%;
-    /* 填满容器 */
-    height: 100%;
-    /* 填满容器 */
-    object-fit: cover;
-    display: block;
-}
-
-.Sumo-background02 {
-    width: 715px;
-    height: 135px;
     background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    /* 通過平移水平居中 */
-    border-radius: 40px 40px 0 0;
-    display: flex;
-    /* 使用Flexbox布局 */
-    /* 轉換為Flex容器去包p */
-    justify-content: center;
-    /* 水平居中 */
-    align-items: center;
+    border-radius: 30px 0 30px 0;
+
 }
 
-.Sumo-background02 p {
-    height: 105px;
-    width: 490px;
-    margin-top: 30px;
-}
-
-
-/* 相撲介紹03 */
-.Sumo-img03 {
-    border-radius: 40px;
-    width: 920px;
-    height: 325px;
-    margin: 10px;
-    position: relative;
-    list-style-type: none;
-}
-
-.Sumo-img03 img {
-    border-radius: 40px;
+.Sumo-service .slider2 .card .img {
+    height: 400px;
     width: 100%;
-    /* 填满容器 */
+}
+
+.Sumo-service .slider2 .card .img img {
     height: 100%;
-    /* 填满容器 */
+    width: 100%;
     object-fit: cover;
-    display: block;
+    border-radius: 30px;
 }
 
-.Sumo-background03 {
-    width: 715px;
-    height: 135px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    /* 通過平移水平居中 */
-    border-radius: 40px 40px 0 0;
+.Sumo-service .slider2 .card .content {
+    background-color: #ffffff;
+    padding: 20px 0;
     display: flex;
-    /* 使用Flexbox布局 */
-    /* 轉換為Flex容器去包p */
+    position: absolute;
+    right: 50px;
+    top: 280px;
+    width: 500px;
+    flex-direction: row;
     justify-content: center;
-    /* 水平居中 */
-    align-items: center;
+    border-radius: 20px;
 }
 
-.Sumo-background03 p {
-    height: 105px;
-    width: 490px;
-    margin-top: 30px;
+.Sumo-service .card .content .sub-title {
+    width: 400px;
+    line-height: 20px;
 }
+
+.Sumo-service .card .content p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* 大輪播完 */
 
 
 /* 相撲行程推薦 */
 .Sumo-Itinerary {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
     width: 100%;
     height: 600px;
     background-color: #F1EEE1;

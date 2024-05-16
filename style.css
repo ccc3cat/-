@@ -895,8 +895,6 @@ button#closeMenu {
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
-
-
 }
 
 #allEvents .card .content .sub-title {
