@@ -1,0 +1,787 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #555;
+    font-family:
+        /* 英文 */
+        'times new roman', times, serif,
+        /* 中文 */
+        "Noto Sans TC", sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+}
+
+/* 頁頭 */
+.topbar {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* 元素靠上 */
+    position: relative;
+}
+
+.topbar .logo {
+    height: 110px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.topbar .title {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    align-self: flex-start;
+    /*  p 元素靠上 */
+    margin-top: 30px;
+    z-index: 1;
+}
+
+.english {
+    font-size: 1.3rem;
+    color: #374C66;
+    margin-right: 150px;
+    z-index: 1;
+}
+
+.chiness {
+    font-size: 1.5rem;
+    color: #374C66;
+    margin-right: 50px;
+    z-index: 1;
+}
+
+.titleP {
+    width: 290px;
+    height: 50px;
+    position: absolute;
+    z-index: 0;
+    text-align: right;
+    align-self: flex-start;
+    /*  p 元素靠上 */
+    right: 0px;
+    top: 30px;
+    margin-right: 50px;
+}
+
+/* 首頁大圖*/
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    height: 690px;
+    background-image: url('./images/Traditional Sports/bn.jpg');
+    background-size: cover;
+}
+
+
+
+
+/* 漢堡索引 */
+.box {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 垂直居中 */
+}
+
+.box .text {
+    margin: 0;
+    margin-left: 50px;
+    font-size: 0.8rem;
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.hamburger img {
+    height: 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger h2 {
+    font-size: 1em;
+    /* 16px */
+    margin: 4px;
+}
+
+
+/* 傳統運動介紹 */
+.introduce-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    background-image: url('./images/Traditional Sports/Vector.png ');
+    background-size: cover;
+}
+
+
+
+/* 劍道 */
+
+.Kendo {
+    height: 600px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Kendo-img {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+    overflow-y: hidden;
+    height: 500px;
+    width: 650px;
+}
+
+.Kendo-img img {
+    border-radius: 0 40px 40px 0;
+    /* 左上 右上 右下 左下 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Kendo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 475px;
+    width: 400px;
+    margin-left: 55%;
+    top: 85px;
+    position: relative;
+}
+
+.Kendo-title {
+    width: 300px;
+    height: 50px;
+    margin-left: 0;
+    position: relative;
+    background-image: url("./images/titleImg.svg");
+   background-size: auto ;
+}
+
+
+.Kendo-title h2 {
+    font-size: 1.3rem;
+    /* 20px */
+    margin: 0;
+    color: #374C66;
+
+}
+
+.Kendo-title h3 {
+    font-size: 1.5rem;
+    /* 24px */
+    margin: 0;
+    color: #374C66;
+    margin-left: 200px;
+
+}
+
+/*  .KendoP{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    }
+    
+    .KendoP img{
+     width: 290px;
+    height: 35px;
+    z-index: 1;
+    }*/
+    
+
+.Kendo-text {
+    display: flex;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding-top: 55px;
+    margin-left: 0;
+}
+
+
+/* 劍道介紹的框 */
+.Kendo-service {
+    width: 100%;
+    height: 525px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+}
+
+.Kendo-service-box {
+    display: flex;
+    overflow-y: hidden;
+    width: 500%;
+    /* 超出容器寬度*/
+    position: absolute;
+}
+
+
+/* 劍道介紹01 */
+.Kendo-img01 {
+    border-radius: 40px;
+    width: 920px;
+    height: 325px;
+    margin: 10px;
+    position: relative;
+    list-style-type: none;
+}
+
+.Kendo-img01 img {
+    border-radius: 40px;
+    width: 100%;
+    /* 填满容器 */
+    height: 100%;
+    /* 填满容器 */
+    object-fit: cover;
+    display: block;
+}
+
+.Kendo-background01 {
+    width: 715px;
+    height: 135px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 通過平移水平居中 */
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    /* 使用Flexbox布局 */
+    /* 轉換為Flex容器去包p */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+}
+
+.Kendo-background01 p {
+    height: 105px;
+    width: 490px;
+    margin-top: 50px;
+}
+
+
+/* 劍道介紹02 */
+.Kendo-img02 {
+    border-radius: 40px;
+    width: 920px;
+    height: 325px;
+    margin: 10px;
+    position: relative;
+    list-style-type: none;
+}
+
+.Kendo-img02 img {
+    border-radius: 40px;
+    width: 100%;
+    /* 填满容器 */
+    height: 100%;
+    /* 填满容器 */
+    object-fit: cover;
+    display: block;
+}
+
+.Kendo-background02 {
+    width: 715px;
+    height: 135px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 通過平移水平居中 */
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    /* 使用Flexbox布局 */
+    /* 轉換為Flex容器去包p */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+}
+
+.Kendo-background02 p {
+    height: 105px;
+    width: 490px;
+    margin-top: 30px;
+}
+
+
+/* 劍道介紹03 */
+.Kendo-img03 {
+    border-radius: 40px;
+    width: 920px;
+    height: 325px;
+    margin: 10px;
+    position: relative;
+    list-style-type: none;
+}
+
+.Kendo-img03 img {
+    border-radius: 40px;
+    width: 100%;
+    /* 填满容器 */
+    height: 100%;
+    /* 填满容器 */
+    object-fit: cover;
+    display: block;
+}
+
+.Kendo-background03 {
+    width: 715px;
+    height: 135px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 通過平移水平居中 */
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    /* 使用Flexbox布局 */
+    /* 轉換為Flex容器去包p */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+}
+
+.Kendo-background03 p {
+    height: 105px;
+    width: 490px;
+    margin-top: 30px;
+}
+
+
+/* 劍道行程推薦 */
+.Kendo-Itinerary {
+    width: 100%;
+    height: 600px;
+    background-color: #F1EEE1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 相撲 */
+
+.Sumo {
+    height: 600px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Sumo-img {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+    overflow-y: hidden;
+    height: 500px;
+    width: 650px;
+    right: 0;
+}
+
+.Sumo-img img {
+    border-radius: 40px 0 0 40px;
+    /* 左上 右上 右下 左下 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Sumo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 475px;
+    width: 400px;
+    margin-left: 20%;
+    top: 85px;
+    position: relative;
+}
+
+.Sumo-title {
+    width: 300px;
+    height: 50px;
+    margin-left: 0;
+    background-image: url("./images/titleImg.svg");
+    background-size: auto ;
+}
+
+
+.Sumo-title h2 {
+    font-size: 1.3rem;
+    /* 20px */
+    margin: 0;
+    color: #374C66;
+}
+
+.Sumo-title h3 {
+    font-size: 1.5rem;
+    /* 24px */
+    margin: 0;
+    color: #374C66;
+    margin-left: 200px;
+}
+
+.Sumo-text {
+    display: flex;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding-top: 55px;
+    margin-left: 0;
+}
+
+
+/* 相撲介紹的框 */
+.Sumo-service {
+    width: 100%;
+    height: 525px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+}
+
+.Sumo-service-box {
+    display: flex;
+    overflow-y: hidden;
+    width: 500%;
+    /* 超出容器寬度*/
+    position: absolute;
+}
+
+
+/* 相撲介紹01 */
+.Sumo-img01 {
+    border-radius: 40px;
+    width: 920px;
+    height: 325px;
+    margin: 10px;
+    position: relative;
+    list-style-type: none;
+}
+
+.Sumo-img01 img {
+    border-radius: 40px;
+    width: 100%;
+    /* 填满容器 */
+    height: 100%;
+    /* 填满容器 */
+    object-fit: cover;
+    display: block;
+}
+
+.Sumo-background01 {
+    width: 715px;
+    height: 135px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 通過平移水平居中 */
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    /* 使用Flexbox布局 */
+    /* 轉換為Flex容器去包p */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+}
+
+.Sumo-background01 p {
+    height: 105px;
+    width: 490px;
+    margin-top: 50px;
+}
+
+
+/* 相撲介紹02 */
+.Sumo-img02 {
+    border-radius: 40px;
+    width: 920px;
+    height: 325px;
+    margin: 10px;
+    position: relative;
+    list-style-type: none;
+}
+
+.Sumo-img02 img {
+    border-radius: 40px;
+    width: 100%;
+    /* 填满容器 */
+    height: 100%;
+    /* 填满容器 */
+    object-fit: cover;
+    display: block;
+}
+
+.Sumo-background02 {
+    width: 715px;
+    height: 135px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 通過平移水平居中 */
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    /* 使用Flexbox布局 */
+    /* 轉換為Flex容器去包p */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+}
+
+.Sumo-background02 p {
+    height: 105px;
+    width: 490px;
+    margin-top: 30px;
+}
+
+
+/* 相撲介紹03 */
+.Sumo-img03 {
+    border-radius: 40px;
+    width: 920px;
+    height: 325px;
+    margin: 10px;
+    position: relative;
+    list-style-type: none;
+}
+
+.Sumo-img03 img {
+    border-radius: 40px;
+    width: 100%;
+    /* 填满容器 */
+    height: 100%;
+    /* 填满容器 */
+    object-fit: cover;
+    display: block;
+}
+
+.Sumo-background03 {
+    width: 715px;
+    height: 135px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* 通過平移水平居中 */
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    /* 使用Flexbox布局 */
+    /* 轉換為Flex容器去包p */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+}
+
+.Sumo-background03 p {
+    height: 105px;
+    width: 490px;
+    margin-top: 30px;
+}
+
+
+/* 相撲行程推薦 */
+.Sumo-Itinerary {
+    width: 100%;
+    height: 600px;
+    background-color: #F1EEE1;
+}
+
+
+
+
+
+
+
+
+/* 頁尾 */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #374C66;
+    height: 40vh;
+}
+
+.footer-frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-icon {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.r a {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid #ff1c1c; */
+}
+
+.footer-left {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.footerLogo {
+    width: 100px;
+    padding-right: 30px;
+    border-right: 3px solid #F1EEE1;
+}
+
+.footer-left h1 {
+    font-weight: bold;
+    /* 粗體字 */
+    color: #F1EEE1;
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+
+}
+
+.footer-left h2 {
+    color: #F1EEE1;
+    /* 調整文字顏色 */
+    line-height: 2.5;
+    /* 設置行高為文字大小的2.5倍 */
+    font-size: 1rem;
+
+}
+
+.f1 {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: center; */
+    /*主軸(垂直)置中*/
+}
+
+.f2 {
+    margin-right: 62px;
+}
+
+.f3 h2 {
+    line-height: 1.5;
+    /* 設置行高為文字大小的1.5倍 */
+}
+
+
+.footer-right {
+    display: flex;
+    height: 224px;
+    width: 350px;
+    color: #F1EEE1;
+}
+
+.footer-right a {
+    color: #F1EEE1;
+}
+
+.r {
+    line-height: 2.5;
+    align-content: center;
+}
+
+.r1 {
+    display: block;
+    position: relative;
+}
+
+.r1::after {
+    content: "";
+    position: absolute;
+    top: 19%;
+    left: 140%;
+    background: #aaa;
+    width: 3px;
+    height: 140px;
+}
+
+.r1,
+.r2 {
+    margin-right: 60px;
+}
+
+.Copyright-Notice {
+    color: #F1EEE1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

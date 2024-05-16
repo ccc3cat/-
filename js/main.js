@@ -27,23 +27,46 @@ $(function () {
 });
 
 // 輪播卡
-$(".slider").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    items: 5, // 修改这里来指定同时显示的图片数目
+
+$(document).ready(function() {
+    function initializeOwl(selector, itemsDefault, itemsMedium, itemsSmall) {
+        var owl = $(selector).owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: selector === '.slider' ? 3000 : 4500,
+            autoplayHoverPause: true,
+            items: itemsDefault
+        });
+
+        function updateOwlItems() {
+            var windowWidth = $(window).width();
+            var newItems;
+            if (windowWidth <= 640) {
+                newItems = itemsSmall;
+            } else if (windowWidth <= 820) {
+                newItems = itemsMedium;
+            } else {
+                newItems = itemsDefault;
+            }
+            owl.trigger('destroy.owl.carousel');
+            owl.owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: selector === '.slider' ? 3000 : 4500,
+                autoplayHoverPause: true,
+                items: newItems
+            });
+        }
+
+        $(window).resize(updateOwlItems);
+        updateOwlItems(); // Initialize on page load
+    }
+
+    initializeOwl('.slider', 5, 3, 1);
+    initializeOwl('.slider2', 3, 1, 1);
 });
 
-$(".slider2").owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 4500,
-    autoplayHoverPause: true,
-    items: 3, // 修改这里来指定同时显示的图片数目
-});
-
-    // 至頂按鈕
+    // TOP至頂按鈕
     $('#gotop').click(function () {
         $('html,body').animate({ scrollTop: 0 }, 1300);
     })

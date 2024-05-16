@@ -932,7 +932,15 @@ button#closeMenu {
 .all-t p {
     margin: 20px 60px;
 }
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
 
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
 
 
 
@@ -952,7 +960,7 @@ button#closeMenu {
 
 #news .newsImg {
     height: 100vh;
-    width: auto;
+    width: 40%;
 }
 
 .newst {
@@ -969,9 +977,7 @@ button#closeMenu {
     justify-content: space-between;
     font-size: 1rem;
     border-bottom: 1px solid var(--indigo);
-    /* 外框線寬度和顏色 */
     line-height: 2.5;
-    /* 設置行高為文字大小的2.5倍 */
 }
 
 .newsright-t img {
@@ -982,6 +988,62 @@ button#closeMenu {
     margin: 30px 0;
 }
 
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {
+#news{
+    height: 75vh;
+    justify-content: center;
+    align-items: start;
+}
+#news .title{
+    margin-left: 60px;
+    margin-bottom: 80px;
+}
+    #news .newsImg {
+        display: none;
+    }
+    .newst {
+        width: 100%;
+        margin: 0;
+    }
+
+    .newsright-t {
+        width: 400px;
+    }
+
+    .newst1 {
+        width: 80%;
+    }
+
+    .newsright-t img {
+        height: 30px;
+
+    }
+}
+
+/*手機板*/
+@media (max-width:640px) {
+    .newsImg {
+        display: none;
+    }
+
+    .newst {
+        width: 100%;
+    }
+
+    .newsright-t img {
+        height: 30px;
+
+    }
+
+    .newst1 {
+        margin: 10px 0 0 10px;
+    }
+}
 
 /* 頁尾區 */
 footer {
@@ -1110,7 +1172,6 @@ footer a:hover {
 
 }
 
-
 .r1,
 .r2 {
     margin-right: 60px;
@@ -1124,6 +1185,26 @@ footer a:hover {
     margin-top: 50px;
 
     /* border: 1px solid #ff1c1c; */
+}
+
+/*rwd斷點*/
+
+/*平板*/
+@media (max-width:820px) {
+    footer {
+        width: 100%;
+
+        height: 100%;
+    }
+}
+
+/*手機板*/
+@media (max-width:640px) {
+    footer {
+        width: 100%;
+
+        height: 100%;
+    }
 }
 
 /* TOP鈕 */
