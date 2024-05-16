@@ -32,7 +32,7 @@ a {
 .topbar {
     width: 100%;
     height: 800px;
-    background-image: url('./images02/Fukuoka/bn.jpg');
+    background-image: url('./images/Fukuoka/bn.jpg');
     position: relative;
     background-size: cover;
 }
@@ -331,7 +331,7 @@ a {
     background-size: cover;
     z-index: 1;
     position: absolute;
-    background-image: url("./images02/Fukuoka/guide.jpg");
+    background-image: url("./images/Fukuoka/guide.jpg");
 }
 
 .guide-line {
@@ -442,7 +442,7 @@ a {
 }
 
 .btn-lift {
-    background-image: url("./images02/button-left.svg");
+    background-image: url("./images/button-left.svg");
     width: 38px;
     height: 38px;
     background-color: #fff;
@@ -451,7 +451,7 @@ a {
 }
 
 .btn-right {
-    background-image: url("./images02/button-right.svg");
+    background-image: url("./images/button-right.svg");
     width: 38px;
     height: 38px;
     background-color: #fff;
@@ -665,7 +665,7 @@ position: relative;
 }
 
 .btn-day-lift {
-    background-image: url("./images02/btn-day-lift.png");
+    background-image: url("./images/btn-day-lift.png");
     width: 38px;
     height: 38px;
     background-color: #374C66;
@@ -675,7 +675,7 @@ position: relative;
 }
 
 .btn-day-right {
-    background-image: url("./images02/btn-day-right.png");
+    background-image: url("./images/btn-day-right.png");
     width: 38px;
     height: 38px;
     background-color: #374C66;
