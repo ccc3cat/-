@@ -217,7 +217,7 @@ section {
     /* text-align: right; */
     align-self: flex-start;
     /*  p 元素靠上 */
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .title .english {
@@ -229,7 +229,7 @@ section {
 
 .title .chiness {
     position: absolute;
-    top: 70px;
+    top: 50px;
     /* 垂直置中 */
     right: 40px;
     /* 靠右 */
