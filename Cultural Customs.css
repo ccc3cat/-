@@ -214,11 +214,31 @@ section {
 .topbar .title {
     margin: 0;
     padding: 0;
-    text-align: right;
+    /* text-align: right; */
     align-self: flex-start;
     /*  p 元素靠上 */
     margin-top: 30px;
-    z-index: 1;
+}
+
+.title .english {
+    font-size: 1.3rem;
+    /* 調整文字大小 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+}
+
+.title .chiness {
+    position: absolute;
+    top: 70px;
+    /* 垂直置中 */
+    right: 40px;
+    /* 靠右 */
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
 }
 
 /* 漢堡按鈕區 */
@@ -368,32 +388,6 @@ button#closeMenu {
 /* 完 */
 
 
-.english {
-    font-size: 1.3rem;
-    color: #374C66;
-    margin-right: 150px;
-    z-index: 1;
-}
-
-.chiness {
-    font-size: 1.5rem;
-    color: #374C66;
-    margin-right: 50px;
-    z-index: 1;
-}
-
-.titleP {
-    width: 290px;
-    height: 50px;
-    position: absolute;
-    z-index: 0;
-    text-align: right;
-    align-self: flex-start;
-    /*  p 元素靠上 */
-    right: 0px;
-    top: 30px;
-    margin-right: 50px;
-}
 
 /* 首頁大圖*/
 .banner {
@@ -502,6 +496,7 @@ button#closeMenu {
 }
 
 .Tea-title {
+    position: relative;
     width: 300px;
     height: 50px;
     margin-left: 0;
@@ -512,17 +507,23 @@ button#closeMenu {
 
 .Tea-title h2 {
     font-size: 1.3rem;
-    /* 20px */
-    margin: 0;
-    color: #374C66;
+    /* 調整文字大小 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
 }
 
 .Tea-title h3 {
+    position: absolute;
+    top:20px;
+    /* 垂直置中 */
+    right: 40px;
+    /* 靠右 */
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
     font-size: 1.5rem;
-    /* 24px */
-    margin: 0;
-    color: #374C66;
-    margin-left: 200px;
+    /* 調整文字大小 */
 }
 
 .Tea-text {
@@ -763,6 +764,7 @@ button#closeMenu {
 }
 
 .Kabuki-title {
+    position: relative;
     width: 300px;
     height: 50px;
     margin-left: 0;
@@ -773,17 +775,25 @@ button#closeMenu {
 
 .Kabuki-title h2 {
     font-size: 1.3rem;
-    /* 20px */
-    margin: 0;
-    color: #374C66;
+    /* 調整文字大小 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+
 }
 
 .Kabuki-title h3 {
+    position: absolute;
+    top:20px;
+    /* 垂直置中 */
+    right: 40px;
+    /* 靠右 */
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
     font-size: 1.5rem;
-    /* 24px */
-    margin: 0;
-    color: #374C66;
-    margin-left: 200px;
+    /* 調整文字大小 */
+
 }
 
 .Kabuki-text {
