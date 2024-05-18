@@ -481,7 +481,7 @@ button#closeMenu {
 
 /*關於日本*/
 #about {
-    background-image: url(./images/Rectangle\ 180.png);
+    background-image: url(./images/Rectangle-180.jpg);
     position: relative;
     display: flex;
 }
@@ -567,7 +567,8 @@ button#closeMenu {
     justify-content: start;
     position: relative;
     height: 700px;
-    background-image: url(./images/Rectangle\ 180.png);
+    background-image: url(./images/Rectangle-180.jpg);
+    
     overflow: hidden;
 }
 
@@ -718,7 +719,7 @@ button#closeMenu {
 #recommendations {
     height: 55vh;
     align-items: center;
-    background-image: url(./images/Rectangle\ 180.png);
+    background-image: url(./images/Rectangle-180.jpg);
 }
 
 .recommendations-botton {
