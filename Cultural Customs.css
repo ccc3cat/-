@@ -191,6 +191,34 @@ section {
     height: 100vh;
 
 }
+/* 標題 */
+.title {
+    position: relative;
+        align-self: flex-start;
+        margin-top: 10px;
+    }
+    
+    .title .english {
+        font-size: 1.3rem;
+        /* 調整文字大小 */
+        color: var(--indigo);
+        /* 調整文字顏色 */
+    }
+    
+    .title .chiness {
+        position: absolute;
+        top: 40px;
+        /* 垂直置中 */
+        right: 30px;
+        /* 靠右 */
+        font-weight: bold;
+        /* 粗體字 */
+        color: var(--indigo);
+        /* 調整文字顏色 */
+        font-size: 1.5rem;
+        /* 調整文字大小 */
+    }
+/* 標題完 */
 
 /* 頁頭 */
 .topbar {
@@ -203,6 +231,10 @@ section {
     /* position: relative; */
 }
 
+.topbar .title {
+margin-right: 50px;
+}
+
 .topbar .logo {
     height: 110px;
     margin: 0;
@@ -211,34 +243,15 @@ section {
     margin-left: 50px;
 }
 
-.topbar .title {
-    margin: 0;
-    padding: 0;
-    /* text-align: right; */
-    align-self: flex-start;
-    /*  p 元素靠上 */
-    margin-top: 10px;
-}
-
-.title .english {
-    font-size: 1.3rem;
-    /* 調整文字大小 */
-    color: var(--indigo);
-    /* 調整文字顏色 */
-}
-
-.title .chiness {
-    position: absolute;
-    top: 50px;
-    /* 垂直置中 */
-    right: 40px;
-    /* 靠右 */
-    font-weight: bold;
-    /* 粗體字 */
-    color: var(--indigo);
-    /* 調整文字顏色 */
-    font-size: 1.5rem;
-    /* 調整文字大小 */
+/* 首頁大圖*/
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    height: 690px;
+    background-image: url('./images/Cultural Customs/bn.jpg');
+    background-size: cover;
 }
 
 /* 漢堡按鈕區 */
@@ -387,21 +400,6 @@ button#closeMenu {
 /* 完 */
 
 
-
-/* 首頁大圖*/
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    height: 690px;
-    background-image: url('./images/Cultural Customs/bn.jpg');
-    background-size: cover;
-}
-
-
-
-
 /* 漢堡索引 */
 .box {
     height: 110px;
@@ -494,36 +492,6 @@ button#closeMenu {
     position: relative;
 }
 
-.Tea-title {
-    position: relative;
-    width: 300px;
-    height: 50px;
-    margin-left: 0;
-    background-image: url("./images/titleImg.svg");
-    background-size: cover;
-}
-
-
-.Tea-title h2 {
-    font-size: 1.3rem;
-    /* 調整文字大小 */
-    color: var(--indigo);
-    /* 調整文字顏色 */
-}
-
-.Tea-title h3 {
-    position: absolute;
-    top:20px;
-    /* 垂直置中 */
-    right: 40px;
-    /* 靠右 */
-    font-weight: bold;
-    /* 粗體字 */
-    color: var(--indigo);
-    /* 調整文字顏色 */
-    font-size: 1.5rem;
-    /* 調整文字大小 */
-}
 
 .Tea-text {
     display: flex;

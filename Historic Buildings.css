@@ -196,8 +196,35 @@ section {
     align-items: center;
     /*副軸水平置中*/
     height: 100vh;
-
 }
+/* 標題 */
+.title {
+    position: relative;
+        align-self: flex-start;
+        margin-top: 10px;
+    }
+    
+    .title .english {
+        font-size: 1.3rem;
+        /* 調整文字大小 */
+        color: var(--indigo);
+        /* 調整文字顏色 */
+    }
+    
+    .title .chiness {
+        position: absolute;
+        top: 40px;
+        /* 垂直置中 */
+        right: 30px;
+        /* 靠右 */
+        font-weight: bold;
+        /* 粗體字 */
+        color: var(--indigo);
+        /* 調整文字顏色 */
+        font-size: 1.5rem;
+        /* 調整文字大小 */
+    }
+/* 標題完 */
 
 /* 頁頭 */
 .topbar {
@@ -219,42 +246,9 @@ section {
 }
 
 .topbar .title {
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    align-self: flex-start;
-    /*  p 元素靠上 */
-    margin-top: 30px;
-    z-index: 1;
-}
-
-.english {
-    font-size: 1.3rem;
-    color: #374C66;
-    margin-right: 150px;
-    z-index: 1;
-}
-
-.chiness {
-    font-size: 1.5rem;
-    color: #374C66;
-    margin-right: 50px;
-    z-index: 1;
-
-}
-
-.titleP {
-    width: 290px;
-    height: 50px;
-    position: absolute;
-    z-index: 0;
-    text-align: right;
-    align-self: flex-start;
-    /*  p 元素靠上 */
-    right: 0px;
-    top: 30px;
     margin-right: 50px;
 }
+
 
 /* 首頁大圖*/
 .banner {
