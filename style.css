@@ -816,8 +816,6 @@ button#closeMenu {
     display: flex;
     align-items: center;
     font-size: .875rem;
-    /* font-weight: 600; */
-
     line-height: 20px;
 }
 

@@ -613,7 +613,6 @@ button#closeMenu {
 .Ttemples-service .card .content p {
     font-size: 1rem;
     text-align: justify;
-    letter-spacing: 5px;
 }
 
 /* 大輪播完 */
@@ -780,7 +779,6 @@ button#closeMenu {
 .Garden-service .card .content p {
     font-size: 1rem;
     text-align: justify;
-    letter-spacing: 5px;
 }
 
 /* 大輪播完 */
@@ -874,8 +872,6 @@ button#closeMenu {
     display: flex;
     align-items: center;
     font-size: .875rem;
-    font-weight: 600;
-
     line-height: 20px;
 }
 
