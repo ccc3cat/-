@@ -1,7 +1,8 @@
-// 漢堡 
 const openMenuButton = document.getElementById('openMenu');
 const closeMenuButton = document.getElementById('closeMenu');
 const menu = document.getElementById('menu');
+const overlay = document.getElementById('overlay');
+const jumpLinks = document.querySelectorAll('.jumpLink'); // 使用类名选择所有跳转链接
 
 openMenuButton.addEventListener('click', () => {
     menu.classList.add('show-menu');
@@ -11,6 +12,15 @@ openMenuButton.addEventListener('click', () => {
 closeMenuButton.addEventListener('click', () => {
     menu.classList.remove('show-menu');
     overlay.classList.remove('show-overlay');
+});
+
+// 为每个跳转链接添加点击事件
+jumpLinks.forEach((jumpLink) => {
+    jumpLink.addEventListener('click', () => {
+        // 点击链接时，关闭菜单和遮罩
+        menu.classList.remove('show-menu');
+        overlay.classList.remove('show-overlay');
+    });
 });
 
 

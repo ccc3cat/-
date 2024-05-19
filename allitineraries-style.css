@@ -52,6 +52,19 @@ p {
     line-height: 1.5;
 }
 
+button {
+    /* 重置所有默认样式 */
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    /* 显示指针光标 */
+    /* 在需要的情况下添加其他样式 */
+}
+
 /* 標題 */
 .title {
     color: var(--indigo);
@@ -99,6 +112,152 @@ p {
 .topbar .title {
     margin-right: 50px;
 }
+
+/* 漢堡按鈕區 */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    transition: right 0.7s ease;
+    z-index: 999;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.menuBox {
+    display: flex;
+    align-items: center;
+}
+
+.menuLogoimg {
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    display: flex;
+}
+
+.menuImg {
+    height: 100vh;
+    max-height: 100%;
+
+}
+
+.logohavefont {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 230px;
+    max-width: 100%;
+
+}
+
+
+.menuIconBox {
+    width: 74%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.menuIconBox li {
+    font-size: 1.4rem;
+    color: #000000;
+    /* background-color: #d7ffea; */
+}
+
+.menuIconBox li img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.menuIconBox li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--indigo);
+}
+
+.menu .all {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .all a {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--indigo);
+}
+
+.menuIconBox .allOptions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 230px;
+    margin: 40px 0;
+}
+
+.menuIconBox .allOptions li {
+    width: auto;
+}
+
+.menuIconBox .button,
+.l {
+    margin: 0 30px;
+}
+
+.menuIconBox .button li {
+    margin-top: 20px;
+}
+
+.menu-social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.menu-social-media li:nth-child(1),
+.menu-social-media li:nth-child(2) {
+    margin-right: 50px;
+}
+
+.menu-social-media li img {
+    /* margin設定格式化 */
+    margin: initial;
+    width: 25px;
+    height: 25px;
+}
+
+
+.show-menu {
+    right: 0;
+}
+
+button#closeMenu {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+
+/* 完 */
 
 .carousel {
     position: relative;
@@ -399,13 +558,11 @@ ul {
 
 .navigation li {
     margin: 5px;
-}
-
-.navigation li a {
-    margin: 5px;
     color: #403D3D;
     font-size: 0.85rem;
 }
+
+
 
 .navbar-place {
     display: flex;
