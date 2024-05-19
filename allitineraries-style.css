@@ -36,6 +36,13 @@ body {
     --jel: #403D3D;
 }
 
+a {
+    display: block;
+    color: var(--deep);
+    text-decoration: none;
+    /* 取消預設的底線裝飾 */
+}
+
 img {
     display: block;
     width: 100%;
@@ -44,6 +51,7 @@ img {
 p {
     line-height: 1.5;
 }
+
 /* 標題 */
 .title {
     color: var(--indigo);
@@ -90,7 +98,7 @@ p {
 
 .topbar .title {
     margin-right: 50px;
-    }
+}
 
 .carousel {
     position: relative;
@@ -532,26 +540,174 @@ ul {
     padding: 3px 3px;
 }
 
-/* footer */
+
+/* 頁尾區 */
 footer {
     display: flex;
-    height: 200px;
-    padding: 50px 50px;
-    /* 水平 */
+    justify-content: center;
+    align-items: center;
+    background-color: var(--indigo);
+    height: 40vh;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-icon {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.footer {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #374C66;
-    color: #F1EEE1;
 }
 
-footer .logo {
+.footer-left {
+
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.footerLogo {
     width: 100px;
+    padding-right: 30px;
+    border-right: 3px solid var(--alabaster);
 }
 
-footer small {
+.footer-left h1 {
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--alabaster);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+
+}
+
+.footer-left h2 {
+    color: var(--alabaster);
+    /* 調整文字顏色 */
+    line-height: 2.5;
+    /* 設置行高為文字大小的2.5倍 */
+    font-size: 1rem;
+
+}
+
+.f1 {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: center; */
+    /*主軸(垂直)置中*/
+}
+
+.f2 {
+    margin-right: 62px;
+}
+
+.f3 h2 {
+    line-height: 1.5;
+    /* 設置行高為文字大小的1.5倍 */
+}
+
+.footer-right {
+    display: flex;
+    /* flex-direction: row; */
+
+    height: 224px;
+    width: 350px;
+    color: var(--alabaster);
+
+    /* border: 1px solid #ff1c1c; */
+}
+
+.r {
+    line-height: 2.5;
+    align-content: center;
+
+}
+
+.r1 {
     display: block;
-    text-align: center;
-    font-size: .75rem;
-    /* 0.75rem */
+    position: relative;
 }
 
-/* #-id , .-class */
+.r1::after {
+    content: "";
+    position: absolute;
+    top: 19%;
+    left: 140%;
+    background: #aaa;
+    width: 3px;
+    height: 140px;
+
+}
+
+.r1,
+.r2 {
+    margin-right: 60px;
+}
+
+.Copyright-Notice {
+    color: var(--alabaster);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    /* border: 1px solid #ff1c1c; */
+}
+
+/*rwd斷點*/
+
+/*平板*/
+@media (max-width:820px) {
+    footer {
+        width: 100%;
+
+        height: 100%;
+    }
+}
+
+/*手機板*/
+@media (max-width:640px) {
+    footer {
+        width: 100%;
+
+        height: 100%;
+    }
+}
+
+/* TOP鈕 */
+.gotop {
+    position: fixed;
+    display: none;
+    top: 85%;
+    left: 95%;
+    width: 70px;
+    max-width: 100%;
+    z-index: 999;
+    cursor: pointer;
+}

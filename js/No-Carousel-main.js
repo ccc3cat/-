@@ -5,7 +5,7 @@
 
     // 淡出淡入
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 1000) {
+        if ($(this).scrollTop() > 500) {
             $('#gotop').stop().fadeTo('', 1);
         }
         else {
