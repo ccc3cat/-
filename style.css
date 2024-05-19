@@ -478,6 +478,9 @@ button#closeMenu {
     margin-right: 5px;
     /* 調整圖片與文字之間的間距 */
 }
+.menubt:hover{
+    cursor: pointer;
+}
 
 .burgerBtn {
     cursor: pointer;

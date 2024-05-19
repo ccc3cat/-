@@ -433,6 +433,10 @@ button#closeMenu {
     align-items: center;
 }
 
+#openMenu:hover{
+    cursor: pointer;
+}
+
 .hamburger img {
     height: 30px;
     margin: 0;

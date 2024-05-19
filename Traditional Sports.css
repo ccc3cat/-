@@ -434,6 +434,9 @@ button#closeMenu {
     display: flex;
     align-items: center;
 }
+#openMenu:hover{
+    cursor: pointer;
+}
 
 .hamburger img {
     height: 30px;
@@ -978,13 +981,6 @@ button#closeMenu {
     height: 600px;
     background-color: #F1EEE1;
 }
-
-
-
-
-
-
-
 
 /* 頁尾區 */
 footer {

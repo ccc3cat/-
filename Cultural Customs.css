@@ -427,6 +427,9 @@ button#closeMenu {
     display: flex;
     align-items: center;
 }
+#openMenu:hover{
+    cursor: pointer;
+}
 
 .hamburger img {
     height: 30px;
