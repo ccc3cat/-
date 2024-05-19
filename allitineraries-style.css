@@ -1,0 +1,542 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Serif+TC:wght@200&display=swap');
+
+@font-face {
+    font-family: "times new roman";
+    src: url(./webfonts/times\ new\ roman.ttf);
+    /*./同一層*/
+    /*@共用*/
+}
+
+/* 全域選擇器，基本取消 */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    /* 歸0為1rem/16 */
+}
+
+body {
+    font-family:
+        /*西文*/
+        "times new roman"
+        /*中文*/
+        "Noto Sans TC", sans-serif;
+    /*中文，空格要有引號*/
+    color: var(--deep);
+    /*定義整個網站預設字色*/
+}
+
+:root {
+    --indigo: #374C66;
+    --auburn: #9F353A;
+    --alabaster: #F1EEE1;
+    --rosyBrown: #B19693;
+    --jel: #403D3D;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.topbar {
+    /* 預設水平排 */
+    /* 貼齊左右，中間均分 */
+    display: flex;
+    /* 定義父層為彈性區塊,使父層提供彈性環境給所有子層 */
+    align-items: center;
+    /* 置中，單行元素在副軸的排列方式(對齊/平均) */
+    justify-content: space-between;
+    /* 主軸元素的排列方式(對齊/平均) */
+    padding: 10px 50px;
+}
+
+.topbar .logo {
+    width: 200px;
+}
+
+.topbar .title {
+    display: flex;
+    flex-direction: column;
+    /*主軸(垂直)排列*/
+    /*垂直主軸方向改變，副軸跟著改變*/
+    align-items: flex-end;
+}
+
+.topbar .title h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.topbar .title p {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding-right: 50px;
+}
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(64, 61, 61, 0.64);
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked+.carousel-item-1 {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item-1 {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    /*讓整張圖完整進去，不會被裁切*/
+    background-image: url(./images/banner.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*文字h1置中*/
+    z-index: -1;
+    width: 100%;
+}
+
+.carousel-open:checked+.carousel-item-2 {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item-2 {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    /*讓整張圖完整進去，不會被裁切*/
+    background-image: url(./images/banner2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*文字h1置中*/
+    z-index: -1;
+    width: 100%;
+}
+
+.carousel-open:checked+.carousel-item-3 {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item-3 {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    /*讓整張圖完整進去，不會被裁切*/
+    background-image: url(./images/banner3.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*文字h1置中*/
+    z-index: -1;
+    width: 100%;
+}
+
+.carousel-open:checked+.carousel-item-4 {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item-4 {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    /*讓整張圖完整進去，不會被裁切*/
+    background-image: url(./images/banner4.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*文字h1置中*/
+    z-index: -1;
+    width: 100%;
+}
+
+.carousel-open:checked+.carousel-item-5 {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item-5 {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    /*讓整張圖完整進去，不會被裁切*/
+    background-image: url(./images/banner5.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*文字h1置中*/
+    z-index: -1;
+    width: 100%;
+}
+
+.carousel-open:checked+.carousel-item-6 {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item-6 {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    /*讓整張圖完整進去，不會被裁切*/
+    background-image: url(./images/banner6.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*文字h1置中*/
+    z-index: -1;
+    width: 100%;
+}
+
+.content {
+    padding-top: 6%;
+    padding-right: 25%;
+    letter-spacing: 0.3rem;
+    color: #F1EEE1;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.carousel-control {
+    background: rgba(64, 61, 61, 0.28);
+    border-radius: 50%;
+    color: #F1EEE1;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(64, 61, 61, 0.8);
+    color: #F1EEE1;
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3,
+#carousel-4:checked~.control-4,
+#carousel-5:checked~.control-5,
+#carousel-6:checked~.control-6 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #F1EEE1;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #F1EEE1;
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked~.control-4~.carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-5:checked~.control-5~.carousel-indicators li:nth-child(5) .carousel-bullet,
+#carousel-6:checked~.control-6~.carousel-indicators li:nth-child(6) .carousel-bullet {
+    color: #374C66;
+}
+
+.btn-more {
+    margin-top: 40px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 2px solid #9F353A;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    color: #F1EEE1;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+.btn-more::after {
+    content: "";
+    background-color: #9F353A;
+    opacity: 70%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 3px;
+    left: 3px;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 3px 3px;
+}
+
+nav a {
+    display: block;
+    /* 行內間距取消 */
+    text-decoration: none;
+    /* 裝飾底線刪除 */
+    /* 不要預設藍色 */
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    /* 水平 */
+    padding: 50px 50px;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation li {
+    margin: 5px;
+}
+
+.navigation li a {
+    margin: 5px;
+    color: #403D3D;
+    font-size: 0.85rem;
+}
+
+.navbar-place {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-place li {
+    margin: 5px;
+}
+
+.navbar-place li a {
+    margin: 5px;
+    color: #374C66;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.navbar-menu a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-menu li {
+    margin: 5px;
+    color: #403D3D;
+}
+
+#allitineraries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#allitineraries h2 {
+    font-size: 1.5rem;
+    margin: 5px;
+    color: #374C66;
+}
+
+.list-box {
+    width: 70%;
+}
+
+.list-box .item {
+    border: 2px solid rgb(55, 76, 102, .5);
+    border-radius: 40px;
+    background-color: #F1EEE1;
+    padding: 30px 50px;
+    margin: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #403D3D;
+}
+
+#allitineraries .list-box .item .information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#allitineraries .list-box .item .information .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#allitineraries .list-box .item .information .detail li {
+    margin: 0 5px;
+}
+
+.btn-full {
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 2px solid #403D3D;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    color: #F1EEE1;
+    z-index: 1;
+    font-size: 1rem;
+}
+
+.btn-full::after {
+    content: "";
+    background-color: #403D3D;
+    opacity: 70%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 3px;
+    left: 3px;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 3px 3px;
+}
+
+.btn-SignUp {
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 2px solid #9F353A;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    color: #F1EEE1;
+    z-index: 1;
+    font-size: 1rem;
+}
+
+.btn-SignUp::after {
+    content: "";
+    background-color: #9F353A;
+    opacity: 70%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 3px;
+    left: 3px;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 3px 3px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    height: 200px;
+    padding: 50px 50px;
+    /* 水平 */
+    justify-content: space-between;
+    background-color: #374C66;
+    color: #F1EEE1;
+}
+
+footer .logo {
+    width: 100px;
+}
+
+footer small {
+    display: block;
+    text-align: center;
+    font-size: .75rem;
+    /* 0.75rem */
+}
+
+/* #-id , .-class */

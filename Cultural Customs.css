@@ -227,21 +227,19 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* 元素靠上 */
-    /* position: relative; */
+    display: flex;
+    align-items: center;
+}
+
+.topbar .logo {
+
+    margin-left: 50px;
 }
 
 .topbar .title {
 margin-right: 50px;
 }
 
-.topbar .logo {
-    height: 110px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-}
 
 /* 首頁大圖*/
 .banner {

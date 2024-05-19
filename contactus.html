@@ -1,0 +1,89 @@
+<!-- 文件類型HTML5結構說明 -->
+<!DOCTYPE html>
+<!-- 預設語言台灣 設定顯示語系 -->
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8"> <!-- 編碼 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 功能列標題 -->
+    <title>聯絡我們</title> <!-- SEO -->
+    <!-- 手動設定favicon -->
+    <link rel="icon" href="./images/logo-b.png">
+    <!-- 自訂的樣式表檔 -->
+    <link rel="stylesheet" href="contactus-style.css"><!-- 定義屬性 -->
+</head>
+
+<body>
+    <!-- 頁首區 -->
+    <header class="topbar">
+        <!-- h1.logo -->
+        <h1 class="logo">
+            <a href="index.html"><img src="./images/logo-b.svg" alt="昵朋旅行社"></a>
+        </h1>
+        <nav class="title">
+            <p>Contact Us</p>
+            <h2>聯絡我們</h2>
+        </nav>
+    </header>
+
+    <!-- 主要內容區 -->
+    <main>
+        <section id="glass">
+            <div class="content">
+                <div class="description">
+                    <h2>聯絡我們</h2>
+                    <p>
+                        親愛的客戶您好 :<br>
+                        感謝您選擇我們的旅行社！為了確保我們能夠<br>
+                        為您提供最佳的服務，請您填寫下面的表格，<br>
+                        讓我們更好地了解您的需求和偏好。您的每一<br>
+                        個資訊都將幫助我們打造一個與您期望相符的<br>
+                        旅程。如果您有任何疑問或特殊需求，請在表<br>
+                        格中註明，我們將竭誠為您服務！
+                    </p>
+                    <h2>昵朋旅行社感謝您的聯繫！</h2>
+                </div>
+                <form action="" method="post" name="form-contact" id="form-contact" title="聯絡我們表單">
+
+                    <div class="adjust">
+                        <label for="username">姓名&nbsp;<span style="color: #9F353A;">*</span>：</label>
+                        <input type="text" name="username" id="username" title="請輸入姓名" placeholder="王大明" required>
+                    </div>
+
+                    <div class="adjust">
+                        <label for="tel">電話&nbsp;<span style="color: #9F353A;">*</span>：</label>
+                        <input type="tel" name="tel" id="tel" title="請輸入聯絡電話" placeholder="0952052052" required>
+                    </div>
+
+                    <div class="adjust">
+                        <label for="email">E-mail&nbsp;<span style="color: #9F353A;">*</span>：</label>
+                        <input type="email" name="email" id="email" title="請輸入電子郵件" placeholder="nippon123@gmail.com"
+                            required>
+                    </div>
+
+                    <label for="message">內容：</label>
+                    <textarea name="message" id="message" cols="30" rows="7"></textarea>
+
+                </form>
+
+            </div>
+            <div class="submit">
+                <small>此表單為練習作品，不具有收集資料的功能，不具有商業行為。</small>
+                <button class="btn-submit">
+                    確認送出
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁尾區 -->
+    <footer>
+        <h1 class="logo">
+            <a href="index.html"><img src="./images/logo-w.svg" alt="昵朋旅行社"></a>
+        </h1>
+        <small>NIPPON TOURS © 2024 Inc. All right reserved.</small>
+    </footer>
+</body>
+
+</html>

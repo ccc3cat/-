@@ -1,0 +1,139 @@
+<!-- 文件類型HTML5結構說明 -->
+<!DOCTYPE html>
+<!-- 預設語言台灣 設定顯示語系 -->
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8"> <!-- 編碼 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 功能列標題 -->
+    <title>報名頁面</title> <!-- SEO -->
+    <!-- 手動設定favicon -->
+    <link rel="icon" href="./images/logo-b.png">
+    <!-- 自訂的樣式表檔 -->
+    <link rel="stylesheet" href="Registration-style.css"><!-- 定義屬性 -->
+</head>
+
+<body>
+    <!-- 頁首區 -->
+    <header class="topbar">
+        <!-- h1.logo -->
+        <h1 class="logo">
+            <a href="index.html"><img src="./images/logo-b.svg" alt="昵朋旅行社"></a>
+        </h1>
+        <div class="title">
+            <p class="chiness">行程報名</p>
+            <p class="english">Trip Registration</p>
+            <img src="./images/titleImg.svg" alt="">
+        </div>
+    </header>
+
+    <!-- 主要內容區 -->
+    <main>
+        <section id="glass">
+            <div class="content">
+                <div class="box-1">
+                    <div class="registration">
+                        <h2><span style="color: #374C66;">【東京】國技相撲體驗4日旅</span></h2>
+                        <p>
+                            <span style="color: #9F353A;">出發日期：2024 / 07 / 20 ~ 2024 / 07 / 24</span><br>
+                            團號：HIJ01CI230100<br>
+                            團費：58,990元&nbsp;/&nbsp;每人<br>
+                            航班：南南航空 CB175 （09:00-12:00）<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南南航空 CB179
+                            （14:00-17:00）
+                        </p>
+                    </div>
+                    <div class="notice">
+                        <h2>報名須知</h2>
+                        <ul>
+                            <li>所有行程皆需隨團進出，參團最低人數依您訂購的行程而<br>有所不同。</li>
+                            <li>報名之後，本公司將有專員與您聯繫並洽談相關事宜及收<br>取團費。</li>
+                            <li>報名繳交團費後，旅遊型契約書即產生效力，若變更或取<br>消行程，依契約書內容辦理。</li>
+                            <li>若因匯率調整或因成本調漲，本公司於收到團費前保留調<br>整團費之權益。</li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="" method="post" name="form-contact" id="form-contact" title="聯絡我們表單">
+                    <section id="contact">
+
+                        <h2>主要聯絡人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                style="color: #403D3D ; font-size: 1rem;">*為必填欄位</span></h2>
+
+                        <div class="adjust">
+                            <label for="username">姓名&nbsp;<span style="color: #9F353A;">*</span>：</label>
+                            <input type="text" name="username" id="username" title="請輸入姓名" placeholder="王大明" required>
+                            <fieldset>
+                                <input type="radio" name="sex" id="sex-1" value="先生">
+                                <label for="sex-1">先生</label>
+                                &nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="sex" id="sex-2" value="女士">
+                                <label for="sex-2">女士</label>
+                            </fieldset>
+                        </div>
+
+                        <div class="adjust">
+                            <label for="tel">電話&nbsp;<span style="color: #9F353A;">*</span>：</label>
+                            <input type="tel" name="tel" id="tel" title="請輸入聯絡電話" placeholder="0952052052" required>
+                        </div>
+
+                        <div class="adjust">
+                            <label for="email">E-mail&nbsp;<span style="color: #9F353A;">*</span>：</label>
+                            <input type="email" name="email" id="email" title="請輸入電子郵件" placeholder="nippon123@gmail.com" required>
+                        </div>
+
+                    </section>
+
+                    <section id="passenger">
+
+                        <h2>旅客訊息</h2>
+
+                        <div class="adjust">
+                            <label for="number">參團人數&nbsp;<span style="color: #9F353A;">*</span>：</label>
+                            <select name="number" id="number" required>
+                                <option value=""></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="1">3</option>
+                                <option value="2">4</option>
+                                <option value="1">5</option>
+                                <option value="2">6</option>
+                                <option value="1">7</option>
+                                <option value="2">8</option>
+                                <option value="2">9</option>
+                                <option value="2">10</option>
+                            </select>
+                        </div>
+
+                        <div class="adjust">
+                            <label for="message">其他備註：</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+
+                    </section>
+                </form>
+            </div>
+            <div class="submit">
+                <small>此表單為練習作品，不具有收集資料的功能，不具有商業行為。</small>
+                <fieldset>
+                    <input type="radio" name="privacy" id="privacy" value="同意所有相關事項及隱私權政策" required>
+                    <label for="privacy">我已閱讀完<span style="color: #9F353A;">「報名須知」</span>，並同意所有相關事項及隱私權政策。</label>
+                </fieldset>
+                <button class="btn-submit">
+                    確認送出
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁尾區 -->
+    <footer>
+        <h1 class="logo">
+            <a href="index.html"><img src="./images/logo-w.svg" alt="昵朋旅行社"></a>
+        </h1>
+        <small>NIPPON TOURS © 2024 Inc. All right reserved.</small>
+    </footer>
+
+</body>
+
+</html>

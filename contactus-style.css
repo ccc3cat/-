@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url(./images/bn.jpg);
+    z-index: -1;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    font-family:
+        /* 英文 */
+        'times new roman', times, serif,
+        /* 中文 */
+        "Noto Sans TC", sans-serif;
+    line-height: 1;
+    /* overflow-x: hidden; */
+    /*中文，空格要有引號*/
+    color: var(--deep);
+    /*定義整個網站預設字色*/
+}
+
+/*共用區*/
+:root {
+    --indigo: #374C66;
+    --auburn: #9F353A;
+    --alabaster: #F1EEE1;
+    --rosyBrown: #B19693;
+    --jel: #403D3D;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+a {
+    display: block;
+    color: var(--deep);
+    text-decoration: none;
+    /* 取消預設的底線裝飾 */
+}
+
+button {
+    /* 重置所有默认样式 */
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    /* 显示指针光标 */
+    /* 在需要的情况下添加其他样式 */
+}
+
+/* 標題 */
+.title {
+    color: var(--indigo);
+    position: relative;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.title .english {
+    font-size: 1.3rem;
+    /* 調整文字大小 */
+}
+
+.title .chiness {
+    position: absolute;
+    top: 40px;
+    /* 垂直置中 */
+    right: 30px;
+    /* 靠右 */
+    font-weight: bold;
+    /* 粗體字 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+}
+
+/* 標題完 */
+
+
+.topbar {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* 元素靠上 */
+    /* position: relative; */
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .logo {
+    margin-left: 50px;
+}
+
+
+
+#glass {
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 100px 100px;
+    margin: 50px 50px;
+    width: 60%;
+    box-shadow: 2px 2px 4px 1px #9c9797;
+    /* 只有外框陰影 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+#glass .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#glass .content .description {
+    border-right: 1px solid #403D3D;
+    padding-right: 50px;
+}
+
+#glass .content .description h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #374C66;
+}
+
+#glass .content .description p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#glass .content #form-contact{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#form-contact .adjust {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#form-contact #username {
+    margin-left: 30px;
+}
+
+#form-contact #tel {
+    margin-left: 30px;
+}
+
+#form-contact #email {
+    margin-left: 16px;
+}
+
+#form-contact input {
+    padding: 5px 10px;
+    /* border: 2px solid #374C66; */
+    border-radius: 15px;
+    border: 1px solid #374C66;
+}
+
+#form-contact input::placeholder {
+    color: rgba(177, 150, 147, .5);
+}
+
+#form-contact label{
+    line-height: 40px;
+}
+
+#form-contact #message {
+    border: 1px solid #374C66;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+#glass .submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit small {
+    margin-top: 10px;
+    font-size: .75rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.btn-submit {
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 2px solid #9F353A;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    color: #F1EEE1;
+    z-index: 1;
+    font-size: 1rem;
+}
+
+.btn-submit::after {
+    content: "";
+    background-color: #9F353A;
+    opacity: 70%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 3px;
+    left: 3px;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 3px 3px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    height: 200px;
+    padding: 50px 50px;
+    /* 水平 */
+    justify-content: space-between;
+    background-color: #374C66;
+    color: #F1EEE1;
+}
+
+footer .logo {
+    width: 100px;
+}
+
+footer small {
+    display: block;
+    text-align: center;
+    font-size: .75rem;
+    /* 0.75rem */
+}
+
+/* #-id , .-class */
