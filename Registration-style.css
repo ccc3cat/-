@@ -122,7 +122,6 @@ body {
         /* 中文 */
         "Noto Sans TC", sans-serif;
     line-height: 1;
-    /* overflow-x: hidden; */
     /*中文，空格要有引號*/
     color: var(--deep);
     /*定義整個網站預設字色*/
@@ -161,6 +160,9 @@ button {
     cursor: pointer;
     /* 显示指针光标 */
     /* 在需要的情况下添加其他样式 */
+}
+p {
+    line-height: 1.5;
 }
 
 /* 標題 */
