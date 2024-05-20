@@ -905,57 +905,90 @@ button#closeMenu {
     flex-direction: column;
 }
 
-.Day-box {
-    margin: 30px 30px 0 30px;  /* 上右下左 */
-    padding: 0;
-    /*float: left;  */
-    list-style: none;
-    height: 90px;
-    /*border-bottom: 1px solid #9F353A;  */
-    width: 1440px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        /* 標籤效果 */
+        .tabs {
+            display: flex;
+            justify-content: center;
+                        /* 按鈕排置中 */
+            width: 100%;
+            float: none;
+            list-style: none;
+            position: relative;
+            margin: 80px 0 0 10px;
+            text-align: left;
+        }
 
-.Day-box li {
-    float: left;
-    margin: 0 73px 0 73px;
-    cursor: pointer;
-    padding: 0px 21px;
-    height: 85px;
-    width: 230px;
-    line-height: 31px;
-    border: 6px double #fff;
-    background-color: #9F353A;
-    color: #fff;
-    overflow: hidden;
-    position: relative;
-    border-radius: 40px 40px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .tabs li {
+            float: left;
+            display: block;
+        }
 
-/* 滑鼠移動變色 */
-.Day-box li:hover {
-    background-color: #fff;
-    color: #000;
-    border-right: 15px solid #9F353A;
-    border-top: 2px solid #9F353A;
-    border-left: 1px solid #9F353A;
-}
+        .tabs input[type="radio"] {
+            position: absolute;
+            top: 0;
+            left: -9999px;
+        }
 
-.Day-box .day {
-    background-color: #fff;
-    color: #000000;
-    border-right: 15px solid #9F353A;
-    border-top: 2px solid #9F353A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 1px solid #9F353A;
-}
+        /* 標籤樣式設定 */
+        .tabs label {
+            float: left;
+            margin: 0 73px 0 73px;
+            cursor: pointer;
+            padding: 0px 21px;
+            height: 85px;
+            width: 230px;
+            line-height: 31px;
+            border: 6px double #fff;
+            background-color: #9F353A;
+            color: #fff;
+            overflow: hidden;
+            position: relative;
+            border-radius: 40px 40px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tabs label:hover {
+            background-color: #fff;
+            color: #000;
+            border-right: 15px solid #9F353A;
+            border-top: 2px solid #9F353A;
+            border-left: 1px solid #9F353A;
+            z-index: 999;
+        }
+
+        .tabs .tab-content {
+
+            
+            z-index: 2;
+            display: none;
+            overflow: hidden;
+            width: 1590px;
+            font-size: 17px;
+            line-height: 25px;
+            padding: 30px;
+            position: absolute;
+            top: 53px;
+            left: 150px;
+        }
+
+        .tabs [id^="tab"]:checked+label {
+            top: 0;
+            padding-top: 17px;
+            background-color: #fff;
+            color: #000;
+            border-right: 15px solid #9F353A;
+            border-top: 2px solid #9F353A;
+            border-left: 1px solid #9F353A;
+            z-index: 999;
+        }
+
+        .tabs [id^="tab"]:checked~[id^="tab-content"] {
+            display: block;
+        }
+/* 標籤效果完 */
+
 
 .day_container {
     border-right: 15px solid #9F353A;
