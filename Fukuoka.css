@@ -889,6 +889,7 @@ button#closeMenu {
     align-items: center;
     justify-content: center;
     background-color: #F1EEE1;
+    margin-bottom: 100px;
 }
 
 .DailyTour img {
@@ -918,10 +919,12 @@ button#closeMenu {
 #tabs-1 ,#tabs-2 ,#tabs-3 ,#tabs-4{
     padding: 0;
 }
-
+#tabs li{
+    margin: 0 50px;
+}
 
 #tabs li a {
-    padding: 40px 120px;
+    padding: 40px 100px;
 }
 
 /* 預設標 */
@@ -935,7 +938,7 @@ html .ui-button.ui-state-disabled:active {
     height: 85px;
     width: 230px;
     line-height: 31px;
-    border: 6px double #fff;
+    /* border: 6px  double #fff; */
     background-color: #9F353A;
     color: #fff;
     overflow: hidden;
@@ -944,6 +947,7 @@ html .ui-button.ui-state-disabled:active {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 /* 預設A */
@@ -964,7 +968,7 @@ a:visited.ui-button,
     float: left;
     position: relative;
     top: 0;
-    margin: 1px 50px;
+    margin: 0 50px;
     border-bottom-width: 0;
     padding: 0;
     white-space: nowrap;
@@ -1343,7 +1347,9 @@ a:visited.ui-button,
     letter-spacing: 1rem;
 }
 
-
+iframe{
+    margin-top: 100px;
+}
 
 /* 備註 */
 .note {
