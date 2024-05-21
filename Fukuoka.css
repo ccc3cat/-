@@ -111,7 +111,7 @@ body {
         /* 中文 */
         "Noto Sans TC", sans-serif;
     line-height: 1;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 ol,
@@ -899,120 +899,136 @@ button#closeMenu {
 
 /* 每日行程 */
 .all-DAY {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            /* 地圖間距 */
-            margin-bottom: 4800px;
-        }
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#tabs{
+    border: none;
+}
 
-        .tabs {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            list-style: none;
-            position: relative;
-            margin: 80px 0 0 10px;
-            text-align: left;
-        }
+#tabs ul {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: #fff;
+}
+#tabs-1 ,#tabs-2 ,#tabs-3 ,#tabs-4{
+    padding: 0;
+}
 
-        .tabs li {
-            float: left;
-            display: block;
-        }
 
-        .tabs input[type="radio"] {
-            position: absolute;
-            top: 0;
-            left: -9999px;
-        }
+#tabs li a {
+    padding: 40px 120px;
+}
 
-        .tabs label {
-            float: left;
-            margin: 0 50px 0 50px;
-            cursor: pointer;
-            padding: 0px 10px;
-            height: 70px;
-            width: 230px;
-            line-height: 31px;
-            border: 6px double #fff;
-            background-color: #9F353A;
-            color: #fff;
-            overflow: hidden;
-            position: relative;
-            border-radius: 40px 40px 0 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+/* 預設標 */
+#tabs .ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    float: left;
+    height: 85px;
+    width: 230px;
+    line-height: 31px;
+    border: 6px double #fff;
+    background-color: #9F353A;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .tabs label:hover {
-            height: 77px;
-            background-color: #fff;
-            color: #000;
-            border-right: 15px solid #9F353A;
-            border-top: 2px solid #9F353A;
-            border-left: 1px solid #9F353A;
-            z-index: 999;
-        }
+/* 預設A */
+#tabs .ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited,
+a.ui-button,
+a:link.ui-button,
+a:visited.ui-button,
+.ui-button {
+    color: #ffffff;
+    text-decoration: none;
+}
 
-        .tabs .tab-content {
-            z-index: 2;
-            display: none;
-            overflow: hidden;
-            width: 1590px;
-            font-size: 17px;
-            line-height: 25px;
-            padding: 30px;
-            position: absolute;
-            top: 53px;
-            left: 150px;
-        }
+/* 標籤間距 */
+#tabs .ui-tabs .ui-tabs-nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 0;
+    margin: 1px 50px;
+    border-bottom-width: 0;
+    padding: 0;
+    white-space: nowrap;
+}
 
-        .tabs [id^="tab"]:checked+label {
-            top: 0;
-            padding-top: 8px;
-            background-color: #fff;
-            color: #000;
-            border-right: 15px solid #9F353A;
-            border-top: 2px solid #9F353A;
-            border-left: 1px solid #9F353A;
-            z-index: 999;
-        }
+/* 已按了 */
+#tabs .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background-color: #fff;
+    color: #000000;
+    border-right: 15px solid #9F353A;
+    border-top: 2px solid #9F353A;
+    border-left: 1px solid #9F353A;
+    border-radius: 40px 40px 0 0;
+}
 
-        .tabs [id^="tab"]:checked~[id^="tab-content"] {
-            display: block;
-        }
+/* 已按A */
+#tabs .ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    color: #000000;
+    text-decoration: none;
+}
 
-        .day_container {
-            border-right: 15px solid #9F353A;
-            height: auto;
-            width: 1530px;
-            border-radius: 40px;
-            border-left: 1px solid #9F353A;
-            border-top: 2px solid #9F353A;
-            border-bottom: 1px solid #9F353A;
-            position: relative;
-        }
 
-        .day-content {
-            position: relative;
-        }
 
-        .d1 {
-            margin-top: 100px;
-        }
+#tabs li:hover {
+    background-color: #fff;
+    border-right: 15px solid #9F353A;
+    border-top: 2px solid #9F353A;
+    border-left: 1px solid #9F353A;
+    border-radius: 40px 40px 0 0;
+}
 
-        .journey-box {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            overflow: hidden;
-            margin-top: 100px;
-        }
+#tabs li a:hover {
+    color: #000;
+}
+
+.day_container {
+    border-right: 15px solid #9F353A;
+    height: auto;
+    width: 1530px;
+    border-radius: 40px;
+    border-left: 1px solid #9F353A;
+    border-top: 2px solid #9F353A;
+    border-bottom: 1px solid #9F353A;
+    position: relative;
+}
+
+.day-content {
+    position: relative;
+}
+
+.d1 {
+    margin-top: 100px;
+}
+
+.journey-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-top: 100px;
+}
 
 
 /* 行程內容 */
