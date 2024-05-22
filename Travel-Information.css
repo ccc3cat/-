@@ -458,17 +458,14 @@ ul {
 
 .navbar-menu li {
     margin: 5px;
-    color: #403D3D;
+    color: var(--jel);
 }
 
-#information-box{
-margin: 0 100px;
-}
-
-
-
-/* 主要資訊內容區 */
-.content {
+#information-box {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
     display: flex;
     justify-content: center;
 
@@ -477,18 +474,23 @@ margin: 0 100px;
 
     background-position: center;
     background-size: cover;
-    width: 100%;
-    /* border: 2px solid red; */
+
 }
 
-.information{
+
+
+/* 主要資訊內容區 */
+
+.information {
     position: relative;
+    margin: 30px 0 30px 0;
 }
 
+/* 裝飾線 */
 .information::before {
     content: '';
     position: absolute;
-top: 30px;
+    top: 30px;
     width: 800px;
     height: 3px;
     background-color: #222;
@@ -498,8 +500,9 @@ top: 30px;
     font-size: 1.5rem;
     letter-spacing: 2px;
     font-weight: bold;
+    margin-left: 25px;
     margin-bottom: 30px;
-    color: #374C66;
+    color: var(--indigo);
 }
 
 .information li {
@@ -507,13 +510,14 @@ top: 30px;
     margin-left: 30px;
     /* 實心圓點 */
     list-style-type: disc;
+    color: var(--jel);
 }
 
 .information p {
     font-size: 1rem;
     letter-spacing: 2px;
     line-height: 30px;
-    color: #403D3D;
+    color: var(--jel);
 }
 
 
