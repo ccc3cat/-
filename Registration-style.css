@@ -105,13 +105,15 @@ section {
 }
 
 main {
+    background-image: url(./images/bn.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 body {
-    background-image: url(./images/bn.jpg);
     z-index: -1;
     width: 100%;
     background-position: center;
