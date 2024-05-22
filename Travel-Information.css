@@ -136,6 +136,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 /*共用區*/
 :root {
     --indigo: #374C66;
@@ -148,10 +149,10 @@ table {
 body {
     color: #555;
     font-family:
-    /* 英文 */
-    'times new roman', times, serif,
-    /* 中文 */
-    "Noto Sans TC", sans-serif;
+        /* 英文 */
+        'times new roman', times, serif,
+        /* 中文 */
+        "Noto Sans TC", sans-serif;
 }
 
 img {
@@ -219,30 +220,31 @@ section {
 /* 標題 */
 .title {
     position: relative;
-        align-self: flex-start;
-        margin-top: 10px;
-    }
-    
-    .title .english {
-        font-size: 1.3rem;
-        /* 調整文字大小 */
-        color: var(--indigo);
-        /* 調整文字顏色 */
-    }
-    
-    .title .chiness {
-        position: absolute;
-        top: 40px;
-        /* 垂直置中 */
-        right: 30px;
-        /* 靠右 */
-        font-weight: bold;
-        /* 粗體字 */
-        color: var(--indigo);
-        /* 調整文字顏色 */
-        font-size: 1.5rem;
-        /* 調整文字大小 */
-    }
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.title .english {
+    font-size: 1.3rem;
+    /* 調整文字大小 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+}
+
+.title .chiness {
+    position: absolute;
+    top: 40px;
+    /* 垂直置中 */
+    right: 30px;
+    /* 靠右 */
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+}
+
 /* 標題完 */
 
 /* 漢堡按鈕區 */
@@ -398,9 +400,12 @@ button#closeMenu {
 
 #banner {
     background-image: url(./images/Travel-Information.jpg);
-    background-position: 50% 55%; /* 將圖片位移 */
-    background-repeat: no-repeat; /* 防止圖片重複 */
-    background-size: cover; /* 使圖片覆蓋整個容器 */
+    background-position: 50% 55%;
+    /* 將圖片位移 */
+    background-repeat: no-repeat;
+    /* 防止圖片重複 */
+    background-size: cover;
+    /* 使圖片覆蓋整個容器 */
     height: 500px;
     width: 100%;
 }
@@ -440,7 +445,8 @@ ul {
     color: #403D3D;
     font-size: 0.85rem;
 }
-.navbar-menu:hover{
+
+.navbar-menu:hover {
     cursor: pointer;
 }
 
@@ -455,22 +461,40 @@ ul {
     color: #403D3D;
 }
 
+#information-box{
+margin: 0 100px;
+}
+
+
+
+/* 主要資訊內容區 */
 .content {
     display: flex;
-    flex-direction: column;
-    /* 方向垂直排列 */
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* 文字置中 */
-    background-image: url(./images/cloud.jpg);
+
+    flex-direction: column;
+    text-align: left;
+
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 300px;
+    /* border: 2px solid red; */
 }
 
-.content h1 {
+.information{
+    position: relative;
+}
+
+.information::before {
+    content: '';
+    position: absolute;
+top: 30px;
+    width: 800px;
+    height: 3px;
+    background-color: #222;
+}
+
+.information h2 {
     font-size: 1.5rem;
     letter-spacing: 2px;
     font-weight: bold;
@@ -478,39 +502,22 @@ ul {
     color: #374C66;
 }
 
-.content p {
+.information li {
+    line-height: 30px;
+    margin-left: 30px;
+    /* 實心圓點 */
+    list-style-type: disc;
+}
+
+.information p {
     font-size: 1rem;
     letter-spacing: 2px;
     line-height: 30px;
     color: #403D3D;
 }
 
-#polaroid {
-    background-image: url(./images/polaroid.jpg);
-    background-position: bottom;
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-}
 
-#linear {
-    background: linear-gradient(#fff, #F1EEE1);
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    /* 方向垂直排列 */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* 文字置中 */
-}
 
-#linear h1{
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: #374C66;
-}
 
 
 
