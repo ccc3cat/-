@@ -533,9 +533,7 @@ button#closeMenu {
 .choose {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
-    /* 垂直排列 */
     margin-left: 15%;
 }
 
@@ -549,9 +547,16 @@ button#closeMenu {
     border-width: 1px;
     border-radius: 40px;
     border-color: #B19693;
-    /* 線框顏色 */
-    background-color: rgb(241, 238, 225, 0.3);
+    background-color: rgba(241, 238, 225, 0.3);
     margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.choose-btn.inactive {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
 }
 
 .choose-box {
@@ -559,7 +564,6 @@ button#closeMenu {
     height: 90px;
     display: flex;
     flex-direction: column;
-    /* 垂直排列 */
     align-items: center;
     justify-content: center;
 }
@@ -587,8 +591,8 @@ button#closeMenu {
     font-size: 1.3rem;
     color: #9F353A;
     font-weight: bold;
-
 }
+
 
 /* 報名按鈕 */
 .btn-SignUp {

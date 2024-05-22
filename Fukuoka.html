@@ -82,7 +82,6 @@
 
     <!-- 內容 -->
     <main>
-
         <!-- 索引 -->
         <div class="focus">
             <ul class="focus-box">
@@ -125,7 +124,7 @@
             </div>
 
             <div class="choose">
-                <div class="choose-btn">
+                <div class="choose-btn" id="btn1" onclick="selectButton(1)">
                     <div class="choose-box">
                         <div class="choose-text">
                             <img src="./images/Fukuoka/airplan.svg" alt="">
@@ -134,8 +133,8 @@
                         <p>南南航空： 去程CB175（9：00-12：00）/回程CB179（14：00-17：00）</p>
                     </div>
                 </div>
-
-                <div class="choose-btn">
+            
+                <div class="choose-btn inactive" id="btn2" onclick="selectButton(2)">
                     <div class="choose-box">
                         <div class="choose-text">
                             <img src="./images/Fukuoka/airplan.svg" alt="">
@@ -1129,6 +1128,20 @@
     $(function () {
         $("#tabs").tabs();
     });
+
+    // 日期按鈕
+    function selectButton(selectedBtnId) {
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+
+    if (selectedBtnId === 1) {
+        btn1.classList.remove('inactive');
+        btn2.classList.add('inactive');
+    } else if (selectedBtnId === 2) {
+        btn2.classList.remove('inactive');
+        btn1.classList.add('inactive');
+    }
+}
 </script>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
