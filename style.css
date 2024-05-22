@@ -478,7 +478,8 @@ button#closeMenu {
     margin-right: 5px;
     /* 調整圖片與文字之間的間距 */
 }
-.menubt:hover{
+
+.menubt:hover {
     cursor: pointer;
 }
 
@@ -575,7 +576,7 @@ button#closeMenu {
     position: relative;
     height: 700px;
     background-image: url(./images/Rectangle-180.jpg);
-    
+
     overflow: hidden;
 }
 
@@ -718,6 +719,7 @@ button#closeMenu {
     left: 20px;
     top: 530px;
 }
+
 /* 完。*/
 
 
@@ -874,7 +876,35 @@ button#closeMenu {
     position: absolute;
     background-color: #fff;
     border-radius: 30px 0 30px 0;
+    color: var(--indigo);
+}
 
+.Label p {
+    position: absolute;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.Label .T {
+    top: 10px;
+    left: 25px;
+}
+
+.Label .D {
+    top: 50px;
+    left: 75px;
+
+}
+
+.Label::before {
+    content: '';
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    width: 100px;
+    height: 2px;
+    transform: rotate(145deg);
+    background-color: var(--indigo);
 }
 
 #allEvents .slider2 .card .img {
@@ -933,6 +963,7 @@ button#closeMenu {
 .all-t p {
     margin: 20px 60px;
 }
+
 /*rwd斷點*/
 /*桌機板*/
 @media (min-width:821px) {}
@@ -995,18 +1026,21 @@ button#closeMenu {
 
 /*平板*/
 @media (max-width:820px) {
-#news{
-    height: 75vh;
-    justify-content: center;
-    align-items: start;
-}
-#news .title{
-    margin-left: 60px;
-    margin-bottom: 80px;
-}
+    #news {
+        height: 75vh;
+        justify-content: center;
+        align-items: start;
+    }
+
+    #news .title {
+        margin-left: 60px;
+        margin-bottom: 80px;
+    }
+
     #news .newsImg {
         display: none;
     }
+
     .newst {
         width: 100%;
         margin: 0;

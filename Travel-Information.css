@@ -513,17 +513,19 @@ ul {
     color: var(--jel);
 }
 
+.information a{
+    color: var(--auburn);
+}
+.information a:hover{
+text-decoration: underline;
+}
 .information p {
     font-size: 1rem;
     letter-spacing: 2px;
     line-height: 30px;
     color: var(--jel);
+    margin-left: 5px;
 }
-
-
-
-
-
 
 /* 頁尾區 */
 footer {
@@ -685,4 +687,15 @@ footer a:hover {
 
         height: 100%;
     }
+}
+/* TOP鈕 */
+.gotop {
+    position: fixed;
+    display: none;
+    top: 85%;
+    left: 95%;
+    width: 70px;
+    max-width: 100%;
+    z-index: 999;
+    cursor: pointer;
 }
