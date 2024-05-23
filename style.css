@@ -427,7 +427,6 @@ button#closeMenu {
     justify-content: end;
     align-items: center;
     /* 垂直置中 */
-    background-color: #fff;
     border-radius: 0 0 50px 50px;
 }
 
@@ -436,6 +435,11 @@ button#closeMenu {
     top: 0;
     width: 100%;
     z-index: 999;
+    /* 導覽列玻璃擬態 */
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 2px 2px 4px 1px #9c9797;
+    /* 只有外框陰影 */
+    backdrop-filter: blur(10px);
 }
 
 
@@ -496,6 +500,9 @@ button#closeMenu {
     background-image: url(./images/Rectangle-180.jpg);
     position: relative;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
 }
 
 
@@ -529,10 +536,8 @@ button#closeMenu {
 }
 
 
-#about {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.sticky + main {
+    padding-top: 80px;
 }
 
 #CarouselImg {

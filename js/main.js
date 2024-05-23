@@ -38,7 +38,7 @@ $(function () {
 
 // 輪播卡
 
-$(document).ready(function() {
+$(document).ready(function () {
     function initializeOwl(selector, itemsDefault, itemsMedium, itemsSmall) {
         var owl = $(selector).owlCarousel({
             loop: true,
@@ -76,30 +76,30 @@ $(document).ready(function() {
     initializeOwl('.slider2', 3, 1, 1);
 });
 
-    // TOP至頂按鈕
-    $('#gotop').click(function () {
-        $('html,body').animate({ scrollTop: 0 }, 1300);
-    })
+// TOP至頂按鈕
+$('#gotop').click(function () {
+    $('html,body').animate({ scrollTop: 0 }, 1300);
+})
 
-    // 淡出淡入
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 1000) {
-            $('#gotop').stop().fadeTo('', 1);
-        }
-        else {
-            $('#gotop').stop().fadeOut();
-        }
-    })
-
-    window.onscroll = function () { myFunction() };
-
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
+// 淡出淡入
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 1000) {
+        $('#gotop').stop().fadeTo('', 1);
     }
+    else {
+        $('#gotop').stop().fadeOut();
+    }
+})
+// 黏性導覽列
+window.onscroll = function () { myFunction() };
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
