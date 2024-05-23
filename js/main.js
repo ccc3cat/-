@@ -26,7 +26,7 @@ jumpLinks.forEach((jumpLink) => {
 
 // 關於日本輪播圖
 $(function () {
-    $("#CarouselImg").cycle({
+    $(".CarouselImg").cycle({
         // 輪播效果名稱
         fx: 'fade',
         // 第一次輪播時的第一張圖片停留時

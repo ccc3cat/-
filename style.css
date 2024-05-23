@@ -480,7 +480,6 @@ button#closeMenu {
     cursor: pointer;
 }
 
-
 .icon li img {
     width: 50px;
     /* 圖片寬度 */
@@ -490,6 +489,9 @@ button#closeMenu {
     /* 調整圖片與文字之間的間距 */
 }
 
+.sticky + main {
+    padding-top: 80px;
+}
 
 .burgerBtn {
     cursor: pointer;
@@ -502,9 +504,16 @@ button#closeMenu {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
+}
+.imgbox{
+    display: flex;
+    margin-right: 100px;
 }
 
+.imgboxR{
+    display: flex;
+    flex-direction: column;
+}
 
 .title {
     position: relative;
@@ -536,23 +545,27 @@ button#closeMenu {
 }
 
 
-.sticky + main {
-    padding-top: 80px;
-}
 
-#CarouselImg {
-    margin-right: 200px;
-}
 
-#CarouselImg img {
-    background-color: transparent;
-    border-radius: 45px;
+#CarouselImg1 {
     height: 700px;
-    min-height: 100%;
+    width: 500px;
+
+}
+
+#CarouselImg2{
+    height: 450px;
+    width: 350px;
+
+}
+
+.CarouselImg img {
+    object-fit: cover;
+    border-radius: 45px;
 }
 
 .aboutT {
-    width: 50%;
+    width: 45%;
 }
 
 .whyjp {
