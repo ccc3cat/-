@@ -406,7 +406,7 @@ button#closeMenu {
     /* 防止圖片重複 */
     background-size: cover;
     /* 使圖片覆蓋整個容器 */
-    height: 500px;
+    height: 300px;
     width: 100%;
 }
 
@@ -464,7 +464,6 @@ ul {
 #information-box {
     width: 800px;
     margin: 0 auto;
-    margin-top: 50px;
     margin-bottom: 150px;
     display: flex;
     justify-content: center;

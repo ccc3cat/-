@@ -428,6 +428,7 @@ button#closeMenu {
     align-items: center;
     /* 垂直置中 */
     background-color: #fff;
+    border-radius: 0 0 50px 50px;
 }
 
 .sticky {
