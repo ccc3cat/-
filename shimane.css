@@ -873,6 +873,7 @@ button#closeMenu {
 
 .f04img img {
     /* 直式照片 */
+    position: absolute;
     width: 300px;
     height: 430px;
     border-radius: 40px;
