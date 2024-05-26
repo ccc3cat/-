@@ -196,44 +196,29 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // 行程特色切換輪播
-const imgs = document.getElementById('imgs')
-const leftBtn = document.getElementById('left')
-const rightBtn = document.getElementById('right')
+let slideIndex = 1;
+showSlides(slideIndex);
 
-const img = document.querySelectorAll('#imgs img')
-
-let idx = 0
-
-let interval = setInterval(run, 2000)
-
-function run() {
-    idx++
-    changeImage()
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-function changeImage() {
-    if(idx > img.length - 1) {
-        idx = 0
-    } else if(idx < 0) {
-        idx = img.length - 1
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-
-    imgs.style.transform = `translateX(${-idx * 425}px)`
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
 }
-
-function resetInterval() {
-    clearInterval(interval)
-    interval = setInterval(run, 2000)
-}
-
-rightBtn.addEventListener('click', () => {
-    idx++
-    changeImage()
-    resetInterval()
-})
-
-leftBtn.addEventListener('click', () => {
-    idx--
-    changeImage()
-    resetInterval()
-})
