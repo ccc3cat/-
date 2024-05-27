@@ -481,15 +481,15 @@ button#closeMenu {
 }
 
 .icon li img {
-    width: 50px;
+    width: 30px;
     /* 圖片寬度 */
-    height: 50px;
+    height: 30px;
     /* 圖片高度 */
     margin-right: 5px;
     /* 調整圖片與文字之間的間距 */
 }
 
-.sticky + main {
+.sticky+main {
     padding-top: 80px;
 }
 
@@ -505,16 +505,33 @@ button#closeMenu {
     flex-direction: row;
     justify-content: flex-end;
 }
-.imgbox{
+
+.imgbox {
     display: flex;
     margin-right: 100px;
 }
 
-.imgboxR{
+.imgboxR {
+    height: 550px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+/* W調整圖比例 */
+#CarouselImg1 {
+    width: 410px;
 }
 
+#CarouselImg2 {
+    height: 262.55px;
+    width: 350px;
+}
+
+.CarouselImg img {
+    object-fit: cover;
+    border-radius: 45px;
+}
 .title {
     position: relative;
     width: 290px;
@@ -545,24 +562,6 @@ button#closeMenu {
 }
 
 
-
-
-#CarouselImg1 {
-    height: 700px;
-    width: 500px;
-
-}
-
-#CarouselImg2{
-    height: 450px;
-    width: 350px;
-
-}
-
-.CarouselImg img {
-    object-fit: cover;
-    border-radius: 45px;
-}
 
 .aboutT {
     width: 45%;
