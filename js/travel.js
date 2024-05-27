@@ -214,11 +214,12 @@ function showSlides(n) {
     let slides = document.getElementsByClassName("mySlides");
     let slides2 = document.getElementsByClassName("mySlides2");
     let slides3 = document.getElementsByClassName("mySlides3");
+    let paragraphs = document.getElementsByClassName("paragraph");
     let dots = document.getElementsByClassName("dot");
     let headings = [
-        "出雲大社飯店",
         "出雲大社",
-        "海鮮料理"
+        "海鮮料理",
+        "出雲大社飯店"
     ];
 
     // 循環輪播
@@ -236,13 +237,18 @@ function showSlides(n) {
         slides3[i].style.display = "none";
     }
 
+            // 隱藏所有段落
+            for (i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.display = "none";
+            }
 
 
     // 顯示當前幻燈片
     slides[slideIndex - 1].style.display = "block";
     slides2[slideIndex - 1].style.display = "block";
     slides3[slideIndex - 1].style.display = "block";
-
+        // 顯示當前段落
+        paragraphs[slideIndex - 1].style.display = "block";
 
     // 更新 H1 標題
     document.getElementById("slide-heading").innerText = headings[slideIndex - 1];
