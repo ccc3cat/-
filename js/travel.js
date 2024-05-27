@@ -199,10 +199,12 @@ document.addEventListener('DOMContentLoaded', function () {
 let slideIndex = 1;
 showSlides(slideIndex);
 
+// 上一張和下一張按鈕的控制
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
+// 點擊圓點控制
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -210,15 +212,38 @@ function currentSlide(n) {
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
+    let slides2 = document.getElementsByClassName("mySlides2");
+    let slides3 = document.getElementsByClassName("mySlides3");
     let dots = document.getElementsByClassName("dot");
+    let headings = [
+        "出雲大社飯店",
+        "出雲大社",
+        "海鮮料理"
+    ];
+
+    // 循環輪播
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
+
+    // 隱藏所有幻燈片
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+    for (i = 0; i < slides2.length; i++) {
+        slides2[i].style.display = "none";
     }
+    for (i = 0; i < slides3.length; i++) {
+        slides3[i].style.display = "none";
+    }
+
+
+
+    // 顯示當前幻燈片
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    slides2[slideIndex - 1].style.display = "block";
+    slides3[slideIndex - 1].style.display = "block";
+
+
+    // 更新 H1 標題
+    document.getElementById("slide-heading").innerText = headings[slideIndex - 1];
 }

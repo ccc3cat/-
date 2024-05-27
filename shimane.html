@@ -176,9 +176,15 @@
         <div class="feature-box">
             <nav>
                 <ul>
-                    <a onclick="currentSlide(1)"><li>古蹟建築</li></a>
-                    <a onclick="currentSlide(2)"><li>當地美食</li></a>
-                    <a onclick="currentSlide(3)"><li>精選旅宿</li></a>
+                    <a onclick="currentSlide(1)">
+                        <li>古蹟建築</li>
+                    </a>
+                    <a onclick="currentSlide(2)">
+                        <li>當地美食</li>
+                    </a>
+                    <a onclick="currentSlide(3)">
+                        <li>精選旅宿</li>
+                    </a>
                 </ul>
             </nav>
 
@@ -189,92 +195,91 @@
 
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 3</div>
-                        <img src="./images02/shimane/feature/1.jpg" style="width:100%">
+                        <img src="./images02/shimane/feature/3.jpg" style="width:100%">
                         <div class="text">出雲大社飯店</div>
                     </div>
-            
+
                     <div class="mySlides fade">
                         <div class="numbertext">2 / 3</div>
                         <img src="./images02/shimane/feature/2.jpg" style="width:100%">
                         <div class="text">出雲大社</div>
                     </div>
-            
+
                     <div class="mySlides fade">
                         <div class="numbertext">3 / 3</div>
-                        <img src="./images02/shimane/feature/3.jpg" style="width:100%">
+                        <img src="./images02/shimane/feature/1.jpg" style="width:100%">
                         <div class="text">海鮮料理</div>
                     </div>
-<!--             
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-             -->
                 </div>
-                <br>
-            
-                <!-- <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div> -->
-                <!-- <div class="carousel">
-                    <div class="image-container" id="imgs">
-                        <img src="./images02/shimane/feature/1.jpg" alt="first-image" />
-                        <img src="./images02/shimane/feature/2.jpg" alt="second-image" />
-                        <img src="./images02/shimane/feature/3.jpg" alt="third-image" />
-                    </div>
-                </div> -->
+
 
                 <div class="f-box">
                     <div class="f-boxBtn">
                         <button class="btn-lift" id="left" onclick="plusSlides(-1)"></button>
-                        <h1>出雲大社飯店</h1>
-                        <h1>出雲大社</h1>
-                        <h1>海鮮料理</h1>
+                        <!-- 標題切換 -->
+                        <div class="text-container">
+                            <h1 id="slide-heading">Slide 1 Heading</h1>
+                        </div>
                         <button class="btn-right" id="right" onclick="plusSlides(1)"></button>
                     </div>
-                    <p class="paragraph">每年的十月份，出雲大社都會舉辦十月大祭，
+
+
+
+                    <!-- <p class="paragraph">每年的十月份，出雲大社都會舉辦十月大祭，
                         這是一場盛大的祭典，吸引了來自日本各地的參與者。</p>
                     <p class="paragraph">日式海鮮料理，以其新鮮、清淡和精致的風味，享譽全球。
                         這種料理風格注重食材的新鮮度和本味，並且常常以簡單的烹調方式呈現。</p>
                     <p class="paragraph">這家飯店提供傳統的日式和現代風格的客房，以滿足不同類型客人的需求。
-                        此外，飯店還設有餐廳、溫泉、禮品店等設施，讓客人在住宿期間享受更多的便利和舒適。</p>
+                        此外，飯店還設有餐廳、溫泉、禮品店等設施，讓客人在住宿期間享受更多的便利和舒適。</p> -->
 
-
-
-  
-                    
-
-
-
-
-
-                    <!-- <div class="f-boxImg">
-                        <div class="carousel">
-                            <div class="image-container" id="imgs2">
-                                <img src="./images02/shimane/feature/4.jpg" alt="first-image" />
-                                <img src="./images02/shimane/feature/5.jpg" alt="second-image" />
-                                <img src="./images02/shimane/feature/6.jpg" alt="third-image" />
+                    <div class="f-boxImg">
+                        <!-- 第二個輪播圖容器 -->
+                        <div class="slideshow-container2">
+                            <!-- 第二個輪播圖中的幻燈片 -->
+                            <div class="mySlides2 fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="./images02/shimane/feature/4.jpg" style="width:100%">
+                                <div class="text">Caption Text 4</div>
                             </div>
-                        </div> -->
 
+                            <div class="mySlides2 fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="./images02/shimane/feature/5.jpg" style="width:100%">
+                                <div class="text">Caption Text 5</div>
+                            </div>
 
- 
-                        <!-- <div class="carousel2">
-                            <div class="image-container2">
-                                
+                            <div class="mySlides2 fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="./images02/shimane/feature/6.jpg" style="width:100%">
+                                <div class="text">Caption Text 6</div>
                             </div>
                         </div>
-
-                        <div class="carousel2">
-                            <div class="image-container2">
-                                <img src="./images02/shimane/feature/7.jpg" alt="first-image" />
-                                <img src="./images02/shimane/feature/8.jpg" alt="second-image" />
-                                <img src="./images02/shimane/feature/9.jpg" alt="third-image" />
+                        <!-- 第二個輪播圖容器 -->
+                        <div class="slideshow-container3">
+                            <!-- 第二個輪播圖中的幻燈片 -->
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="./images02/shimane/feature/8.jpg" style="width:100%">
+                                <div class="text">Caption Text 4</div>
                             </div>
-                        </div> -->
+
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="./images02/shimane/feature/7.jpg" style="width:100%">
+                                <div class="text">Caption Text 5</div>
+                            </div>
+
+                            <div class="mySlides3 fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="./images02/shimane/feature/9.jpg" style="width:100%">
+                                <div class="text">Caption Text 6</div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
+        </div>
         </div>
 
 

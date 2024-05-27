@@ -229,7 +229,7 @@ section {
     top: 0;
 }
 
-.text {
+.topbar .text {
     width: 120px;
     height: 570px;
     justify-content: center;
@@ -237,7 +237,7 @@ section {
     /* 要包文字 */
 }
 
-.text h1 {
+.topbar .text h1 {
     writing-mode: vertical-lr;
     /* 文字垂直排 */
     letter-spacing: 0.2em;
@@ -249,7 +249,7 @@ section {
     margin-top: 115px;
 }
 
-.text h2 {
+.topbar .text h2 {
     writing-mode: vertical-lr;
     /* 文字垂直排 */
     letter-spacing: 0.2em;
@@ -258,7 +258,7 @@ section {
     margin-right: 16px;
 }
 
-.text h3 {
+.topbar .text h3 {
     font-size: 1rem;
     color: #B19693;
     writing-mode: vertical-lr;
@@ -744,7 +744,7 @@ button#closeMenu {
     font-weight: bold;
 }
 
-.feature-box  a{
+.feature-box ul{
     width: 95px;
     height: 280px;
     margin-left: 100px;
@@ -766,26 +766,10 @@ button#closeMenu {
     margin: auto;
 }
 
-/* .carousel {
-    overflow: hidden;
-    border-radius: 50px;
-}
-.carousel{
-    height: 500px;
-    width: 333px;
-}
-.carousel .image-container {
-    display: flex;
-    transform: translateX(0);
-    transition: transform 0.5s ease-in-out;
-}
 
-.carousel .image-container img {
-    width: 333.3px;
-    object-fit: cover;
-} */
-.mySlides {
-    display: none
+/* 幻燈片的基本樣式 */
+.mySlides, .mySlides2, .mySlides3 {
+    display: none;
 }
 
 .slideshow-container img {
@@ -793,20 +777,41 @@ button#closeMenu {
     border-radius: 30px;
 }
 
-/* Slideshow container */
+.slideshow-container2 img {
+    vertical-align: middle;
+    border-radius: 30px;
+}
+
+.slideshow-container3 img {
+    vertical-align: middle;
+    border-radius: 30px;
+}
+
+/* 第一個輪播圖容器 */
 .slideshow-container {
-    /* max-width: 300px; */
-width: 333px;
+    width: 333px;
     position: relative;
     margin: auto;
 }
 
+/* 第二個輪播圖容器 */
+.slideshow-container2 {
+    width: 333px;
+    position: relative;
+    margin: auto;
+}
 
-
+/* 第三個輪播圖容器 */
+.slideshow-container3 {
+    width: 333px;
+    position: relative;
+    margin: auto;
+}
+/* 完 */
 
 /* Caption text */
 .text {
-    color: #f2f2f2;
+    color: #ffffff;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
