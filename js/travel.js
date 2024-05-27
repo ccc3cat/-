@@ -190,10 +190,9 @@ document.addEventListener('DOMContentLoaded', function () {
             currentOffset -= 550;
             checkOffset();
         });
-
     });
-
 });
+
 
 // 行程特色切換輪播
 let slideIndex = 1;
@@ -201,12 +200,16 @@ showSlides(slideIndex);
 
 // 上一張和下一張按鈕的控制
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    slideIndex += n;
+    updateNav(slideIndex);
+    showSlides(slideIndex);
 }
 
 // 點擊圓點控制
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    slideIndex = n;
+    updateNav(slideIndex);
+    showSlides(slideIndex);
 }
 
 function showSlides(n) {
@@ -215,7 +218,6 @@ function showSlides(n) {
     let slides2 = document.getElementsByClassName("mySlides2");
     let slides3 = document.getElementsByClassName("mySlides3");
     let paragraphs = document.getElementsByClassName("paragraph");
-    let dots = document.getElementsByClassName("dot");
     let headings = [
         "出雲大社",
         "海鮮料理",
@@ -237,19 +239,33 @@ function showSlides(n) {
         slides3[i].style.display = "none";
     }
 
-            // 隱藏所有段落
-            for (i = 0; i < paragraphs.length; i++) {
-                paragraphs[i].style.display = "none";
-            }
-
+    // 隱藏所有段落
+    for (i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.display = "none";
+    }
 
     // 顯示當前幻燈片
     slides[slideIndex - 1].style.display = "block";
     slides2[slideIndex - 1].style.display = "block";
     slides3[slideIndex - 1].style.display = "block";
-        // 顯示當前段落
-        paragraphs[slideIndex - 1].style.display = "block";
+    // 顯示當前段落
+    paragraphs[slideIndex - 1].style.display = "block";
 
     // 更新 H1 標題
     document.getElementById("slide-heading").innerText = headings[slideIndex - 1];
 }
+
+function updateNav(index) {
+    var lis = document.querySelectorAll(".feature-box ul li");
+    lis.forEach(function(li, i) {
+        if (i === (index - 1) % lis.length) {
+            li.classList.add("active");
+        } else {
+            li.classList.remove("active");
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    currentSlide(1); // 預設選中第一個 li 並顯示對應幻燈片
+});

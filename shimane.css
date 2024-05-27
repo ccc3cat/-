@@ -735,7 +735,7 @@ button#closeMenu {
 
 
 
-/* 行程特色 */
+/* 形成精選輪播*/
 .feature-box {
     width: 100%;
     height: 650px;
@@ -743,13 +743,13 @@ button#closeMenu {
     justify-content: center;
     font-weight: bold;
 }
-
-.feature-box ul{
+.feature-box ul {
     width: 95px;
     height: 280px;
     margin-left: 100px;
     margin-top: 150px;
     border-right: 0.5px solid #374C66;
+    color: rgba(55, 76, 102,.5);
 }
 
 .feature-box li {
@@ -758,17 +758,35 @@ button#closeMenu {
     flex-direction: column;
     align-items: center;
     margin: 60px 0;
+    font-weight: bolder;
+    width: 70px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    cursor: pointer; /* 鼠标悬停时显示手形指针 */
+}
+
+.feature-box .active {
+    border-bottom: 1px solid #374C66; /* 点击时显示底线 */
+    color: var(--indigo);
+}
+
+
+.feature-box li:hover {
+    border-bottom:1px solid var(--indigo);
 }
 
 .feature01 {
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin: auto 60px;
+    /* margin-left: 60px; */
 }
 
 
 /* 幻燈片的基本樣式 */
-.mySlides, .mySlides2, .mySlides3 {
+.mySlides,
+.mySlides2,
+.mySlides3 {
     display: none;
 }
 
@@ -807,6 +825,7 @@ button#closeMenu {
     position: relative;
     margin: auto;
 }
+
 /* 完 */
 
 /* Caption text */
@@ -829,16 +848,6 @@ button#closeMenu {
     top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-
-}
 
 /* Fading animation */
 .fade {
@@ -867,32 +876,40 @@ button#closeMenu {
 }
 
 /* 右半邊內容 */
-.f-box{
-margin-left: 50px;
-width: 758px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+.f-box {
+    margin-left: 50px;
+    width: 758px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.f-boxBtn{
+.f-boxBtn {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     font-size: 1.5rem;
     font-weight: bolder;
     color: #374C66;
     letter-spacing: 0.3rem;
+    padding-left: 400px;
+    margin-bottom: 30px;
 }
-.f-boxBtn h1{
-    margin: 0 30px;
+
+.paragraphs-container {
+    margin-left: 30px;
+    height: 220px;
 }
-.f-box p{
-width: 80%;
-height: 15%;
-margin-top: 20px;
+
+.paragraph{
+    font-size: 1rem;
+    line-height: 40px;
+    /* 行距 */
+    letter-spacing: 0.1rem;
+    font-weight: bold;
 }
-.f-boxImg{
+
+.f-boxImg {
     display: flex;
     justify-content: space-between;
 }
@@ -916,64 +933,8 @@ margin-top: 20px;
     border: none;
 }
 
+/* 形成精選輪播完 */
 
-/* 特色行程的圖文 */
-
-.f02 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.f02 p {
-    font-size: 1rem;
-    line-height: 30px;
-    /* 行距 */
-    letter-spacing: 0.3rem;
-}
-
-.Horizontal{
-    display: flex;
-    align-items: center;
-}
-
-.f03-img {
-    display: flex;
-    justify-content: center;
-}
-
-.f03-img1 img {
-    width: 330px;
-    height: 250px;
-    border-radius: 40px;
-    margin-top: 40px;
-    object-fit: cover;
-}
-
-.f03-img2 img {
-    width: 330px;
-    height: 250px;
-    border-radius: 40px;
-    margin-left: 36px;
-    margin-top: 40px;
-    object-fit: cover;
-    /* 圖超過被裁切 */
-}
-
-.f04img img {
-    /* 直式照片 */
-    position: absolute;
-    width: 300px;
-    height: 430px;
-    border-radius: 40px;
-    object-fit: cover;
-}
-
-/* 當地美食*/
-
-
-/*精選旅宿*/
 
 
 
