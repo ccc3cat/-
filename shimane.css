@@ -893,12 +893,12 @@ button#closeMenu {
     color: #374C66;
     letter-spacing: 0.3rem;
     padding-left: 400px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .paragraphs-container {
     margin-left: 30px;
-    height: 220px;
+    height: 200px;
 }
 
 .paragraph{

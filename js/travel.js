@@ -257,7 +257,7 @@ function showSlides(n) {
 
 function updateNav(index) {
     var lis = document.querySelectorAll(".feature-box ul li");
-    lis.forEach(function(li, i) {
+    lis.forEach(function (li, i) {
         if (i === (index - 1) % lis.length) {
             li.classList.add("active");
         } else {
@@ -266,6 +266,6 @@ function updateNav(index) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     currentSlide(1); // 預設選中第一個 li 並顯示對應幻燈片
 });
