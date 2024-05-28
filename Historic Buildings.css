@@ -463,7 +463,7 @@ button#closeMenu {
 }
 
 .introduce-img{
-    background-color: #F1EEE1 ;
+    background-image: url(./images/Rectangle-180.jpg);
     height: 300px;
     display: flex;
     align-items: center;
@@ -623,20 +623,9 @@ button#closeMenu {
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 600px;
-    background-color: #F1EEE1;
+    height: 635px;
+    background-image: url(./images/Rectangle-180.jpg);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -787,11 +776,11 @@ button#closeMenu {
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 600px;
-    background-color: #F1EEE1;
+    height: 635px;
+    background-image: url(./images/Rectangle-180.jpg);
 }
 .titlebox {
-    margin-top: 15px;
+    margin-top: 35px;
     position: absolute;
     left: 85%;
     top: 0;

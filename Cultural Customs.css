@@ -585,12 +585,12 @@ button#closeMenu {
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 600px;
+    height: 635px;
     /* 背景砂紙圖 */
 background-image: url(./images/Rectangle-180.jpg);
 }
 .titlebox {
-    margin-top: 15px;
+    margin-top: 35px;
     position: absolute;
     left: 85%;
     top: 0;
@@ -853,7 +853,7 @@ background-image: url(./images/Rectangle-180.jpg);
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 600px;
+    height: 635px;
 background-image: url(./images/Rectangle-180.jpg);
 }
 
