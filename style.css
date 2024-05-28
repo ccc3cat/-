@@ -567,8 +567,8 @@ button#closeMenu {
 
 #about .title{
 position: absolute;
-top: 18%;
-right: 35%;
+top: 150px;
+right: 650px;
 }
 
 
@@ -1288,3 +1288,13 @@ footer a:hover {
     z-index: 999;
     cursor: pointer;
 }
+
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {}
