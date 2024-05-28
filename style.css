@@ -508,7 +508,7 @@ button#closeMenu {
 
 .imgbox {
     display: flex;
-    margin-right: 100px;
+    margin-right: 200px;
 }
 
 .imgboxR {
@@ -561,11 +561,16 @@ button#closeMenu {
     /* 調整文字顏色 */
 }
 
-
-
 .aboutT {
     width: 45%;
 }
+
+#about .title{
+position: absolute;
+top: 18%;
+right: 35%;
+}
+
 
 .whyjp {
     line-height: 2rem;
@@ -573,7 +578,7 @@ button#closeMenu {
     /* 外框線寬度和顏色 */
     border-radius: 40px 0 0 40px;
     /* 左側圓角 */
-    padding: 77px 150px 77px 80px;
+    padding: 77px 60px 77px 80px;
 }
 
 .whyjp h1 {
