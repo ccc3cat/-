@@ -251,6 +251,18 @@ margin-right: 50px;
     background-image: url('./images/Cultural Customs/bn.jpg');
     background-size: cover;
 }
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navigation li {
+    margin: 5px;
+    color: #403D3D;
+    font-size: 0.85rem;
+}
 
 /* 漢堡按鈕區 */
 .menu {
@@ -965,7 +977,7 @@ footer a:hover {
 
 .r {
     line-height: 2.5;
-    align-content: center;
+    align-content: start;
 
 }
 
@@ -977,7 +989,7 @@ footer a:hover {
 .r1::after {
     content: "";
     position: absolute;
-    top: 19%;
+    top: 5%;
     left: 140%;
     background: #aaa;
     width: 3px;

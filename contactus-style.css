@@ -456,7 +456,7 @@ footer a:hover {
 
 .r {
     line-height: 2.5;
-    align-content: center;
+    align-content: start;
 
 }
 
@@ -468,7 +468,7 @@ footer a:hover {
 .r1::after {
     content: "";
     position: absolute;
-    top: 19%;
+    top: 5%;
     left: 140%;
     background: #aaa;
     width: 3px;
