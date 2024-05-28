@@ -565,13 +565,6 @@ button#closeMenu {
     width: 45%;
 }
 
-#about .title{
-position: absolute;
-top: 150px;
-right: 650px;
-}
-
-
 .whyjp {
     line-height: 2rem;
     border: 2px solid #ffffff;
