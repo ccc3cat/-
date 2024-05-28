@@ -482,7 +482,7 @@ button#closeMenu {
     top: 50px;
     overflow-y: hidden;
     height: 500px;
-    width: 650px;
+    width: 50%;
 }
 
 .Kendo-img img {
@@ -498,8 +498,8 @@ button#closeMenu {
     flex-direction: column;
     justify-content: center;
     height: 475px;
-    width: 400px;
-    margin-left: 55%;
+    width: 500px;
+    margin-left: 65%;
     top: 85px;
     position: relative;
 }
@@ -839,7 +839,7 @@ button#closeMenu {
     top: 50px;
     overflow-y: hidden;
     height: 500px;
-    width: 650px;
+    width: 50%;
     right: 0;
 }
 
@@ -856,8 +856,8 @@ button#closeMenu {
     flex-direction: column;
     justify-content: center;
     height: 475px;
-    width: 400px;
-    margin-left: 20%;
+    width: 500px;
+    margin-left: 15%;
     top: 85px;
     position: relative;
 }
