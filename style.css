@@ -1038,6 +1038,18 @@ right: 35%;
     line-height: 2.5;
 }
 
+.newsright-t a{
+    height: 60px;
+    width: 190px;
+background-image: url(./images/morebotton.png);
+}
+
+.newsright-t a:hover{
+    height: 60px;
+    width: 190px;
+background-image: url(./images/morebotton-hover.png);
+}
+
 .newsright-t img {
     height: 50px;
 }
