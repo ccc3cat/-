@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>東京劍道四日之旅</title>
+    <link rel="icon" href="./images/LOGO/logo.png">
     <link rel="stylesheet" href="./tokyo-kendo.css">
 </head>
 
@@ -55,20 +56,21 @@
                         <li><a href="./allitineraries.html#KYUSHU">九州</a></li>
                     </div>
                     <div class="button l">
-                        <li><a href="./contactus.html"><img src="./images/icon/sake.svg" alt="">聯絡我們 Contact US</a></li>
-                        <li><a href="./aboutus.html"><img src="./images/icon/daruma.svg" alt="">關於我們 About Us</a></li>
-                        <li><a href="index.html#news"><img src="./images/icon/cat.svg" alt="">最新消息 Latest News</a></li>
+                        <li><a href="./contactus.html"><img src="./images/icon/sake.svg" alt="">聯絡我們 Contact US</a>
+                        </li>
+                        
+                        <li><a href="index.html#news"><img src="./images/icon/cat.svg" alt="">最新消息 Latest News</a>
+                        </li>
                         <li><a href="index.html#about"><img src="./images/icon/susi.svg" alt="">關於日本 About Japan</a>
                         </li>
                     </div>
                     <div class="button">
                         <li><a href="./allitineraries.html"><img src="./images/icon/fish.svg" alt="">開團總覽 Itinerary
                                 Overview</a></li>
-                        <li><a href="#"><img src="./images/icon/noodle.svg" alt="">導遊介紹 Tour Guide Introduction</a>
                         </li>
-                        <li><a href="./Travel-Information.html"><img src="./images/icon/Bamboo.svg" alt="">旅遊資訊 Travel
-                                Information</a></li>
-                        <li><a href="#"><img src="./images/icon/mask.svg" alt="">客製化 Customization</a></li>
+                        <li><a href="./Travel-Information.html"><img src="./images/icon/Bamboo.svg" alt="">旅遊資訊 Travel Information</a></li>
+                        <li><a href="./aboutus.html"><img src="./images/icon/daruma.svg" alt="">關於我們 About Us</a>
+                        </li>
                     </div>
                     <div class="menu-social-media">
                         <li><a href="#"><img src="./images/icon/IG-b.png" alt=""></a></li>
@@ -79,7 +81,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- 內容 -->
     <main>
@@ -178,119 +179,85 @@
 
         <!-- 行程特色 -->
         <div class="feature-box">
-
             <nav>
                 <ul>
-                    <li>古蹟建築</li>
-                    <li>當地美食</li>
-                    <li>精選旅宿</li>
+                    <li onclick="currentSlide(1)">劍道由來</li>
+                    <li onclick="currentSlide(2)">當地美食</li>
+                    <li onclick="currentSlide(3)">精選旅宿</li>
                 </ul>
-
             </nav>
 
             <!--古蹟建築  -->
             <div class="feature01">
-                <div class="f04img"><!-- 直式照片 -->
-                    <img src="./images/tokyo-kendo/food/food1 (22).jpg" alt="">
+                <!-- 直式照片 -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="./images/tokyo-kendo/feature/1.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/tokyo-kendo/feature/2.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./images/tokyo-kendo/feature/3.jpg" style="width:100%">
+                    </div>
                 </div>
+
 
                 <div class="f-box">
-                    <div class="f01">
-                        <button class="btn-lift"></button>
-                        <h1>懷石料理紀尾井町福田家</h1>
-                        <button class="btn-right"></button>
-                    </div>
-
-                    <div class="f02">
-                        <p>
-                            以精緻、優雅的懷石料理聞名，每一道菜都精心製作，融合了日本料理的傳統和現代創意。餐廳的用餐環境雅致舒適，擁有典雅的日式庭院，讓顧客在用餐的同時感受到寧靜和脫俗的氛圍。
-                        </p>
-                    </div>
-
-                    <!-- 橫式照片 -->
-
-                    <div class="f03-img">
-                        <div class="f03-img1">
-                            <img src="./images/tokyo-kendo/food/food1 (12).jpg" alt="">
+                    <div class="f-boxBtn">
+                        <button class="btn-lift" id="left" onclick="plusSlides(-1)"></button>
+                        <!-- 標題切換 -->
+                        <div class="text-container">
+                            <h1 class="headings-container">武士精神</h1>
+                            <h1 class="headings-container">淺草相撲部屋</h1>
+                            <h1 class="headings-container">格拉斯麗淺草飯店
+                            </h1>
                         </div>
-                        <div class="f03-img2">
-                            <img src="./images/tokyo-kendo/food/food1 (23).jpg" alt="">
+                        <button class="btn-right" id="right" onclick="plusSlides(1)"></button>
+                    </div>
+
+                    <div class="paragraphs-container">
+                        <p class="paragraph">武士道精神是日本傳統文化中的核心價值觀，強調忠誠、勇敢、誠實和自我克制。這種精神源自日本的武士階層，強調對主人的忠誠和尊嚴，以及在面對困難和挑戰時的勇敢和堅韌。武士道教導個人尊重他人、注重禮儀，並追求內在的道德完善。儘管現代日本社會已經發生了變化，但武士道精神仍然被視為塑造日本文化和價值觀的重要元素之一。</p>
+                        <p class="paragraph">Chanko是由前相撲選手 Chanko Ban監製的「特選醬油相撲火鍋」，由四種高湯組合而成：當地雞肉、鰹魚、海帶和香菇。美味。淺草相撲部屋特選醬油相撲火鍋，結合了相撲文化與美食的精髓。以深厚的醬油湯底為基礎，搭配新鮮的相撲火鍋料，如嫩嫩的相撲部屋特選肉片、豆腐、蔬菜等，口感豐富多樣。在熱騰騰的湯中沉浸，彷彿置身於相撲場上一般的氛圍中，帶來身心的滿足與享受。是一道充滿日本風情的美味佳餚，讓人回味無窮。</p>
+                        <p class="paragraph">格拉斯麗淺草飯店位於日本東京淺草地區，是一家結合現代風格和傳統魅力的豪華飯店。擁有精心設計的客房和套房，每一處細節都展現了日本傳統工藝和現代設計的完美融合。飯店內設有多間餐廳，供應精緻美食和地道日本料理，滿足客人的味蕾。此外，飯店還提供豐富的休閒設施，包括健身中心、溫泉浴場和美容水療中心，讓客人在旅途中得到全方位的放鬆和享受。格拉斯麗淺草飯店為您的東京之旅增添奢華和舒適的居住體驗。</p>
+                    </div>
+                    
+
+                    <div class="f-boxImg">
+                        <!-- 第二個輪播圖容器 -->
+                        <div class="slideshow-container2">
+                            <!-- 第二個輪播圖中的幻燈片 -->
+                            <div class="mySlides2 fade">
+                                <img src="./images/tokyo-kendo/feature/4.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides2 fade">
+                                <img src="./images/tokyo-kendo/feature/5.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides2 fade">
+                                <img src="./images/tokyo-kendo/feature/6.jpg" style="width:100%">
+                            </div>
+                        </div>
+                        <!-- 第二個輪播圖容器 -->
+                        <div class="slideshow-container3">
+                            <!-- 第二個輪播圖中的幻燈片 -->
+                            <div class="mySlides3 fade">
+                                <img src="./images/tokyo-kendo/feature/7.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides3 fade">
+                                <img src="./images/tokyo-kendo/feature/8.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides3 fade">
+                                <img src="./images/tokyo-kendo/feature/9.jpg" style="width:100%">
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-
-            <!-- 行程特色倫播  勿刪-->
-            <!-- 當地美食 
-          
-             <div class="feature01">
-                <div class="f04img">   
-            <img src="./images/shimane/feature/1 (4).jpg" alt="">
-        </div>
-
-        <div class="f-box">
-            <div class="f01">
-                <button class="btn-lift"></button>
-                <h1>海鮮料理</h1>
-                <button class="btn-right"></button>
-            </div>
-
-            <div class="f02">
-                <p>
-                  日式海鮮料理，以其新鮮、清淡和精致的風味，享譽全球。
-                  這種料理風格注重食材的新鮮度和本味，並且常常以簡單的烹調方式呈現。
-                </p>
-            </div>
-
-        
-            <div class="f03-img">
-                <div class="f03-img1">
-                    <img src="./images/shimane/feature/1 (5).jpg" alt="">
-                </div>
-                <div class="f03-img2">
-                    <img src="./images/shimane/feature/1 (6).jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        </div>-->
-
-
-            <!-- 精選旅宿 
-        <div class="feature01">
-            <div class="f04img"> 
-                <img src="./images/shimane/feature/1 (1).jpg" alt="">
-            </div>
-
-            <div class="f-box">
-                <div class="f01">
-                    <button class="btn-lift"></button>
-                    <h1>出雲大社飯店</h1>
-                    <button class="btn-right"></button>
-                </div>
-
-                <div class="f02">
-                    <p>
-                      這家飯店提供傳統的日式和現代風格的客房，以滿足不同類型客人的需求。
-                      此外，飯店還設有餐廳、溫泉、禮品店等設施，讓客人在住宿期間享受更多的便利和舒適。
-                    </p>
-                </div>
-
-              
-
-                <div class="f03-img">
-                    <div class="f03-img1">
-                        <img src="./images/shimane/feature/1 (2).jpg" alt="">
-                    </div>
-                    <div class="f03-img2">
-                        <img src="./images/shimane/feature/1 (10).jpg" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>--><!-- 行程特色倫播  勿刪-->
-
         </div>
 
 
@@ -1121,9 +1088,7 @@
                     </div>
                     <div class="r r3">
                         <a href="./allitineraries.html">開團總覽</a>
-                        <a href="">導遊介紹</a>
                         <a href="./Travel-Information.html">旅遊資訊</a>
-                        <a href="">客製化</a>
                     </div>
                 </div>
                 <div class="Copyright-Notice">Copyright @ 2024 昵朋旅遊網. Privacy Policy / Copyright</div>
@@ -1161,7 +1126,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
     <!-- 自訂的js -->
-    <script src="./travel.js"></script>
+    <script src="./js/travel.js"></script>
 </body>
 
 </html>
