@@ -208,12 +208,15 @@ section {
     background-image: url('./images/Fukuoka/bn.jpg');
     position: relative;
     background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
 .topbar img {
     height: 96px;
     width: 110px;
-    margin-left: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
@@ -229,15 +232,15 @@ section {
     top: 0;
 }
 
-.topbar .text {
+.text {
     width: 120px;
-    height: 570px;
+    height: 700px;
     justify-content: center;
     display: flex;
     /* 要包文字 */
 }
 
-.topbar .text h1 {
+.text h1 {
     writing-mode: vertical-lr;
     /* 文字垂直排 */
     letter-spacing: 0.2em;
@@ -247,9 +250,10 @@ section {
     font-weight: bold;
     /* 文字加粗 */
     margin-top: 115px;
+    margin-right: 10px;
 }
 
-.topbar .text h2 {
+.text h2 {
     writing-mode: vertical-lr;
     /* 文字垂直排 */
     letter-spacing: 0.2em;
@@ -258,12 +262,13 @@ section {
     margin-right: 16px;
 }
 
-.topbar .text h3 {
+.text h3 {
     font-size: 1rem;
     color: #B19693;
     writing-mode: vertical-lr;
     /* 文字垂直排 */
     margin-top: 115px;
+    letter-spacing: 2px;
 }
 
 /* 漢堡按鈕區 */
@@ -525,6 +530,8 @@ button#closeMenu {
     color: #B19693;
     writing-mode: vertical-lr;
     /* 文字垂直排 */
+    margin-left: 10px;
+    letter-spacing: 2px;
 }
 
 
@@ -599,7 +606,7 @@ button#closeMenu {
 .btn-SignUp {
     font-weight: 200;
     letter-spacing: 2px;
-    padding: 10px 20px;
+    padding: 20px 30px;
     border: 2px solid #9F353A;
     border-radius: 40px;
     cursor: pointer;
@@ -633,7 +640,7 @@ button#closeMenu {
 /* 縮放會有問題!!!尚未更改 */
 .line {
     height: 230px;
-    width: 0.5px;
+    width: 2px;
     border-width: 0;
     background-color: #374C66;
     justify-content: center;
@@ -691,6 +698,8 @@ button#closeMenu {
     z-index: 1;
     position: absolute;
     background-image: url("./images/Fukuoka/guide.jpg");
+    background-position: center;
+    /* 圖片居中 */
 }
 
 .guide-line {
@@ -729,11 +738,6 @@ button#closeMenu {
     margin-top: 30px;
     font-weight: bold;
 }
-
-
-
-
-
 
 /* 形成精選輪播*/
 .feature-box {
@@ -939,8 +943,6 @@ button#closeMenu {
 /* 形成精選輪播完 */
 
 
-
-
 /* 花 */
 .DailyTour {
     width: 100%;
@@ -1129,6 +1131,7 @@ a.ui-button:active,
     padding: 25px 20px;
     color: var(--alabaster);
     background-color: var(--auburn);
+    letter-spacing: 2px;
 }
 
 
@@ -1141,7 +1144,7 @@ a.ui-button:active,
 }
 
 .btn-day-lift {
-    background-image: url("./images/button-left.png");
+    background-image: url("./images/button-left.svg");
     width: 38px;
     height: 38px;
     outline: none;
@@ -1150,7 +1153,7 @@ a.ui-button:active,
 }
 
 .btn-day-right {
-    background-image: url("./images/button-right.png");
+    background-image: url("./images/button-right.svg");
     width: 38px;
     height: 38px;
     outline: none;
@@ -1162,16 +1165,16 @@ a.ui-button:active,
 /* 增加的效果!!!!!!請加進去 */
 .btn-day-lift:hover {
     /* 滑鼠樣式改變 */
-    background-image: url("./images/btn-day-lift.png");
-    background-color: var(--indigo);
+    background-image: url("./images/button-left.svg");
+    background-color: var(--alabaster);
     border-radius: 99px;
     cursor: pointer;
 }
 
 /* 增加的效果!!!!!!請加進去 */
 .btn-day-right:hover {
-    background-image: url("./images/btn-day-right.png");
-    background-color: var(--indigo);
+    background-image: url("./images/button-right.svg");
+    background-color: var(--alabaster);
     border-radius: 99px;
     /* 滑鼠樣式改變 */
     cursor: pointer;
@@ -1180,7 +1183,7 @@ a.ui-button:active,
 
 
 .day-text h4 {
-    color: #fff;
+    color: #374C66;
     font-weight: bold;
     font-size: 1.5rem;
     margin-left: 500px;
@@ -1403,6 +1406,7 @@ a.ui-button:active,
     background-color: #fff;
     position: absolute;
     z-index: 1;
+    letter-spacing: 2px;
 }
 
 .hotel-img img {
@@ -1448,6 +1452,9 @@ a.ui-button:active,
     z-index: 1;
     margin-top: 20px;
     letter-spacing: 1rem;
+    border-right: 2px solid #374C66;
+    padding-right: 40px;
+    font-weight: bold;
 }
 
 
@@ -1485,6 +1492,8 @@ a.ui-button:active,
     color: #B19693;
     writing-mode: vertical-lr;
     /* 文字垂直排 */
+    letter-spacing: 2px;
+    margin-left: 5px;
 }
 
 
@@ -1492,7 +1501,7 @@ a.ui-button:active,
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 350px;
+    margin-left: 250px;
 }
 
 .note-text li {
@@ -1512,7 +1521,7 @@ a.ui-button:active,
 /* 縮放會有問題!!!尚未更改 */
 .note-line {
     height: 150px;
-    width: 1px;
+    width: 2px;
     border-width: 0;
     background-color: #374C66;
     justify-content: center;
@@ -1634,7 +1643,7 @@ footer a:hover {
 
 .r {
     line-height: 2.5;
-    align-content: start;
+    align-content: center;
 
 }
 
@@ -1646,7 +1655,7 @@ footer a:hover {
 .r1::after {
     content: "";
     position: absolute;
-    top: 5%;
+    top: 19%;
     left: 140%;
     background: #aaa;
     width: 3px;
