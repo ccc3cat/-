@@ -481,22 +481,23 @@ ul {
 }
 
 #polaroid {
-    background-image: url(./images/polaroid.jpg);
-    background-position: bottom;
-    background-size: cover;
     width: 100%;
     height: 500px;
+}
+#polaroid img{
+    width: 75%;
+    /* height: 500px; */
 }
 
 #linear {
     background: linear-gradient(#fff, #F1EEE1);
-    height: 500px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     /* 方向垂直排列 */
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; 
     /* 文字置中 */
 }
 
