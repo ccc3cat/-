@@ -611,6 +611,14 @@ button#closeMenu {
     margin-top: 25px;
 }
 
+.btn-SignUp div {
+    transition: 0.8s;
+}
+
+.btn-SignUp:hover div {
+    transform: translateX(6px);
+}
+
 .btn-SignUp::after {
     content: "";
     background-color: #9F353A;
@@ -624,10 +632,13 @@ button#closeMenu {
     border-radius: 40px;
     overflow: hidden;
     padding: 3px 3px;
+    transition: 0.2s;
 }
 
-
-
+.btn-SignUp:hover::after {
+    top: 0px;
+    left: 0px;
+}
 
 /* 裝飾線 */
 /* 縮放會有問題!!!尚未更改 */
@@ -690,7 +701,7 @@ button#closeMenu {
     background-size: cover;
     z-index: 1;
     position: absolute;
-    background-image: url("./images/Fukuoka/guide.jpg");
+    background-image: url("./images/shimane/guide.jpg");
 }
 
 .guide-line {
