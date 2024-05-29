@@ -27,7 +27,7 @@ jumpLinks.forEach((jumpLink) => {
 
 // TOP至頂按鈕
 $('#gotop').click(function () {
-    $('html,body').animate({ scrollTop: 0 }, 1300);
+    $('html,body').animate({ scrollTop: 0 }, 900);
 })
 
 // 淡出淡入

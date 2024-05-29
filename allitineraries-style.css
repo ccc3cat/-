@@ -331,7 +331,7 @@ button#closeMenu {
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
     height: 850px;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     /*讓整張圖完整進去，不會被裁切*/
     background-image: url(./images/banner3.jpg);
@@ -354,7 +354,7 @@ button#closeMenu {
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
     height: 850px;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     /*讓整張圖完整進去，不會被裁切*/
     background-image: url(./images/banner4.jpg);
@@ -426,7 +426,7 @@ button#closeMenu {
     margin-bottom: 40px;
 }
 
-.carousel-control {
+/* .carousel-control {
     background: rgba(64, 61, 61, 0.28);
     border-radius: 50%;
     color: #F1EEE1;
@@ -457,16 +457,16 @@ button#closeMenu {
 .carousel-control:hover {
     background: rgba(64, 61, 61, 0.8);
     color: #F1EEE1;
-}
+} */
 
-#carousel-1:checked~.control-1,
-#carousel-2:checked~.control-2,
-#carousel-3:checked~.control-3,
-#carousel-4:checked~.control-4,
-#carousel-5:checked~.control-5,
-#carousel-6:checked~.control-6 {
+/* #carousel-1:checked,
+#carousel-2:checked,
+#carousel-3:checked,
+#carousel-4:checked,
+#carousel-5:checked,
+#carousel-6:checked {
     display: block;
-}
+} */
 
 .carousel-indicators {
     list-style: none;
@@ -496,12 +496,12 @@ button#closeMenu {
     color: #F1EEE1;
 }
 
-#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet,
-#carousel-4:checked~.control-4~.carousel-indicators li:nth-child(4) .carousel-bullet,
-#carousel-5:checked~.control-5~.carousel-indicators li:nth-child(5) .carousel-bullet,
-#carousel-6:checked~.control-6~.carousel-indicators li:nth-child(6) .carousel-bullet {
+#carousel-1:checked~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked~.carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked~.carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-5:checked~.carousel-indicators li:nth-child(5) .carousel-bullet,
+#carousel-6:checked~.carousel-indicators li:nth-child(6) .carousel-bullet {
     color: #374C66;
 }
 
@@ -518,6 +518,15 @@ button#closeMenu {
     color: #F1EEE1;
     z-index: 1;
     font-size: 1.2rem;
+    width: 70px;
+}
+
+.btn-more div {
+    transition: 0.8s;
+}
+
+.btn-more:hover div {
+    transform: translateX(6px);
 }
 
 .btn-more::after {
@@ -533,6 +542,12 @@ button#closeMenu {
     border-radius: 40px;
     overflow: hidden;
     padding: 3px 3px;
+    transition: 0.2s;
+}
+
+.btn-more:hover::after {
+    top: 0px;
+    left: 0px;
 }
 
 nav a {
@@ -615,7 +630,7 @@ ul {
 }
 
 .list-box .item {
-    border: 2px solid rgb(55, 76, 102, .5);
+    border: 2px solid rgb(55, 76, 102, .2);
     border-radius: 40px;
     background-color: #F1EEE1;
     padding: 30px 50px;
@@ -686,6 +701,14 @@ ul {
     font-size: 1rem;
 }
 
+.btn-SignUp div {
+    transition: 0.8s;
+}
+
+.btn-SignUp:hover div {
+    transform: translateX(6px);
+}
+
 .btn-SignUp::after {
     content: "";
     background-color: #9F353A;
@@ -699,8 +722,13 @@ ul {
     border-radius: 40px;
     overflow: hidden;
     padding: 3px 3px;
+    transition: 0.2s;
 }
 
+.btn-SignUp:hover::after {
+    top: 0px;
+    left: 0px;
+}
 
 /* 頁尾區 */
 footer {
@@ -800,8 +828,6 @@ footer a:hover {
     height: 224px;
     width: 350px;
     color: var(--alabaster);
-
-    /* border: 1px solid #ff1c1c; */
 }
 
 .r {
@@ -837,8 +863,6 @@ footer a:hover {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-
-    /* border: 1px solid #ff1c1c; */
 }
 
 /*rwd斷點*/

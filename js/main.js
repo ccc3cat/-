@@ -103,3 +103,22 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 }
+
+// 同頁面中的menu關閉呼叫
+document.addEventListener("DOMContentLoaded", function () {
+    // 獲取 closeMenu 按鈕
+    var closeMenuButton = document.getElementById("closeMenu");
+
+    // 獲取 "最新消息" 和 "關於日本" 的連結
+    var latestNewsLink = document.querySelector("a[href='index.html#news']");
+    var aboutJapanLink = document.querySelector("a[href='index.html#about']");
+
+    // 定義模擬點擊 closeMenu 按鈕的函數
+    function simulateCloseMenuClick() {
+        closeMenuButton.click();
+    }
+
+    // 為 "最新消息" 和 "關於日本" 連結添加點擊事件監聽器
+    latestNewsLink.addEventListener("click", simulateCloseMenuClick);
+    aboutJapanLink.addEventListener("click", simulateCloseMenuClick);
+});
