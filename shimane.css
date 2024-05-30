@@ -252,6 +252,8 @@ section {
 .topbar .text h2 {
     writing-mode: vertical-lr;
     /* 文字垂直排 */
+    color: var(--jel);
+    font-weight: bold;
     letter-spacing: 0.2em;
     font-size: 1.3rem;
     margin-top: 390px;

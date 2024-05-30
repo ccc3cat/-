@@ -232,7 +232,7 @@ section {
     top: 0;
 }
 
-.text {
+.text-box .text {
     width: 120px;
     height: 700px;
     justify-content: center;
@@ -240,7 +240,7 @@ section {
     /* 要包文字 */
 }
 
-.text h1 {
+.text-box .text h1 {
     writing-mode: vertical-lr;
     /* 文字垂直排 */
     letter-spacing: 0.2em;
@@ -253,9 +253,11 @@ section {
     margin-right: 10px;
 }
 
-.text h2 {
+.text-box .text h2 {
     writing-mode: vertical-lr;
     /* 文字垂直排 */
+    color: var(--jel);
+    font-weight: bold;
     letter-spacing: 0.2em;
     font-size: 1.3rem;
     margin-top: 390px;
