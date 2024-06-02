@@ -1189,6 +1189,8 @@ margin-left: 20px;
 
 /*手機板*/
 @media (max-width:640px) {
+    #news {
+margin-bottom: 50px;    }
     .newsImg {
         display: none;
     }
