@@ -1009,6 +1009,42 @@ button#closeMenu {
     text-align: justify;
 }
 
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+    #allEvents .slider2 .card {
+        width: 400px;
+        height: 500px;
+        flex: 1;
+        margin: 0 15px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #allEvents .slider2 .card .content {
+        background-color: #ffffff;
+        padding: 20px 0;
+        display: flex;
+        position: absolute;
+        right: 50px;
+        top: 280px;
+        width: 300px;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    #allEvents .card .content .sub-title {
+        margin: 0 30px;
+    }
+}
+
 /* 大輪播完 */
 .all-t {
     width: 634px;
@@ -1172,6 +1208,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer a {
+    width: 64px;
+    height: 40px;
+}
+
 .footer-frame {
     width: 100%;
     display: flex;
@@ -1200,7 +1241,6 @@ footer a:hover {
 }
 
 .footer-left {
-
     width: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -1237,8 +1277,6 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* justify-content: center; */
-    /*主軸(垂直)置中*/
 }
 
 .f2 {
@@ -1248,20 +1286,14 @@ footer a:hover {
 .f3 h2 {
     line-height: 1.5;
     /* 設置行高為文字大小的1.5倍 */
-
-
 }
 
 
 .footer-right {
     display: flex;
-    /* flex-direction: row; */
-
     height: 224px;
     width: 350px;
     color: var(--alabaster);
-
-    /* border: 1px solid #ff1c1c; */
 }
 
 .r {
@@ -1282,7 +1314,6 @@ footer a:hover {
     background: #aaa;
     width: 3px;
     height: 140px;
-
 }
 
 .r1,
@@ -1311,10 +1342,63 @@ footer a:hover {
 
 /*手機板*/
 @media (max-width:640px) {
-    footer {
-        width: 100%;
+    .footer {
+        margin-top: 10px;
+        width: 73%;
+    }
 
-        height: 100%;
+    .social-media-icon {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-media-icon a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-media-icon img {
+        height: 25px;
+        width: 25px;
+        margin-right: 0px;
+    }
+
+    .footer-left {
+        align-items: center;
+        /* 垂直居中 */
+        justify-content: center;
+        /* 水平居中 */
+        align-content: center;
+        /* 如果有多行，保证整体居中 */
+    }
+
+    .footer-left .f3 {
+        margin: 10px 120px 20px 0;
+    }
+
+    .footerLogo {
+        padding-right: 10px;
+    }
+
+
+    .f1 {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .f2 {
+        margin-right: 0px;
+    }
+
+    .Copyright-Notice {
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
     }
 }
 
@@ -1329,6 +1413,18 @@ footer a:hover {
     z-index: 999;
     cursor: pointer;
 }
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+    .gotop {
+    left: 80%;
+}}
 
 /*rwd斷點*/
 /*桌機板*/
