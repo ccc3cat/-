@@ -649,7 +649,6 @@ margin-left: 20px;
     position: relative;
     height: 700px;
     background-image: url(./images/Rectangle-180.jpg);
-
     overflow: hidden;
 }
 
@@ -736,7 +735,6 @@ margin-left: 20px;
 /* 地圖縮放 */
 .map {
     position: relative;
-    /* height: 100vh; */
     width: 250px;
 }
 
@@ -754,7 +752,6 @@ margin-left: 20px;
 .Kanto:hover {
     z-index: 999;
 }
-
 
 
 .Hokkaido {
@@ -794,6 +791,52 @@ margin-left: 20px;
 }
 
 /* 完。*/
+
+/*rwd斷點*/
+/*桌機板*/
+@media (min-width:821px) {}
+
+/*平板*/
+@media (max-width:820px) {}
+
+/*手機板*/
+@media (max-width:640px) {
+    .Hokkaido {
+        height: 200px;
+        width: 230px;
+        top: 100px;
+        left: 300px;
+    }
+    
+    .Kanto {
+        height: 250px;
+        left: 239px;
+        top: 279px;
+        width: 150px;
+    }
+    
+    .Kansai {
+        height: 230px;
+        left: -65px;
+        top: 415px;
+    }
+    
+    
+    .Shikoku {
+        height: 90px;
+        left: 50px;
+        width: 100px;
+        top: 530px;
+    
+    }
+    
+    .Kyushu {
+        height: 100px;
+        width: 60px;
+        left: 10px;
+        top: 530px;
+    }
+}
 
 
 /* 推薦行程 */
