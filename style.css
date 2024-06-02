@@ -144,16 +144,6 @@ table {
     --alabaster: #F1EEE1;
     --rosyBrown: #B19693;
     --jel: #403D3D;
-
-    /* --bg-color-1: #F2EDF0;
-    --bg-color-2: #E6ECE5;
-    --bg-color-3: #ECF0F4;
-
-    --lesser-color: #BF9899; */
-    /*透明色調*/
-    /* --alpha-deep: rgba(0, 0, 0, 0.4);
-    --alpha-red: rgba(227, 217, 151, 0.2);
-    --alpha-red2: rgba(214, 168, 163, 0.6); */
 }
 
 img {
@@ -486,6 +476,11 @@ button#closeMenu {
     cursor: pointer;
 }
 
+.Mmenu {
+    display: none;
+
+}
+
 /*桌機板*/
 @media (min-width:821px) {}
 
@@ -495,22 +490,30 @@ button#closeMenu {
 /*手機板*/
 @media (max-width:640px) {
     #navbar {
-        position: fixed;
+        display: none;
+        /* position: fixed;
         z-index: 999;
         top: 0;
-        right: 0;
+        right: 0; */
     }
 
-    nav ul.icon li {
+    /* nav ul.icon li {
         display: none;
     }
 
     .sticky {
-        /* display: none; */
+
     }
 
     nav ul.icon li:last-child {
         display: block;
+    } */
+    .Mmenu {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        top: 30px;
+        right: 30px;
     }
 
 
@@ -616,7 +619,10 @@ button#closeMenu {
 @media (max-width:640px) {
     #about {
         flex-direction: column-reverse;
-
+    }
+    #about .title{
+        margin-top: 50px;
+margin-left: 20px;
     }
 
     .whyjp {
@@ -630,7 +636,7 @@ button#closeMenu {
     }
 
     .aboutT {
-        width: 87%;
+        width: 78%;
     }
 
 }
@@ -1018,6 +1024,9 @@ button#closeMenu {
 
 /*手機板*/
 @media (max-width:640px) {
+    #allEvents {
+        height: 700px;
+    }
     #allEvents .slider2 .card {
         width: 400px;
         height: 500px;
@@ -1042,6 +1051,9 @@ button#closeMenu {
 
     #allEvents .card .content .sub-title {
         margin: 0 30px;
+    }
+    #allEvents .title {
+        margin-bottom: 60px;
     }
 }
 
@@ -1413,6 +1425,7 @@ footer a {
     z-index: 999;
     cursor: pointer;
 }
+
 /*rwd斷點*/
 /*桌機板*/
 @media (min-width:821px) {}
@@ -1423,8 +1436,9 @@ footer a {
 /*手機板*/
 @media (max-width:640px) {
     .gotop {
-    left: 80%;
-}}
+        left: 80%;
+    }
+}
 
 /*rwd斷點*/
 /*桌機板*/

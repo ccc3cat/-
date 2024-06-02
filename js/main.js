@@ -4,24 +4,26 @@ const menu = document.getElementById('menu');
 const overlay = document.getElementById('overlay');
 const jumpLinks = document.querySelectorAll('.jumpLink'); // 使用类名选择所有跳转链接
 
-openMenuButton.addEventListener('click', () => {
+function showMenu() {
     menu.classList.add('show-menu');
     overlay.classList.add('show-overlay');
-});
+}
 
-closeMenuButton.addEventListener('click', () => {
+function hideMenu() {
     menu.classList.remove('show-menu');
     overlay.classList.remove('show-overlay');
-});
+}
+
+openMenuButton.addEventListener('click', showMenu);
+closeMenuButton.addEventListener('click', hideMenu);
 
 // 为每个跳转链接添加点击事件
 jumpLinks.forEach((jumpLink) => {
-    jumpLink.addEventListener('click', () => {
-        // 点击链接时，关闭菜单和遮罩
-        menu.classList.remove('show-menu');
-        overlay.classList.remove('show-overlay');
-    });
+    jumpLink.addEventListener('click', hideMenu);
 });
+
+// 现在可以在其他地方调用 showMenu() 和 hideMenu() 来控制菜单的显示和隐藏
+
 
 
 // 關於日本輪播圖
