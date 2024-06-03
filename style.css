@@ -1567,6 +1567,9 @@ footer a {
         margin-bottom: 50px;
         text-align: center;
     }
+    footer a:hover {
+        display: none;
+    }
 }
 
 /* TOP鈕 */
