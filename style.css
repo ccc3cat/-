@@ -736,7 +736,6 @@ button#closeMenu {
 /* 地圖縮放 */
 .map {
     position: relative;
-    width: 250px;
 }
 
 .map a {
@@ -771,6 +770,7 @@ button#closeMenu {
 
 .Kansai {
     height: 230px;
+    width: 305px;
     left: -55px;
     top: 415px;
 }
@@ -845,39 +845,39 @@ button#closeMenu {
     }
 
     .Hokkaido {
+        top:140px;
+        left: 160px;
+        width: 120px;
         height: 200px;
-        width: 230px;
-        top: 100px;
-        left: 300px;
     }
 
     .Kanto {
+        top: 232px;
+        left: 119px;
+        width: 91px;
         height: 250px;
-        left: 239px;
-        top: 279px;
-        width: 150px;
     }
 
     .Kansai {
+        top: 315px;
+        left: -55px;
+        width: 175px;
         height: 230px;
-        left: -65px;
-        top: 415px;
     }
 
 
     .Shikoku {
+        top: 382px;
+        left: 2px;
+        width: 70px;
         height: 90px;
-        left: 50px;
-        width: 100px;
-        top: 530px;
-
     }
 
     .Kyushu {
+        top: 379px;
+        left: -22px;
+        width: 39px;
         height: 100px;
-        width: 60px;
-        left: 10px;
-        top: 530px;
     }
 
     #allRegions .titlebox {
