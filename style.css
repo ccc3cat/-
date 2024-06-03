@@ -1105,7 +1105,7 @@ button#closeMenu {
         width: 400px;
         height: 500px;
         flex: 1;
-        margin: 0 15px;
+        margin: 0 10px;
         overflow: hidden;
         position: relative;
     }

@@ -1,26 +1,46 @@
-const openMenuButton = document.getElementById('openMenu');
-const closeMenuButton = document.getElementById('closeMenu');
-const menu = document.getElementById('menu');
-const overlay = document.getElementById('overlay');
-const jumpLinks = document.querySelectorAll('.jumpLink'); // 使用类名选择所有跳转链接
+document.addEventListener('DOMContentLoaded', () => {
+    const openMenuButton = document.getElementById('openMenu');
+    const closeMenuButton = document.getElementById('closeMenu');
+    const menu = document.getElementById('menu');
+    const jumpLinks = document.querySelectorAll('.jumpLink');
 
-function showMenu() {
-    menu.classList.add('show-menu');
-    overlay.classList.add('show-overlay');
-}
+    function showMenu() {
+        if (menu) {
+            menu.classList.add('show-menu');
+        } else {
+            console.error('未找到菜单元素');
+        }
+    }
 
-function hideMenu() {
-    menu.classList.remove('show-menu');
-    overlay.classList.remove('show-overlay');
-}
+    function hideMenu() {
+        if (menu) {
+            menu.classList.remove('show-menu');
+        } else {
+            console.error('未找到菜单元素');
+        }
+    }
 
-openMenuButton.addEventListener('click', showMenu);
-closeMenuButton.addEventListener('click', hideMenu);
+    if (openMenuButton) {
+        openMenuButton.addEventListener('click', showMenu);
+    } else {
+        console.error('未找到打开菜单按钮');
+    }
 
-// 为每个跳转链接添加点击事件
-jumpLinks.forEach((jumpLink) => {
-    jumpLink.addEventListener('click', hideMenu);
+    if (closeMenuButton) {
+        closeMenuButton.addEventListener('click', hideMenu);
+    } else {
+        console.error('未找到关闭菜单按钮');
+    }
+
+    jumpLinks.forEach((jumpLink) => {
+        if (jumpLink) {
+            jumpLink.addEventListener('click', hideMenu);
+        } else {
+            console.error('未找到跳转链接');
+        }
+    });
 });
+
 
 // 现在可以在其他地方调用 showMenu() 和 hideMenu() 来控制菜单的显示和隐藏
 
