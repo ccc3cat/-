@@ -110,28 +110,3 @@ document.querySelectorAll('a[href^="#KYUSHU"]').forEach(anchor => {
         });
     });
 });
-
-    // 同頁面中的menu關閉呼叫
-    document.addEventListener("DOMContentLoaded", function () {
-        // 獲取 closeMenu 按鈕
-        var closeMenuButton = document.getElementById("closeMenu");
-    
-        // 獲取 "最新消息" 和 "關於日本" 的連結
-        var Hokkaido = document.querySelector("a[href='./allitineraries.html#Hokkaido']");
-        var KANTO = document.querySelector("a[href='./allitineraries.html#KANTO']");
-        var KANSAI = document.querySelector("a[href='./allitineraries.html#KANSAI']");
-        var SHIKOKU = document.querySelector("a[href='./allitineraries.html#SHIKOKU']");
-        var KYUSHU = document.querySelector("a[href='./allitineraries.html#KYUSHU']");
-    
-        // 定義模擬點擊 closeMenu 按鈕的函數
-        function simulateCloseMenuClick() {
-            closeMenuButton.click();
-        }
-    
-        // 為 "最新消息" 和 "關於日本" 連結添加點擊事件監聽器
-        Hokkaido.addEventListener("click", simulateCloseMenuClick);
-        KANTO.addEventListener("click", simulateCloseMenuClick);
-        KANSAI.addEventListener("click", simulateCloseMenuClick);
-        SHIKOKU.addEventListener("click", simulateCloseMenuClick);
-        KYUSHU.addEventListener("click", simulateCloseMenuClick);
-    });
