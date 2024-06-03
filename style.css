@@ -260,8 +260,7 @@ section {
 
 .menuIconBox li {
     font-size: 1.4rem;
-    color: #000000;
-    /* background-color: #d7ffea; */
+    color: var(--indigo);
 }
 
 .menuIconBox li img {
@@ -501,6 +500,10 @@ button#closeMenu {
         right: 30px;
     }
 
+    .menu {
+        height: 932px;
+    }
+
     .menuLogoimg {
         display: none;
     }
@@ -528,6 +531,16 @@ button#closeMenu {
         position: absolute;
         top: 50px;
         right: 20px;
+    }
+
+    .menuIconBox li {
+        font-size: 1rem;
+        color: var(--indigo);
+        /* background-color: #d7ffea; */
+    }
+
+    .menu .all {
+        margin-top: 10px;
     }
 }
 
@@ -1482,7 +1495,7 @@ footer a {
 /*手機板*/
 @media (max-width:640px) {
     .footer {
-        margin-top:50px;
+        margin-top: 50px;
         width: 73%;
     }
 
@@ -1516,14 +1529,16 @@ footer a {
     .footer-left .f3 {
         margin: 10px 120px 20px 0;
     }
-    .footer-right{
+
+    .footer-right {
         margin-top: 30px;
         margin-left: 20px;
     }
-    
-.r1::after {
-    left: 130%;
-}
+
+    .r1::after {
+        left: 130%;
+    }
+
     .r1,
     .r2 {
         margin-right: 40px;
