@@ -491,23 +491,8 @@ button#closeMenu {
 @media (max-width:640px) {
     #navbar {
         display: none;
-        /* position: fixed;
-        z-index: 999;
-        top: 0;
-        right: 0; */
     }
 
-    /* nav ul.icon li {
-        display: none;
-    }
-
-    .sticky {
-
-    }
-
-    nav ul.icon li:last-child {
-        display: block;
-    } */
     .Mmenu {
         display: block;
         position: fixed;
@@ -516,7 +501,34 @@ button#closeMenu {
         right: 30px;
     }
 
+    .menuLogoimg {
+        display: none;
+    }
 
+    .menuImg {
+        display: none;
+    }
+
+    .menuIconBox {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .menuIconBox>.all:nth-of-type(1) {
+        margin-top: 100px;
+    }
+
+
+    .menuIconBox .allOptions {
+        padding: 0 0px;
+    }
+
+    button#closeMenu {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
 }
 
 /*關於日本*/
@@ -791,6 +803,10 @@ button#closeMenu {
     top: 530px;
 }
 
+.Mtittle {
+    display: none;
+}
+
 /* 完。*/
 
 /*rwd斷點*/
@@ -815,23 +831,27 @@ button#closeMenu {
         justify-content: center;
         /* 水平置中 */
     }
-.w1,.w2{
-    width: 300px;
-}
-.clouds-L {
-    width: 400px;
-    top: 50%;
-    left: 0;
-}
 
-.clouds-R {
-    width: 400px;
-    top: 85%;
-    right: 0;
-}
+    .w1,
+    .w2 {
+        width: 300px;
+    }
+
+    .clouds-L {
+        width: 400px;
+        top: 50%;
+        left: 0;
+    }
+
+    .clouds-R {
+        width: 400px;
+        top: 85%;
+        right: 0;
+    }
 
 
     .allRegions {
+        width: 100%;
         z-index: 50;
         display: flex;
         flex-direction: column;
@@ -845,37 +865,37 @@ button#closeMenu {
     }
 
     .Hokkaido {
-        top:140px;
-        left: 160px;
+        top: 90px;
+        left: 170px;
         width: 120px;
         height: 200px;
     }
 
     .Kanto {
-        top: 232px;
-        left: 119px;
+        top: 182px;
+        left: 129px;
         width: 91px;
         height: 250px;
     }
 
     .Kansai {
-        top: 315px;
-        left: -55px;
+        top: 265px;
+        left: -45px;
         width: 175px;
         height: 230px;
     }
 
 
     .Shikoku {
-        top: 382px;
-        left: 2px;
+        top: 332px;
+        left: 12px;
         width: 70px;
         height: 90px;
     }
 
     .Kyushu {
-        top: 379px;
-        left: -22px;
+        top: 329px;
+        left: -12px;
         width: 39px;
         height: 100px;
     }
@@ -888,6 +908,14 @@ button#closeMenu {
         display: flex;
         flex-direction: row;
         z-index: 998;
+    }
+
+    .Mtittle {
+        display: block;
+        position: absolute;
+        top: 78%;
+        left: 17%;
+        color: var(--indigo);
     }
 }
 
@@ -1454,7 +1482,7 @@ footer a {
 /*手機板*/
 @media (max-width:640px) {
     .footer {
-        margin-top: 10px;
+        margin-top:50px;
         width: 73%;
     }
 
@@ -1488,6 +1516,18 @@ footer a {
     .footer-left .f3 {
         margin: 10px 120px 20px 0;
     }
+    .footer-right{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+.r1::after {
+    left: 130%;
+}
+    .r1,
+    .r2 {
+        margin-right: 40px;
+    }
 
     .footerLogo {
         padding-right: 10px;
@@ -1503,6 +1543,7 @@ footer a {
     }
 
     .f2 {
+        margin-top: 30px;
         margin-right: 0px;
     }
 

@@ -1,49 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const openMenuButton = document.getElementById('openMenu');
+    const openMenuButtons = document.querySelectorAll('.openMenuButton');
     const closeMenuButton = document.getElementById('closeMenu');
     const menu = document.getElementById('menu');
-    const jumpLinks = document.querySelectorAll('.jumpLink');
+    const overlay = document.getElementById('overlay');
+    const jumpLinks = document.querySelectorAll('.jumpLink'); // 使用类名选择所有跳转链接
 
-    function showMenu() {
-        if (menu) {
+    openMenuButtons.forEach((openMenuButton) => {
+        openMenuButton.addEventListener('click', () => {
             menu.classList.add('show-menu');
-        } else {
-            console.error('未找到菜单元素');
-        }
-    }
+            overlay.classList.add('show-overlay');
+        });
+    });
 
-    function hideMenu() {
-        if (menu) {
-            menu.classList.remove('show-menu');
-        } else {
-            console.error('未找到菜单元素');
-        }
-    }
+    closeMenuButton.addEventListener('click', () => {
+        menu.classList.remove('show-menu');
+        overlay.classList.remove('show-overlay');
+    });
 
-    if (openMenuButton) {
-        openMenuButton.addEventListener('click', showMenu);
-    } else {
-        console.error('未找到打开菜单按钮');
-    }
-
-    if (closeMenuButton) {
-        closeMenuButton.addEventListener('click', hideMenu);
-    } else {
-        console.error('未找到关闭菜单按钮');
-    }
-
+    // 为每个跳转链接添加点击事件
     jumpLinks.forEach((jumpLink) => {
-        if (jumpLink) {
-            jumpLink.addEventListener('click', hideMenu);
-        } else {
-            console.error('未找到跳转链接');
-        }
+        jumpLink.addEventListener('click', () => {
+            // 点击链接时，关闭菜单和遮罩
+            menu.classList.remove('show-menu');
+            overlay.classList.remove('show-overlay');
+        });
     });
 });
-
-
-// 现在可以在其他地方调用 showMenu() 和 hideMenu() 来控制菜单的显示和隐藏
-
 
 
 // 關於日本輪播圖
