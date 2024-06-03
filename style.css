@@ -818,10 +818,30 @@ button#closeMenu {
 .w1,.w2{
     width: 300px;
 }
+.clouds-L {
+    width: 400px;
+    top: 50%;
+    left: 0;
+}
+
+.clouds-R {
+    width: 400px;
+    top: 85%;
+    right: 0;
+}
+
 
     .allRegions {
+        z-index: 50;
         display: flex;
         flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .mapbox .title {
+        position: absolute;
+        top: 2%;
+        left: 17%;
     }
 
     .Hokkaido {
