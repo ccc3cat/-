@@ -114,6 +114,8 @@ body {
     /* overflow-x: hidden; */
 }
 
+
+
 ol,
 ul {
     list-style: none;
@@ -143,15 +145,6 @@ table {
     --alabaster: #F1EEE1;
     --rosyBrown: #B19693;
     --jel: #403D3D;
-}
-
-body {
-    color: #555;
-    font-family:
-    /* 英文 */
-    'times new roman', times, serif,
-    /* 中文 */
-    "Noto Sans TC", sans-serif;
 }
 
 img {
@@ -196,26 +189,8 @@ section {
     align-items: center;
     /*副軸水平置中*/
     height: 100vh;
+
 }
-
-
-.topbar {
-    /* 預設水平排 */
-    /* 貼齊左右，中間均分 */
-    display: flex;
-    /* 定義父層為彈性區塊,使父層提供彈性環境給所有子層 */
-    align-items: center;
-    /* 置中，單行元素在副軸的排列方式(對齊/平均) */
-    justify-content: space-between;
-    /* 主軸元素的排列方式(對齊/平均) */
-    padding: 10px 50px;
-    background-color: #fff;
-}
-
-.topbar .logo {
-    width: 200px;
-}
-
 /* 標題 */
 .title {
     position: relative;
@@ -244,6 +219,50 @@ section {
         /* 調整文字大小 */
     }
 /* 標題完 */
+
+/* 頁頭 */
+.topbar {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .logo {
+
+    margin-left: 50px;
+}
+
+.topbar .title {
+margin-right: 50px;
+}
+
+
+/* 首頁大圖*/
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    height: 450px;
+    background-image: url('./images/CulturalCustoms/bn.jpg');
+    background-size: cover;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navigation li {
+    margin: 5px;
+    color: #403D3D;
+    font-size: 0.85rem;
+}
 
 /* 漢堡按鈕區 */
 .menu {
@@ -307,7 +326,6 @@ section {
 .menuIconBox li {
     font-size: 1.4rem;
     color: #000000;
-    /* background-color: #d7ffea; */
 }
 
 .menuIconBox li img {
@@ -396,117 +414,460 @@ button#closeMenu {
 /* 完 */
 
 
-#banner {
-    background-image: url(./images/try.jpg);
-    height: 500px;
-    background-position: bottom;
-    background-size: cover;
+/* 漢堡索引 */
+.box {
+    height: 110px;
     width: 100%;
-}
-
-nav a {
-    display: block;
-    /* 行內間距取消 */
-    text-decoration: none;
-    /* 裝飾底線刪除 */
-    /* 不要預設藍色 */
-}
-
-ul {
-    list-style: none;
-}
-
-.navbar {
     display: flex;
-    /* 水平 */
-    padding: 50px 50px;
     justify-content: space-between;
-    color: #403D3D;
+    align-items: center;
+    /* 垂直居中 */
 }
 
-.navigation {
+.box .text {
+    margin: 0;
+    margin-left: 50px;
+    font-size: 0.8rem;
+}
+
+.hamburger {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+}
+#openMenu{
+    display: flex;
     align-items: center;
 }
-
-.navigation li {
-    margin: 5px;
-    color: #403D3D;
-    font-size: 0.85rem;
-}
-.navbar-menu:hover{
+#openMenu:hover{
     cursor: pointer;
 }
 
-.navbar-menu a {
+.hamburger img {
+    height: 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger h2 {
+    font-size: 1em;
+    /* 16px */
+    margin: 4px;
+}
+
+
+/* 文化習俗介紹 */
+.introduce-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    background-image: url('./images/Cultural Customs/Vector.png ');
+    background-size: cover;
+}
+
+
+
+/* 茶道 */
+
+.Tea {
+    height: 600px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Tea-img {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+    overflow-y: hidden;
+    height: 500px;
+    width: 50%;
+}
+
+.Tea-img img {
+    border-radius: 0 40px 40px 0;
+    /* 左上 右上 右下 左下 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Tea-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 475px;
+    width: 500px;
+    margin-left: 65%;
+    top: 85px;
+    position: relative;
+}
+
+
+.Tea-text {
+    display: flex;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding-top: 55px;
+    margin-left: 0;
+}
+
+
+/* 茶道介紹的框 */
+.Tea-service {
+    width: 100%;
+    height: 525px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+}
+
+/* 大輪播 */
+.Tea-service .slider2 {
+    max-width: 1900px;
+    display: flex;
+}
+
+.Tea-service .slider2 .card {
+    width: 600px;
+    height: 500px;
+    flex: 1;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.Tea-service .slider2 .card .img {
+    height: 400px;
+    width: 100%;
+}
+
+.Tea-service .slider2 .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.Tea-service .slider2 .card .content {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 280px;
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+    /* 水平偏移量 垂直偏移量 模糊程度 颜色 */
+}
+
+.Tea-service .card .content .sub-title {
+    width: 400px;
+    line-height: 20px;
+}
+
+.Tea-service .card .content p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* 大輪播完 */
+
+
+
+
+/* 茶道行程推薦 */
+.Tea-Itinerary {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 635px;
+    /* 背景砂紙圖 */
+background-image: url(./images/Rectangle-180.jpg);
+}
+.titlebox {
+    margin-top: 35px;
+    position: absolute;
+    left: 85%;
+    top: 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    z-index: 998;
+    /* 設置層級，這裡假設 .div2 在上面 */
 }
-
-.navbar-menu li {
-    margin: 5px;
-    color: #403D3D;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    /* 方向垂直排列 */
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* 文字置中 */
-    background-image: url(./images/cloud.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-}
-
-.content h1 {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+.title1 {
+    writing-mode: vertical-lr;
+    /* 垂直排列，文字由右向左 */
+    text-orientation: upright;
+    /* 文字方向直立 */
+    margin-right: 25px;
     font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+    letter-spacing: 13px;
+    /* 增加字距 */
+}
+
+
+.title2 {
+    transform: rotate(90deg);
+    transform-origin: top left;
+    /* 旋轉基準點在左上角 */
+    white-space: nowrap;
+    /* 防止文字換行 */
+
+}
+.slider {
+    max-width: 1900px;
+    display: flex;
     margin-bottom: 30px;
-    color: #374C66;
 }
 
-.content p {
-    font-size: 1rem;
-    letter-spacing: 2px;
-    line-height: 30px;
-    color: #403D3D;
+.slider .card {
+    flex: 1;
+    height: 400px;
+    margin: 0 20px;
+    background: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+
 }
 
-#polaroid {
+.slider .card .img {
+    height: 200px;
     width: 100%;
-    height: 500px;
-}
-#polaroid img{
-    width: 75%;
 }
 
-#linear {
-    background: linear-gradient(#fff, #F1EEE1);
-    height: 300px;
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .card .content {
+    padding: 10px 20px;
+}
+
+.card .content .Ctitle {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: var(--indigo);
+    font-weight: 600;
+    text-align: left;
+}
+
+.card .content .sub-title {
+    display: flex;
+    align-items: center;
+    font-size: .875rem;
+    line-height: 20px;
+}
+
+.card .content .sub-title img {
+    width: 13px;
+    height: 13px;
+    margin: 0 5px;
+}
+
+.card .content p {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 歌舞伎 */
+
+.Kabuki {
+    height: 600px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Kabuki-img {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+    overflow-y: hidden;
+    height: 500px;
+    width: 50%;
+    right: 0;
+}
+
+.Kabuki-img img {
+    border-radius: 40px 0 0 40px;
+    /* 左上 右上 右下 左下 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Kabuki-box {
     display: flex;
     flex-direction: column;
-    /* 方向垂直排列 */
     justify-content: center;
-    align-items: center;
-    text-align: center; 
-    /* 文字置中 */
+    height: 475px;
+    width: 500px;
+    margin-left: 15%;
+    top: 85px;
+    position: relative;
 }
 
-#linear h1{
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+.Kabuki-title {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-left: 0;
+    background-image: url("./images/titleImg.svg");
+    background-size: cover;
+}
+
+
+.Kabuki-title h2 {
+    font-size: 1.3rem;
+    /* 調整文字大小 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+
+}
+
+.Kabuki-title h3 {
+    position: absolute;
+    top:20px;
+    /* 垂直置中 */
+    right: 40px;
+    /* 靠右 */
     font-weight: bold;
-    color: #374C66;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+
 }
 
+.Kabuki-text {
+    display: flex;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding-top: 55px;
+    margin-left: 0;
+}
+
+
+/* 歌舞伎介紹的框 */
+.Kabuki-service {
+    width: 100%;
+    height: 525px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+}
+
+/* 大輪播 */
+.Kabuki-service .slider2 {
+    max-width: 1900px;
+    display: flex;
+}
+
+.Kabuki-service .slider2 .card {
+    width: 600px;
+    height: 500px;
+    flex: 1;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.Kabuki-service .slider2 .card .img {
+    height: 400px;
+    width: 100%;
+}
+
+.Kabuki-service .slider2 .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.Kabuki-service .slider2 .card .content {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 280px;
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.Kabuki-service .card .content .sub-title {
+    width: 400px;
+    line-height: 20px;
+}
+
+.Kabuki-service .card .content p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* 大輪播完 */
+
+
+
+
+/* 歌舞伎行程推薦 */
+.Kabuki-Itinerary {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 635px;
+background-image: url(./images/Rectangle-180.jpg);
+}
 
 
 /* 頁尾區 */
@@ -669,4 +1030,16 @@ footer a:hover {
 
         height: 100%;
     }
+}
+
+/* TOP鈕 */
+.gotop {
+    position: fixed;
+    display: none;
+    top: 85%;
+    left: 95%;
+    width: 70px;
+    max-width: 100%;
+    z-index: 999;
+    cursor: pointer;
 }

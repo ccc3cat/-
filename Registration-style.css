@@ -163,6 +163,7 @@ button {
     /* 显示指针光标 */
     /* 在需要的情况下添加其他样式 */
 }
+
 p {
     line-height: 1.5;
 }
@@ -214,7 +215,7 @@ p {
 
 .topbar .title {
     margin-right: 50px;
-    }
+}
 
 #glass {
     border-radius: 40px;
@@ -356,7 +357,7 @@ p {
 .btn-submit {
     font-weight: 200;
     letter-spacing: 2px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border: 2px solid #9F353A;
     border-radius: 40px;
     cursor: pointer;
@@ -365,6 +366,14 @@ p {
     color: #F1EEE1;
     z-index: 1;
     font-size: 1rem;
+}
+
+.btn-submit div {
+    transition: 0.8s;
+}
+
+.btn-submit:hover div {
+    transform: translateX(6px);
 }
 
 .btn-submit::after {
@@ -380,6 +389,12 @@ p {
     border-radius: 40px;
     overflow: hidden;
     padding: 3px 3px;
+    transition: 0.2s;
+}
+
+.btn-submit:hover::after {
+    top: 0px;
+    left: 0px;
 }
 
 /* 頁尾區 */

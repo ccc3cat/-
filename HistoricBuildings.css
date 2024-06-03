@@ -1,0 +1,1089 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family:
+        /* 英文 */
+        'times new roman', times, serif,
+        /* 中文 */
+        "Noto Sans TC", sans-serif;
+    line-height: 1;
+    /* overflow-x: hidden; */
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*共用區*/
+:root {
+    --indigo: #374C66;
+    --auburn: #9F353A;
+    --alabaster: #F1EEE1;
+    --rosyBrown: #B19693;
+    --jel: #403D3D;
+}
+
+body {
+    color: #555;
+    font-family:
+        /* 英文 */
+        'times new roman', times, serif,
+        /* 中文 */
+        "Noto Sans TC", sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    display: block;
+    color: var(--deep);
+    text-decoration: none;
+    /* 取消預設的底線裝飾 */
+}
+
+button {
+    /* 重置所有默认样式 */
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    /* 显示指针光标 */
+    /* 在需要的情况下添加其他样式 */
+}
+
+p {
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /*主軸:垂直*/
+    justify-content: center;
+    /*主軸(垂直)置中*/
+    align-items: center;
+    /*副軸水平置中*/
+    height: 100vh;
+}
+
+/* 標題 */
+.title {
+    position: relative;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.title .english {
+    font-size: 1.3rem;
+    /* 調整文字大小 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+}
+
+.title .chiness {
+    position: absolute;
+    top: 40px;
+    /* 垂直置中 */
+    right: 30px;
+    /* 靠右 */
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+}
+
+/* 標題完 */
+
+/* 頁頭 */
+.topbar {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .logo {
+
+    margin-left: 50px;
+}
+
+.topbar .title {
+    margin-right: 50px;
+}
+
+
+/* 首頁大圖*/
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    height: 450px;
+    background-image: url('./images/HistoricBuildings/bn.jpg');
+    background-size: cover;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navigation li {
+    margin: 5px;
+    color: #403D3D;
+    font-size: 0.85rem;
+}
+
+/* 漢堡按鈕區 */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    transition: right 0.7s ease;
+    z-index: 999;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.menuBox {
+    display: flex;
+    align-items: center;
+}
+
+.menuLogoimg {
+    position: relative;
+    width: 500px;
+    height: 100vh;
+    display: flex;
+}
+
+.menuImg {
+    height: 100vh;
+    max-height: 100%;
+
+}
+
+.logohavefont {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 230px;
+    max-width: 100%;
+
+}
+
+
+.menuIconBox {
+    width: 74%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.menuIconBox li {
+    font-size: 1.4rem;
+    color: #000000;
+    /* background-color: #d7ffea; */
+}
+
+.menuIconBox li img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.menuIconBox li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--indigo);
+}
+
+.menu .all {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu .all li {
+    color: var(--indigo);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--indigo);
+}
+
+.menuIconBox .allOptions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 230px;
+    margin: 40px 0;
+}
+
+.menuIconBox .allOptions li {
+    width: auto;
+}
+
+.menuIconBox .button,
+.l {
+    margin: 0 30px;
+}
+
+.menuIconBox .button li {
+    margin-top: 20px;
+}
+
+.menu-social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.menu-social-media li:nth-child(1),
+.menu-social-media li:nth-child(2) {
+    margin-right: 50px;
+}
+
+.menu-social-media li img {
+    /* margin設定格式化 */
+    margin: initial;
+    width: 25px;
+    height: 25px;
+}
+
+
+.show-menu {
+    right: 0;
+}
+
+button#closeMenu {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+/* 完 */
+
+
+/* 漢堡索引 */
+.box {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 垂直居中 */
+}
+
+.box .text {
+    margin: 0;
+    margin-left: 50px;
+    font-size: 0.8rem;
+}
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#openMenu {
+    display: flex;
+    align-items: center;
+}
+
+#openMenu:hover {
+    cursor: pointer;
+}
+
+.hamburger img {
+    height: 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger h2 {
+    font-size: 1em;
+    /* 16px */
+    margin: 4px;
+}
+
+
+/* 古蹟建築介紹 */
+.introduce-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    background-image: url('./images/Historic Buildings/Vector.png ');
+    background-size: cover;
+}
+
+.introduce-img {
+    background-image: url(./images/Rectangle-180.jpg);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduce-img img {
+    height: 175px;
+}
+
+
+/* 神社 */
+
+.Ttemples {
+    height: 600px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 更改處W50%BOXW500pxML65% */
+.Ttemples-img {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+    overflow-y: hidden;
+    height: 500px;
+    width: 50%;
+}
+
+.Ttemples-img img {
+    border-radius: 0 40px 40px 0;
+    /* 左上 右上 右下 左下 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Ttemples-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 475px;
+    width: 500px;
+    margin-left: 65%;
+    top: 85px;
+    position: relative;
+}
+
+.Ttemples-title {
+    width: 300px;
+    height: 50px;
+    margin-left: 0;
+    background-image: url("./images/titleImg.svg");
+    background-size: cover;
+}
+
+
+.Ttemples-title h2 {
+    font-size: 1.3rem;
+    /* 20px */
+    margin: 0;
+    color: #374C66;
+}
+
+.Ttemples-title h3 {
+    font-size: 1.5rem;
+    /* 24px */
+    margin: 0;
+    color: #374C66;
+    margin-left: 170px;
+}
+
+.Ttemples-text {
+    display: flex;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding-top: 55px;
+    margin-left: 0;
+}
+
+
+/* 神社介紹的框 */
+.Ttemples-service .card {
+    width: 100%;
+    height: 525px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* 垂直居中 */
+}
+
+/* 大輪播 */
+.Ttemples-service .slider2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Ttemples-service .slider2 .card {
+    width: 600px;
+    height: 500px;
+    flex: 1;
+    /* margin: 0 15px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.Ttemples-service .slider2 .card .img {
+    height: 400px;
+    width: 100%;
+}
+
+.Ttemples-service .slider2 .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.Ttemples-service .slider2 .card .content {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 280px;
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.Ttemples-service .card .content .sub-title {
+    border-radius: 20px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ffffff;
+ padding: 20px;
+    display: flex;
+    position: absolute;
+    right: 35px;
+    top: 320px;
+    width: 500px;
+    height: 90px;
+    font-size: 1rem;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ttemples-service .card .content p {
+    font-size: 1rem;
+    text-align: justify;
+
+}
+
+/* 大輪播完 */
+
+
+
+
+
+/*神社行程推薦 */
+.Ttemples-Itinerary {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 635px;
+    background-image: url(./images/Rectangle-180.jpg);
+}
+
+
+
+/* 庭園*/
+
+.Garden {
+    height: 600px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 更改處W50%BOXW500pxML15% */
+.Garden-img {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+    overflow-y: hidden;
+    height: 500px;
+    width: 50%;
+    right: 0;
+}
+
+.Garden-img img {
+    border-radius: 40px 0 0 40px;
+    /* 左上 右上 右下 左下 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Garden-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 475px;
+    width: 500px;
+    margin-left: 15%;
+    top: 85px;
+    position: relative;
+}
+
+.Garden-title {
+    width: 300px;
+    height: 50px;
+    margin-left: 0;
+    background-image: url("./images/titleImg.svg");
+    background-size: cover;
+}
+
+
+.Garden-title h2 {
+    font-size: 1.3rem;
+    /* 20px */
+    margin: 0;
+    color: #374C66;
+}
+
+.Garden-title h3 {
+    font-size: 1.5rem;
+    /* 24px */
+    margin: 0;
+    color: #374C66;
+    margin-left: 170px;
+}
+
+.Garden-text {
+    display: flex;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding-top: 55px;
+    margin-left: 0;
+}
+
+
+/* 庭園介紹的框 */
+.Garden-service {
+    width: 100%;
+    height: 525px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+}
+
+/* 大輪播 */
+.Garden-service .slider2 {
+    max-width: 1900px;
+    display: flex;
+}
+
+.Garden-service .slider2 .card {
+    width: 600px;
+    height: 500px;
+    flex: 1;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.Garden-service .slider2 .card .img {
+    height: 400px;
+    width: 100%;
+}
+
+.Garden-service .slider2 .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.Garden-service .slider2 .card .content {
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 280px;
+    width: 500px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.Garden-service .card .content .sub-title {
+    width: 400px;
+    line-height: 20px;
+}
+
+.Garden-service .card .content p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* 大輪播完 */
+
+
+
+/* 庭園行程推薦 */
+.Garden-Itinerary {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 635px;
+    background-image: url(./images/Rectangle-180.jpg);
+}
+
+.titlebox {
+    margin-top: 35px;
+    position: absolute;
+    left: 85%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 998;
+    /* 設置層級，這裡假設 .div2 在上面 */
+}
+
+.title1 {
+    writing-mode: vertical-lr;
+    /* 垂直排列，文字由右向左 */
+    text-orientation: upright;
+    /* 文字方向直立 */
+    margin-right: 25px;
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--indigo);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+    letter-spacing: 13px;
+    /* 增加字距 */
+}
+
+
+.title2 {
+    transform: rotate(90deg);
+    transform-origin: top left;
+    /* 旋轉基準點在左上角 */
+    white-space: nowrap;
+    /* 防止文字換行 */
+
+}
+
+.slider {
+    max-width: 1900px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.slider .card {
+    flex: 1;
+    height: 400px;
+    margin: 0 20px;
+    background: #fff;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.slider .card .img {
+    height: 200px;
+    width: 100%;
+}
+
+.slider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .card .content {
+    padding: 10px 20px;
+}
+
+.card .content .Ctitle {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: var(--indigo);
+    font-weight: 600;
+    text-align: left;
+}
+
+.card .content .sub-title {
+    display: flex;
+    align-items: center;
+    font-size: .875rem;
+    line-height: 20px;
+}
+
+.card .content .sub-title img {
+    width: 13px;
+    height: 13px;
+    margin: 0 5px;
+}
+
+.card .content p {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+
+
+
+
+/* 頁尾區 */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--indigo);
+    height: 40vh;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-icon {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.footer {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-left {
+
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.footerLogo {
+    width: 100px;
+    padding-right: 30px;
+    border-right: 3px solid var(--alabaster);
+}
+
+.footer-left h1 {
+    font-weight: bold;
+    /* 粗體字 */
+    color: var(--alabaster);
+    /* 調整文字顏色 */
+    font-size: 1.5rem;
+    /* 調整文字大小 */
+
+}
+
+.footer-left h2 {
+    color: var(--alabaster);
+    /* 調整文字顏色 */
+    line-height: 2.5;
+    /* 設置行高為文字大小的2.5倍 */
+    font-size: 1rem;
+
+}
+
+.f1 {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: center; */
+    /*主軸(垂直)置中*/
+}
+
+.f2 {
+    margin-right: 62px;
+}
+
+.f3 h2 {
+    line-height: 1.5;
+    /* 設置行高為文字大小的1.5倍 */
+
+
+}
+
+
+.footer-right {
+    display: flex;
+    /* flex-direction: row; */
+
+    height: 224px;
+    width: 350px;
+    color: var(--alabaster);
+
+    /* border: 1px solid #ff1c1c; */
+}
+
+.r {
+    line-height: 2.5;
+    align-content: start;
+
+}
+
+.r1 {
+    display: block;
+    position: relative;
+}
+
+.r1::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 140%;
+    background: #aaa;
+    width: 3px;
+    height: 140px;
+
+}
+
+.r1,
+.r2 {
+    margin-right: 60px;
+}
+
+.Copyright-Notice {
+    color: var(--alabaster);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    /* border: 1px solid #ff1c1c; */
+}
+
+/*rwd斷點*/
+
+/*平板*/
+@media (max-width:820px) {
+    footer {
+        width: 100%;
+
+        height: 100%;
+    }
+}
+
+/*手機板*/
+@media (max-width:640px) {
+    footer {
+        width: 100%;
+
+        height: 100%;
+    }
+}
+
+/* TOP鈕 */
+.gotop {
+    position: fixed;
+    display: none;
+    top: 85%;
+    left: 95%;
+    width: 70px;
+    max-width: 100%;
+    z-index: 999;
+    cursor: pointer;
+}

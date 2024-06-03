@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古蹟建築</title>
+    <link rel="icon" href="./images/LOGO/logo.png">
+    <link rel="stylesheet" href="HistoricBuildings.css">
+
+    <!-- react -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 頁首 -->
+
+    <div class="topbar">
+        <div class="logo">
+            <a href="index.html"><img src="./images/logo-b.svg" alt=""></a>
+        </div>
+
+        <div class="title">
+            <p class="chiness">古蹟建築</p>
+            <p class="english">HistoricBuildings</p>
+            <img src="./images/titleImg.svg" alt="">
+        </div>
+
+        <!-- 漢堡按鈕區 -->
+        <div id="menu" class="menu">
+            <div class="menu-content">
+                <button id="closeMenu"><img src="./images/close.png" alt=""></button>
+                <div class="menuBox">
+                    <div class="menuLogoimg">
+                        <img src="./images/menuImg.jpg" alt="" class="menuImg">
+                        <a href="./index.html"><img src="./images/LOGO/logohavefont-off-wite.png" alt=""
+                                class="logohavefont"></a>
+                    </div>
+                    <ul class="menuIconBox">
+                        <div class="all">
+                            <li><img src="./images/icon/tea.png" alt="">所有主題 All Events</li>
+                        </div>
+                        <div class="allOptions">
+                            <li><a href="./HistoricBuildings.html">古蹟建築</a></li>
+                            <li><a href="./TraditionalSports.html">傳統運動</a></li>
+                            <li><a href="./CulturalCustoms.html">文化習俗</a></li>
+                        </div>
+                        <div class="all">
+                            <li><img src="./images/icon/food.png" alt="">所有地區 All Regions</li>
+                        </div>
+                        <div class="allOptions">
+                            <li><a href="./allitineraries.html#Hokkaido">北海道</a></li>
+                            <li><a href="./allitineraries.html#KANTO">關東</a></li>
+                            <li><a href="./allitineraries.html#KANSAI">關西</a></li>
+                            <li><a href="./allitineraries.html#SHIKOKU">四國</a></li>
+                            <li><a href="./allitineraries.html#KYUSHU">九州</a></li>
+                        </div>
+                        <div class="button l">
+                            <li><a href="./contactus.html"><img src="./images/icon/sake.svg" alt="">聯絡我們 Contact US</a>
+                            </li>
+
+                            <li><a href="index.html#news"><img src="./images/icon/cat.svg" alt="">最新消息 Latest News</a>
+                            </li>
+                            <li><a href="index.html#about"><img src="./images/icon/susi.svg" alt="">關於日本 About Japan</a>
+                            </li>
+                        </div>
+                        <div class="button">
+                            <li><a href="./allitineraries.html"><img src="./images/icon/fish.svg" alt="">開團總覽 Itinerary
+                                    Overview</a></li>
+                            </li>
+                            <li><a href="./Travel-Information.html"><img src="./images/icon/Bamboo.svg" alt="">旅遊資訊
+                                    Travel Information</a></li>
+                            <li><a href="./aboutus.html"><img src="./images/icon/daruma.svg" alt="">關於我們 About Us</a>
+                            </li>
+                        </div>
+                        <div class="menu-social-media">
+                            <li><a href="#"><img src="./images/icon/IG-b.png" alt=""></a></li>
+                            <li><a href="#"><img src="./images/icon/LINE-b.png" alt=""></a></li>
+                            <li><a href="#"><img src="./images/icon/FB-b.png" alt=""></a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 內容 -->
+    <main>
+        <div class="banner"> </div>
+        <div class="box">
+
+            <ul class="navigation">
+                <li><a href="index.html">首頁</a></li>
+                <li><b>/</b></li>
+                <li>所有主題</li>
+                <li><b>/</b></li>
+                <li>古蹟建築</li>
+            </ul>
+
+            <div class="hamburger">
+                <a id="openMenu"><img src="./images/HistoricBuildings/menu.svg" alt="">
+                    <h2>MENU</h2>
+                </a>
+            </div>
+        </div>
+
+        <div class="introduce">
+            <div class="introduce-text">
+                <p>
+                    日本的神社、寺廟和庭園是日本文化的重要組成部分，體現了日本人對自然、<br>
+                    宗教和美學的追求。這些地方不僅是信仰和靈修的場所，也是休閒和欣賞美景<br>
+                    的場地。<br><br>傳統日式建築的一個最突出的特點是對木材的巧妙使用。依靠木材的榫卯結構<br>進行組裝，這種技術展示了卓越的工藝和對自然材料的敬畏。
+                </p>
+            </div>
+
+
+            <div class="introduce-img">
+                <img src="./images/HistoricBuildings/introduce.svg" alt="">
+            </div>
+        </div>
+
+
+        <div class="Ttemples">
+            <div class="Ttemples-img">
+                <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/bn.jpg" alt="" />
+            </div>
+            <div class="Ttemples-box">
+                <div class="title">
+                    <p class="chiness">寺廟、神社</p>
+                    <p class="english">Temples, Shrines</p>
+                    <img src="./images/titleImg.svg" alt="" />
+                </div>
+                <p class="Ttemples-text">
+                    日本古蹟建築特色源於其獨特的文化背景與傳統工藝。<br>
+                    古建築融合自然景觀，尊重自然、簡約優雅，
+                    體現出日本人對於美學與和諧的追求。<br><br>
+                    古代神社與寺廟體現了崇拜自然與宗教信仰，
+                    以木造結構、屋瓦與庭園展現和諧。<br><br>
+                    歷史城堡彰顯戰國時代武士文化，擁有堅固的石牆與櫓樓。
+                    宮殿與禪宗寺院精緻的屋檐與彩繪彰顯藝術風格。<br>
+                </p>
+            </div>
+        </div>
+
+
+
+        <div id="root"></div>
+
+        <script type="text/babel">
+            const Cardall = ({ all }) => {
+                const Card = ({ img, text }) => (
+                    <div className="Ttemples-service">
+                        <div className="card">
+                            <div className="img">{img}</div>
+                            <div className="content">
+                                <div className="sub-title">{text}</div>
+                            </div>
+                        </div>
+                    </div>
+                );
+
+                // 初始化Owl Carousel  //js裡的
+                React.useEffect(() => {
+                    $(".owl-carousel").owlCarousel({
+                        items: 3,  //顯示3個
+                        loop: true,
+                        margin: 30,  //每個間距30
+                        nav: true,
+                    });
+                }, []);
+
+                return (
+                    <>
+                        <div className="slider2 owl-carousel">
+                            { // 使用map方式執行迴圈
+                                all.map((a, name) => (
+                                    <Card key={name} img={a.img} text={a.text} />
+                                ))
+                            }
+                        </div>
+                    </>
+                );
+            };
+
+
+
+            const Ttemples = [
+                {
+                    img: <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/01.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
+                    text: "日本神社和佛寺是日本文化的精髓之一。是供奉神明的場所，反映了日本人對自然和神靈的崇拜。也是人們尋求心靈寄託和旅遊觀光的熱門目的地。",
+                },
+                {
+                    img: <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/02.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
+                    text: " 神社（神社）：神社是神道教的宗教場所，用於祭祀神明和舉行儀式。結構：神社的特色包括鳥居、手水舍（洗手口）、神殿和神籬。祭祀活動：人們會在神社參加祭典、祈求福祉和健康。",
+                },
+                {
+                    img: <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/03.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
+                    text: "寺廟（寺）：寺廟是佛教的宗教場所，用於供奉佛像和舉行佛事。結構：寺廟的結構通常包括山門、佛殿、塔和禪堂等建築。靈修活動：寺廟是靈修和冥想的場所，僧侶和信眾在這裡進行宗教活動和修行。",
+                },
+            ];
+
+            const Garden = [
+                {
+                    img: <img src="./images/HistoricBuildings/Garden-introduction/01.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
+                    text: "池泉庭園（池泉回遊式庭園）：擁有池塘和小溪，供人們散步欣賞景色。庭園內通常設有橋樑、島嶼和瀑布，模仿自然景觀。"
+                },
+                {
+                    img: <img src="./images/HistoricBuildings/Garden-introduction/02.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
+                    text: " 枯山水庭園： 也稱為「禪庭」，以石頭、砂子和苔蘚為主要元素。 模仿山川景觀，常見於禪寺，供僧侶冥想和靈修。"
+                },
+                {
+                    img: <img src="./images/HistoricBuildings/Garden-introduction/03.jpg" style={{ height: '400px', width: '100%', objectfit: 'cover', borderRadius: '30px' }} alt="" />,
+                    text: "茶庭（露地）：通常與茶室相連，供茶道儀式使用。包括前庭和內庭，設計簡潔，強調寧靜和自然。"
+                },
+            ];
+
+            const MyApp = () => {
+                return (
+                    <>
+                        <div id="shrines">
+                            <Cardall all={Ttemples} />
+                        </div>
+
+                    </>
+                );
+            };
+
+            ReactDOM.createRoot(document.getElementById('root')).render(<MyApp />);
+        </script>
+
+
+
+        <!-- HTML寫法  -->
+        <!-- <div class="Ttemples-service">
+            
+            <div class="slider2 owl-carousel">
+                <div class="card">
+                    <div class="img">
+                        <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/01.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="sub-title">
+                            <p>日本神社和佛寺是日本文化的精髓之一。
+                                是供奉神明的場所，反映了日本人對自然和神靈的崇拜。也是人們尋求心靈寄託和旅遊觀光的熱門目的地。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img">
+                        <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/02.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="sub-title">
+                            <p>
+                                神社（神社）：
+                                宗教：神社是神道教的宗教場所，用於祭祀神明和舉行儀式。
+                                結構：神社的特色包括鳥居、手水舍（洗手口）、神殿和神籬。
+                                祭祀活動：人們會在神社參加祭典、祈求福祉和健康。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img">
+                        <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/03.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="sub-title">
+                            <p>寺廟（寺）：
+                                宗教：寺廟是佛教的宗教場所，用於供奉佛像和舉行佛事。
+                                結構：寺廟的結構通常包括山門、佛殿、塔和禪堂等建築。
+                                靈修活動：寺廟是靈修和冥想的場所，僧侶和信眾在這裡進行宗教活動和修行。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="Ttemples-Itinerary">
+            <div class="titlebox">
+                <div class="title1">
+                    <h1>推薦行程</h1>
+                </div>
+                <div class="title2">
+                    <h2>Recommendations</h2>
+                </div>
+            </div>
+            <!-- 插入輪播 -->
+            <div class="slider owl-carousel">
+                <a href="./fukuoka.html">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/Itinerary/1.jpg"
+                                alt="">
+                        </div>
+                        <div class="content">
+                            <div class="Ctitle">
+                                福岡-宗教建築巡礼4日之旅</div>
+                            <div class="sub-title">
+                                <img src="./images/icon/people.png" alt="">
+                                10人立即成團
+                                <img src="./images/icon/date.png" alt="">
+                                2024/07/20
+                            </div>
+                            <p>
+                                探索福岡的宗教文化和歷史。行程涵蓋了著名的神社和寺廟，讓您領略日本傳統建築的精華和宗教氛圍。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./fukuoka.html">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/Itinerary/2.jpg"
+                                alt="">
+                        </div>
+                        <div class="content">
+                            <div class="Ctitle">
+                                福岡-宗教建築巡礼4日之旅</div>
+                            <div class="sub-title">
+                                <img src="./images/icon/people.png" alt="">
+                                15人立即成團
+                                <img src="./images/icon/date.png" alt="">
+                                2024/06/15
+                            </div>
+                            <p>
+                                探索福岡的宗教文化和歷史。行程涵蓋了著名的神社和寺廟，讓您領略日本傳統建築的精華和宗教氛圍。</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./fukuoka.html">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/Itinerary/3.jpg"
+                                alt="">
+                        </div>
+                        <div class="content">
+                            <div class="Ctitle">
+                                福岡-宗教建築巡礼4日之旅</div>
+                            <div class="sub-title">
+                                <img src="./images/icon/people.png" alt="">
+                                10人立即成團
+                                <img src="./images/icon/date.png" alt="">
+                                2024/08/25
+                            </div>
+                            <p>
+                                探索福岡的宗教文化和歷史。行程涵蓋了著名的神社和寺廟，讓您領略日本傳統建築的精華和宗教氛圍。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./fukuoka.html">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/Itinerary/4.jpg"
+                                alt="">
+                        </div>
+                        <div class="content">
+                            <div class="Ctitle">
+                                福岡-宗教建築巡礼4日之旅</div>
+                            <div class="sub-title">
+                                <img src="./images/icon/people.png" alt="">
+                                10人立即成團
+                                <img src="./images/icon/date.png" alt="">
+                                2024/05/25
+                            </div>
+                            <p>
+                                探索福岡的宗教文化和歷史。行程涵蓋了著名的神社和寺廟，讓您領略日本傳統建築的精華和宗教氛圍。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./fukuoka.html">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./images/HistoricBuildings/Introduction-to-shrines-and-temples/Itinerary/5.jpg"
+                                alt="">
+                        </div>
+                        <div class="content">
+                            <div class="Ctitle">
+                                福岡-宗教建築巡礼4日之旅</div>
+                            <div class="sub-title">
+                                <img src="./images/icon/people.png" alt="">
+                                10人立即成團
+                                <img src="./images/icon/date.png" alt="">
+                                2024/07/20
+                            </div>
+                            <p>
+                                作為國技，相撲在日本文化中具有重要地位，這趟東京相撲鑒賞之旅將讓您親身體驗這項傳統運動的獨特魅力和歷史。</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+        <!--庭園 -->
+        <div class="Garden">
+            <div class="Garden-img">
+                <img src="./images/HistoricBuildings/Garden-introduction/bn .jpg" alt="">
+            </div>
+            <div class="Garden-box">
+                <div class="title">
+                    <p class="chiness">日式庭園</p>
+                    <p class="english">Japanese Garden</p>
+                    <img src="./images/titleImg.svg" alt="">
+                </div>
+                <p class="Garden-text">
+                    日本庭園是日本文化中的重要組成部分，<br>
+                    以其精緻的設計和與自然環境的和諧而聞名於世。<br><br>
+                    日式庭園體現了日本人對自然和諧、美學和禪意的追求。<br>
+                    這種庭園設計在日本文化和歷史中佔有重要地位，<br>
+                    並在世界範圍內受到廣泛的讚譽。
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="root1"></div>
+        <script type="text/babel">
+            const App = () => {
+                return (
+                    <>
+                        <div id="Gardens">
+                            <Cardall all={Garden} />
+                        </div>
+
+                    </>
+                );
+            };
+
+            ReactDOM.createRoot(document.getElementById('root1')).render(<App />);
+        </script>
+
+
+
+        <!-- HTML寫法  -->
+        <!-- 大輪播 -->
+        <!-- <div class="Garden-service">
+            <div class="slider2 owl-carousel">
+
+                <div class="card">
+                    <div class="img">
+                        <img src="./images/HistoricBuildings/Garden-introduction/01.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="sub-title">
+                            <p>池泉庭園（池泉回遊式庭園）：<br>
+                                擁有池塘和小溪，供人們散步欣賞景色。
+                                庭園內通常設有橋樑、島嶼和瀑布，模仿自然景觀。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img">
+                        <img src="./images/HistoricBuildings/Garden-introduction/02.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="sub-title">
+                            <p>枯山水庭園：<br>
+                                也稱為「禪庭」，以石頭、砂子和苔蘚為主要元素。
+                                模仿山川景觀，常見於禪寺，供僧侶冥想和靈修。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img">
+                        <img src="./images/HistoricBuildings/Garden-introduction/03.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="sub-title">
+                            <p>茶庭（露地）：<br>
+                                通常與茶室相連，供茶道儀式使用。
+                                包括前庭和內庭，設計簡潔，強調寧靜和自然。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>-->
+
+
+
+
+
+
+        <!-- 庭園推薦行程 -->
+        <div class="Garden-Itinerary">
+            <div class="titlebox">
+                <div class="title1">
+                    <h1>推薦行程</h1>
+                </div>
+                <div class="title2">
+                    <h2>Recommendations</h2>
+                </div>
+            </div>
+            <!-- 插入輪播 -->
+            <div class="slider owl-carousel">
+                <a href="./shimane.html">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./images/HistoricBuildings/Garden-introduction/Itinerary/1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="Ctitle">
+                                島根-藝術與禪庭園4日旅</div>
+                            <div class="sub-title">
+                                <img src="./images/icon/people.png" alt="">
+                                10人立即成團
+                                <img src="./images/icon/date.png" alt="">
+                                2024/07/20
+                            </div>
+                            <p>
+                                這趟旅程提供豐富的視覺和精神享受，讓您深入了解島根的文化和美學，是一次完美的文化與禪庭園之旅。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./shimane.html">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./images/HistoricBuildings/Garden-introduction/Itinerary/2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="Ctitle">
+                                島根-藝術與禪庭園4日旅</div>
+                            <div class="sub-title">
+                                <img src="./images/icon/people.png" alt="">
+                                15人立即成團
+                                <img src="./images/icon/date.png" alt="">
+                                2024/06/15
+                            </div>
+                            <p>
+                                這趟旅程提供豐富的視覺和精神享受，讓您深入了解島根的文化和美學，是一次完美的文化與禪庭園之旅。</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./shimane.html">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./images/HistoricBuildings/Garden-introduction/Itinerary/3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="Ctitle">
+                                島根-藝術與禪庭園4日旅</div>
+                            <div class="sub-title">
+                                <img src="./images/icon/people.png" alt="">
+                                10人立即成團
+                                <img src="./images/icon/date.png" alt="">
+                                2024/08/25
+                            </div>
+                            <p>
+                                這趟旅程提供豐富的視覺和精神享受，讓您深入了解島根的文化和美學，是一次完美的文化與禪庭園之旅。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./shimane.html">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./images/HistoricBuildings/Garden-introduction/Itinerary/4.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="Ctitle">
+                                島根-藝術與禪庭園4日旅</div>
+                            <div class="sub-title">
+                                <img src="./images/icon/people.png" alt="">
+                                10人立即成團
+                                <img src="./images/icon/date.png" alt="">
+                                2024/05/25
+                            </div>
+                            <p>
+                                這趟旅程提供豐富的視覺和精神享受，讓您深入了解島根的文化和美學，是一次完美的文化與禪庭園之旅。</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./shimane.html">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./images/HistoricBuildings/Garden-introduction/Itinerary/5.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="Ctitle">
+                                島根-藝術與禪庭園4日旅</div>
+                            <div class="sub-title">
+                                <img src="./images/icon/people.png" alt="">
+                                10人立即成團
+                                <img src="./images/icon/date.png" alt="">
+                                2024/07/20
+                            </div>
+                            <p>
+                                這趟旅程提供豐富的視覺和精神享受，讓您深入了解島根的文化和美學，是一次完美的文化與禪庭園之旅。</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- 頁尾區 -->
+    <footer>
+        <div class="footer-frame">
+            <div class="social-media-icon">
+                <a href=""><img src="./images/icon/fb.png" alt=""></a>
+                <a href=""><img src="./images/icon/ig.png" alt=""></a>
+                <a href=""><img src="./images/icon/line.png" alt=""></a>
+            </div>
+            <div class="footer">
+                <div class="footer-left">
+                    <div class="footerLogo">
+                        <img src="./images/LOGO/logo-Off-white.png" alt="">
+                    </div>
+                    <div class="f f1">
+                        <h1>昵朋旅行社</h1>
+                        <h1>NIPPON TOURS</h1>
+                    </div>
+                    <div class="f f2">
+                        <h2>地址 / 台西市下區大大路 20 號 11 樓之 7 </h2>
+                        <h2>電話 / 08-8787878787 </h2>
+                        <h2>Email : nippon123@gmail.com</h2>
+                    </div>
+                    <div class="f f3">
+                        <h2>平日 12：00 ～ 19：00</h2>
+                        <h2>假日 10：00 ～ 19：00</h2>
+                        <h2>（週二、週三公休）</h2>
+                        <h2>*國定假日照常營業</h2>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="r r1">
+                        <a href="#allEvents">所有主題</a>
+                        <a href="./HistoricBuildings.html">古蹟建築</a>
+                        <a href="./TraditionalSports.html">傳統運動</a>
+                        <a href="./CulturalCustoms.html">文化習俗</a>
+                    </div>
+                    <div class="r r2">
+                        <a href="./contactus.html">聯絡我們</a>
+                        <a href="./aboutus.html">關於我們</a>
+                        <a href="index.html#news">最新消息</a>
+                        <a href="index.html#about">關於日本</a>
+                    </div>
+                    <div class="r r3">
+                        <a href="./allitineraries.html">開團總覽</a>
+                        <a href="./Travel-Information.html">旅遊資訊</a>
+                    </div>
+                </div>
+                <div class="Copyright-Notice">Copyright @ 2024 昵朋旅遊網. Privacy Policy / Copyright</div>
+            </div>
+        </div>
+    </footer>
+    <!-- TOP鈕 -->
+    <a href="#" class="gotop" id="gotop"><img src="./images/TOP.png" alt=""></a>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="./js/jquery.cycle.all.js"></script>
+    <script src="./js/main-1.js"></script>
+
+</body>
+
+</html>

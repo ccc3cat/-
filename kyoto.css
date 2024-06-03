@@ -609,7 +609,7 @@ button#closeMenu {
 .btn-SignUp {
     font-weight: 200;
     letter-spacing: 2px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     border: 2px solid #9F353A;
     border-radius: 40px;
     cursor: pointer;
@@ -619,6 +619,14 @@ button#closeMenu {
     z-index: 1;
     font-size: 1rem;
     margin-top: 25px;
+}
+
+.btn-SignUp div {
+    transition: 0.8s;
+}
+
+.btn-SignUp:hover div {
+    transform: translateX(6px);
 }
 
 .btn-SignUp::after {
@@ -634,10 +642,13 @@ button#closeMenu {
     border-radius: 40px;
     overflow: hidden;
     padding: 3px 3px;
+    transition: 0.2s;
 }
 
-
-
+.btn-SignUp:hover::after {
+    top: 0px;
+    left: 0px;
+}
 
 /* 裝飾線 */
 /* 縮放會有問題!!!尚未更改 */

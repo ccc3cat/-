@@ -601,7 +601,7 @@ button#closeMenu {
 .btn-SignUp {
     font-weight: 200;
     letter-spacing: 2px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     border: 2px solid #9F353A;
     border-radius: 40px;
     cursor: pointer;
@@ -611,6 +611,14 @@ button#closeMenu {
     z-index: 1;
     font-size: 1rem;
     margin-top: 25px;
+}
+
+.btn-SignUp div {
+    transition: 0.8s;
+}
+
+.btn-SignUp:hover div {
+    transform: translateX(6px);
 }
 
 .btn-SignUp::after {
@@ -626,8 +634,13 @@ button#closeMenu {
     border-radius: 40px;
     overflow: hidden;
     padding: 3px 3px;
+    transition: 0.2s;
 }
 
+.btn-SignUp:hover::after {
+    top: 0px;
+    left: 0px;
+}
 
 /* 裝飾線 */
 /* 縮放會有問題!!!尚未更改 */
@@ -739,6 +752,7 @@ button#closeMenu {
     justify-content: center;
     font-weight: bold;
 }
+
 .feature-box ul {
     display: flex;
     flex-direction: column;
@@ -748,7 +762,7 @@ button#closeMenu {
     margin-left: 100px;
     margin-top: 150px;
     border-right: 0.5px solid #374C66;
-    color: rgba(55, 76, 102,.5);
+    color: rgba(55, 76, 102, .5);
 }
 
 .feature-box li {
@@ -761,17 +775,19 @@ button#closeMenu {
     width: 70px;
     padding-bottom: 5px;
     border-bottom: 1px solid transparent;
-    cursor: pointer; /* 鼠标悬停时显示手形指针 */
+    cursor: pointer;
+    /* 鼠标悬停时显示手形指针 */
 }
 
 .feature-box .active {
-    border-bottom: 1px solid #374C66; /* 点击时显示底线 */
+    border-bottom: 1px solid #374C66;
+    /* 点击时显示底线 */
     color: var(--indigo);
 }
 
 
 .feature-box li:hover {
-    border-bottom:1px solid var(--indigo);
+    border-bottom: 1px solid var(--indigo);
 }
 
 .feature01 {
@@ -900,7 +916,7 @@ button#closeMenu {
     height: 200px;
 }
 
-.paragraph{
+.paragraph {
     font-size: 1rem;
     line-height: 40px;
     /* 行距 */
@@ -1125,6 +1141,7 @@ a.ui-button:active,
     padding: 25px 20px;
     color: var(--alabaster);
     background-color: var(--auburn);
+    letter-spacing: 2px;
 }
 
 
@@ -1137,7 +1154,7 @@ a.ui-button:active,
 }
 
 .btn-day-lift {
-    background-image: url("./images/button-left.png");
+    background-image: url("./images/button-left.svg");
     width: 38px;
     height: 38px;
     outline: none;
@@ -1146,7 +1163,7 @@ a.ui-button:active,
 }
 
 .btn-day-right {
-    background-image: url("./images/button-right.png");
+    background-image: url("./images/button-right.svg");
     width: 38px;
     height: 38px;
     outline: none;
@@ -1158,16 +1175,16 @@ a.ui-button:active,
 /* 增加的效果!!!!!!請加進去 */
 .btn-day-lift:hover {
     /* 滑鼠樣式改變 */
-    background-image: url("./images/btn-day-lift.png");
-    background-color: var(--indigo);
+    background-image: url("./images/button-left.svg");
+    background-color: var(--alabaster);
     border-radius: 99px;
     cursor: pointer;
 }
 
 /* 增加的效果!!!!!!請加進去 */
 .btn-day-right:hover {
-    background-image: url("./images/btn-day-right.png");
-    background-color: var(--indigo);
+    background-image: url("./images/button-right.svg");
+    background-color: var(--alabaster);
     border-radius: 99px;
     /* 滑鼠樣式改變 */
     cursor: pointer;
@@ -1176,7 +1193,7 @@ a.ui-button:active,
 
 
 .day-text h4 {
-    color: #fff;
+    color: #374C66;
     font-weight: bold;
     font-size: 1.5rem;
     margin-left: 500px;
