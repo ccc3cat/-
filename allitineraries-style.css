@@ -629,30 +629,6 @@ ul {
     width: 70%;
 }
 
-.list-box .new {
-    color: #9F353A;
-    float: left;
-    font-size: 1.5rem;
-    font-weight: bold;
-    /* top: 15px; */
-    left: 50px;
-    letter-spacing: 1px 
-}
-
-.list-box>.new {
-    animation: bounce 0.5s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-0.5em);
-    }
-}
-
 .list-box .item {
     border: 2px solid rgb(55, 76, 102, .2);
     border-radius: 40px;
@@ -754,7 +730,6 @@ ul {
     left: 0px;
 }
 
-
 /* 頁尾區 */
 footer {
     display: flex;
@@ -853,13 +828,11 @@ footer a:hover {
     height: 224px;
     width: 350px;
     color: var(--alabaster);
-
-    /* border: 1px solid #ff1c1c; */
 }
 
 .r {
     line-height: 2.5;
-    align-content: center;
+    align-content: start;
 
 }
 
@@ -871,7 +844,7 @@ footer a:hover {
 .r1::after {
     content: "";
     position: absolute;
-    top: 19%;
+    top: 5%;
     left: 140%;
     background: #aaa;
     width: 3px;
@@ -890,8 +863,6 @@ footer a:hover {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-
-    /* border: 1px solid #ff1c1c; */
 }
 
 /*rwd斷點*/
